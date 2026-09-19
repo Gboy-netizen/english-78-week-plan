@@ -466,14 +466,15 @@
       ? (wordFeedback.correct ? "答对了。" : `还差一点。正确拼写是 ${esc(word)}。`) : "";
     const feedback = wordFeedback && wordFeedback.word === word
       ? `<p class="spell-feedback ${wordFeedback.correct ? "success" : "error"}" role="status">${feedbackMessage}</p>` : "";
+    const answered = wordFeedback && wordFeedback.word === word;
     const meaningHtml = revealMeaning
-      ? `<p class="word-meaning">${esc(entry.meaning || "释义待核实")}</p><details class="example"><summary>展开例句</summary><p class="english">${esc(entry.example || "暂无例句")}</p>${entry.translation ? `<p class="muted">${esc(entry.translation)}</p>` : ""}</details>`
+      ? `<p class="word-meaning">${esc(entry.meaning || "释义待核实")}</p>${answered ? `<details class="example"><summary>展开例句</summary><p class="english">${esc(entry.example || "暂无例句")}</p>${entry.translation ? `<p class="muted">${esc(entry.translation)}</p>` : ""}</details>` : ""}`
       : "<p class=\"small muted\">先试着猜意思，再查看释义。</p>";
     return `<div class="practice-heading"><div><p class="eyebrow">STEP 2 · WORDS</p><h2>一次练一个词</h2></div><span class="word-progress">${progress}</span></div>
-      <div class="word-stage"><div class="word-label">${esc(word)}</div><div class="phonetic">${esc(entry.phonetic || "美式音标待核实")}</div>
+      <div class="word-stage">${answered ? `<div class="word-label">${esc(word)}</div><div class="phonetic">${esc(entry.phonetic || "美式音标待核实")}</div>` : `<p class="word-listening">先听发音，凭记忆拼写</p>`}
         <div class="audio-controls"><button type="button" class="secondary" data-audio="${esc(word)}">🔊 听发音</button><button type="button" class="quiet" data-toggle-meaning>${revealMeaning ? "收起释义" : "查看释义"}</button></div>
         ${meaningHtml}
-        <form class="spell-form" id="spellForm"><label for="spellInput">听读后，输入这个词的拼写</label><div class="spell-row"><input id="spellInput" name="spelling" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="输入单词拼写"><button type="submit" class="primary">检查</button></div>${feedback}</form>
+        <form class="spell-form" id="spellForm"><label for="spellInput">听发音后，输入这个词的拼写</label><div class="spell-row"><input id="spellInput" name="spelling" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="输入单词拼写"><button type="submit" class="primary">检查</button></div>${feedback}</form>
       </div>`;
   }
 
@@ -534,7 +535,12 @@
     document.querySelectorAll("[data-speak]").forEach((button) => button.addEventListener("click", () => speak(button.dataset.speak)));
     document.querySelectorAll("[data-audio]").forEach((button) => button.addEventListener("click", () => playAudio(button.dataset.audio)));
     const meaningButton = document.querySelector("[data-toggle-meaning]");
-    if (meaningButton) meaningButton.addEventListener("click", () => { revealMeaning = !revealMeaning; renderPractice(info, state); });
+    if (meaningButton) meaningButton.addEventListener("click", () => {
+      const draftSpelling = $("spellInput")?.value;
+      revealMeaning = !revealMeaning;
+      renderPractice(info, state);
+      if (draftSpelling !== undefined) $("spellInput").value = draftSpelling;
+    });
     const prompt = engine.makePrompt(info, lesson);
     const promptText = $("promptText");
     const copyPrompt = document.querySelector("[data-copy-prompt]");
