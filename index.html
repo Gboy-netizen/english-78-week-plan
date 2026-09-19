@@ -18,6 +18,9 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .lesson-translation{margin-top:2px;color:var(--muted);font-size:13px;line-height:1.6}.lesson-line{margin-bottom:18px}
 .example-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.example-line button{min-height:32px;padding:3px 8px;font-size:12px;background:white;border:1px solid var(--line)}
+.flash-card{padding:28px;background:var(--bg);border-radius:12px;text-align:center;margin-top:18px}.flash-prompt{font-size:17px;margin:32px auto;max-width:420px}.flash-back .word-label{margin-top:0}.flash-back .word-meaning{margin:12px auto}.flash-back .example-line{justify-content:center;margin:18px auto 8px}.flash-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}.use-it{text-align:left;max-width:580px;margin:22px auto 0;padding:18px;background:var(--bg);border-radius:12px}.use-it label{display:block;font-size:13px;margin-bottom:9px}.use-it textarea{width:100%;font-size:14px}.use-it .muted{margin-top:7px}#reviewNote{margin:12px 0 0}
+.review-more{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:8px 12px;margin:0 0 12px;background:var(--blue-soft);border-radius:10px;color:var(--ink);font-size:12px}.review-more button{min-height:34px;padding:5px 9px;color:var(--blue)}
+.mistake-list{padding-left:20px;margin:14px 0}.mistake-list li{padding:5px 0}.mistake-list small{display:block;color:var(--muted)}#reviewMistakes{margin-top:4px}
 </style>
 </head>
 <body>
@@ -45,6 +48,7 @@
             <div class="overline"><span class="pill" id="phaseLabel"></span><span id="dayLabel" class="muted"></span></div>
             <h2 id="lessonTitle"></h2><p id="lessonLead" class="muted"></p>
             <div class="daily-facts"><span><b id="wordCount"></b><small id="wordCountLabel">核心词</small></span><span><b id="totalMinutes"></b><small>分钟 · 跟着步骤走</small></span><span><b>1</b><small>个小目标</small></span></div>
+            <p id="reviewNote" class="small muted" aria-live="polite"></p>
             <div class="overview-bottom"><button id="startLearning" class="primary" type="button">开始今天的学习 <span aria-hidden="true">→</span></button><span class="small muted">不用先学会，先试一次。</span></div>
           </section>
           <section class="study-workspace" aria-label="今日练习">
@@ -70,11 +74,12 @@
       <div class="page-heading"><div><p class="eyebrow">WHEN YOU NEED A LITTLE HELP</p><h1>需要时，再来翻一翻。</h1><p class="muted">日常材料已经在练习里，这里留给查阅和拓展。</p></div></div>
       <div class="resource-grid">
         <section class="card"><h2>词汇与美式发音</h2><p class="muted" id="vocabStats"></p><label for="wordSearch">查一个词</label><div class="search-row"><input id="wordSearch" type="search" placeholder="例如 notes" autocomplete="off"><button class="secondary" id="searchWord" type="button">查词</button></div><div id="searchResult" aria-live="polite"></div><div class="resource-links"><a href="教案素材/02-7000分级词表.csv" download>下载完整词表 CSV ↗</a><a href="教案素材/words-分阶段词表.zip" download>下载分阶段词表 ↗</a><a href="教案素材/01-48音标学习包.html" target="_blank" rel="noopener">美式发音学习卡 ↗</a></div><details><summary>美式发音学习卡（48张）</summary><div id="allPhonetics" class="phon-grid"></div><p class="small muted">包含单音和常见组合音；不代表美式英语有48个独立音位。个别词的读音会因美国地区口音而略有不同。</p></details></section>
+        <section class="card"><h2>我的词卡与错词</h2><p id="deckStats" class="muted"></p><ol id="mistakeList" class="mistake-list"></ol><button id="reviewMistakes" type="button" class="secondary">再练最常错的词</button><p class="small muted">记录只保存在当前浏览器；清除浏览器数据会删除本机词卡。</p></section>
         <section class="card"><h2>打卡与AI练习</h2><p class="muted">每日结束时复制摘要，到飞书记录完成情况、评分和录音。页面不会代替你提交记录。</p><a id="feishuLink" class="secondary feishu-link" target="_blank" rel="noopener">打开飞书打卡 ↗</a><div class="resource-links"><a href="https://www.elsaspeak.com/" target="_blank" rel="noopener">ELSA · 发音反馈 ↗</a><a href="https://typewords.cc" target="_blank" rel="noopener">TypeWords · 更多拼写练习 ↗</a></div><p class="small muted">AI教学指令会出现在当天练习里。用豆包或ChatGPT等工具练习时，自行复制过去即可。免费额度与服务可用性以各平台为准。</p></section>
         <section class="card"><h2>美式听读拓展</h2><p class="muted">先完成当天练习，再用美式范音跟读。</p><div class="resource-links"><a href="https://www.youtube.com/@rachelsenglish" target="_blank" rel="noopener">Rachel's English · 美式发音 ↗</a><a href="https://learningenglish.voanews.com/" target="_blank" rel="noopener">VOA Learning English · 美式听力 ↗</a></div></section>
         <section class="card"><h2>雅思 General</h2><p class="muted">Task 1：书信至少150词，建议约20分钟。Task 2：议论文至少250词，建议约40分钟。完整写作共60分钟。</p><div class="resource-links"><a href="https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/general-training" target="_blank" rel="noopener">British Council · General官方练习 ↗</a><a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test" target="_blank" rel="noopener">IELTS · 考试说明 ↗</a></div><p class="small muted">先选择 General Training 材料。页面内短文和题目为自编练习，并非雅思历年真题。考试形式、费用和报名条件请以报考地区官网为准。</p></section>
       </div>
-      <details class="card secondary-section"><summary>使用说明、数据来源与本机保存</summary><p>文字和练习可以离线查看。单词发音优先调用设备的英语（美国）语音；不可用时尝试在线美音，外部视频和飞书仍需联网。若设备没有美式语音且在线服务受阻，请先安装设备的英语（美国）语音。</p><p>进度、草稿和评分暂存在本机浏览器，不会自动在手机与电脑间同步，也不会写入发布页面。禁止存储时仍可练习，但刷新后临时状态可能丢失。正式记录请保存到飞书。</p><p>词注释来自TypeWords原词典的直接词条，基础恢复例句与校正词条为本项目自编；展示的美式音标由 CMU Pronouncing Dictionary 校正。未核实词形不进入核心练习；不会用原形音标冒充变形单词的读音。</p><p>教学词表的来源是 first20hours/google-10000-english；它是语料词频参考，不等同于掌握词汇量或雅思词汇要求。识别参考词单独保留在离线素材包。</p><a href="LICENSE" target="_blank" rel="noopener">GPL-3.0 许可证</a> · <a href="SOURCES.md" target="_blank" rel="noopener">来源说明</a></details>
+      <details class="card secondary-section"><summary>使用说明、数据来源与本机保存</summary><p>文字和练习可以离线查看。单词发音优先调用设备的英语（美国）语音；不可用时尝试在线美音，外部视频和飞书仍需联网。若设备没有美式语音且在线服务受阻，请先安装设备的英语（美国）语音。</p><p>词汇复习采用 1、3、7、14、30、60 天的间隔；答错或忘记会在次日再出现。每天先做最多 8 张到期闪卡，再做计划内词汇；这套规则不是 TypeWords 的 FSRS 算法。</p><p>进度、闪卡复习日期、自写句子、草稿和评分保存在本机浏览器，不会自动在手机与电脑间同步，也不会写入发布页面。清除浏览器数据会删除本机记录；禁止存储时仍可练习，但刷新后状态可能丢失。正式记录请保存到飞书。</p><p>词注释来自TypeWords原词典的直接词条，基础恢复例句与校正词条为本项目自编；展示的美式音标由 CMU Pronouncing Dictionary 校正。未核实词形不进入核心练习；不会用原形音标冒充变形单词的读音。</p><p>教学词表的来源是 first20hours/google-10000-english；它是语料词频参考，不等同于掌握词汇量或雅思词汇要求。识别参考词单独保留在离线素材包。</p><a href="LICENSE" target="_blank" rel="noopener">GPL-3.0 许可证</a> · <a href="SOURCES.md" target="_blank" rel="noopener">来源说明</a></details>
     </section>
     <noscript><div class="notice">这个学习页需要在支持 JavaScript 的浏览器中打开。请使用Chrome、Edge或Safari，避免只显示附件预览的应用。</div></noscript>
   </main>
@@ -84,6 +89,7 @@
   <script>(function (root) {
   "use strict";
   const DAY_MS = 86400000;
+  const REVIEW_GAPS = [1, 3, 7, 14, 30, 60];
 
   function serialDate(value) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
@@ -224,8 +230,37 @@
     } else { session.done = true; }
   }
 
+  function dueCards(cards, date, data, limit = 8) {
+    const today = serialDate(date);
+    if (today === null || !cards || typeof cards !== "object") return [];
+    return Object.entries(cards)
+      .filter(([word, card]) => eligible(word, data) && card && serialDate(card.due) !== null && serialDate(card.due) <= today)
+      .sort((a, b) => serialDate(a[1].due) - serialDate(b[1].due) || a[0].localeCompare(b[0]))
+      .slice(0, limit)
+      .map(([word]) => word);
+  }
+
+  function recordCard(cards, word, date, remembered) {
+    if (!cards || typeof cards !== "object" || serialDate(date) === null) return null;
+    const previous = cards[word] && typeof cards[word] === "object" ? cards[word] : null;
+    if (remembered && previous?.last === date) return previous;
+    const oldStage = Number.isInteger(previous?.stage) && previous.stage >= 0 && previous.stage < REVIEW_GAPS.length
+      ? previous.stage : -1;
+    const stage = remembered ? Math.min(oldStage + 1, REVIEW_GAPS.length - 1) : 0;
+    const oldHits = Number.isSafeInteger(previous?.hits) && previous.hits >= 0 ? previous.hits : 0;
+    const oldMisses = Number.isSafeInteger(previous?.misses) && previous.misses >= 0 ? previous.misses : 0;
+    const card = {
+      stage, due: dateAt(date, REVIEW_GAPS[stage]), last: date,
+      hits: oldHits + (remembered ? 1 : 0),
+      misses: oldMisses + (remembered ? 0 : 1),
+    };
+    cards[word] = card;
+    return card;
+  }
+
   const api = { serialDate, dateAt, dayInfo, newWords, reviewWords, wordsFor, phoneticsFor,
-    lessonFor, makePrompt, durations, normaliseAnswer, createSession, gradeSession, advanceSession };
+    lessonFor, makePrompt, durations, normaliseAnswer, createSession, gradeSession, advanceSession,
+    dueCards, recordCard, REVIEW_GAPS };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.PlanEngine = api;
 })(typeof globalThis !== "undefined" ? globalThis : this);
@@ -269,6 +304,11 @@
   }
 
   let saved = loadState();
+  function cardStore() {
+    if (!saved.cards || typeof saved.cards !== "object" || Array.isArray(saved.cards)) saved.cards = {};
+    return saved.cards;
+  }
+
   function dayState(value) {
     if (!saved.days || typeof saved.days !== "object") saved.days = {};
     if (!saved.days[value] || typeof saved.days[value] !== "object") {
@@ -417,7 +457,9 @@
     $("stepNav").querySelectorAll("[data-step]").forEach((button) => {
       button.addEventListener("click", () => {
         currentStep = Number(button.dataset.step);
+        state.currentStep = currentStep;
         wordFeedback = null;
+        saveState();
         renderPractice(info, state);
       });
     });
@@ -446,7 +488,29 @@
       ${stepButtons(0, state, "我已经试过了 →")}`;
   }
 
+  function renderFlashcard(info, state, wordData) {
+    const today = formatDate(new Date());
+    let session = state.flashSession;
+    if (!session || !Array.isArray(session.queue) || session.today !== today) {
+      const queue = engine.dueCards(cardStore(), today, data, Number.MAX_SAFE_INTEGER)
+        .filter((word) => !wordData.words.includes(word)).slice(0, 8);
+      session = { today, queue, index: 0, revealed: false };
+      state.flashSession = session;
+      saveState();
+    }
+    if (session.index >= session.queue.length) return "";
+    const word = session.queue[session.index];
+    const entry = data.words[word];
+    const back = session.revealed ? `<div class="flash-back"><div class="word-label">${esc(word)}</div><div class="phonetic">${esc(entry.phonetic || "")}</div><p class="word-meaning">${esc(entry.meaning || "释义待核实")}</p>${entry.example ? `<div class="example-line"><p class="english">${esc(entry.example)}</p><button type="button" class="quiet" data-audio="${esc(entry.example)}">🔊 听例句</button></div><p class="small muted">${esc(entry.translation || "听一句、跟读一句，再试着改成自己的生活句。")}</p>` : ""}<div class="flash-actions"><button type="button" class="secondary" data-flash-rating="forgot">还没记住 · 明天再练</button><button type="button" class="primary" data-flash-rating="remembered">想起来了 · 延后复习</button></div></div>` : `<p class="flash-prompt">先听发音，在心里拼出这个词，并想想它的意思。</p><div class="flash-actions"><button type="button" class="secondary" data-audio="${esc(word)}">🔊 听发音</button><button type="button" class="primary" data-flash-reveal>翻开卡片</button></div>`;
+    return `<div class="practice-heading"><div><p class="eyebrow">STEP 2 · SPACED REVIEW</p><h2>先复习到期闪卡</h2></div><span class="word-progress">${session.index + 1} / ${session.queue.length}</span></div><p class="small muted">这张卡片来自之前学过的词。翻开后按真实记忆情况选择，系统会安排下次复习。</p><div class="flash-card">${back}</div>`;
+  }
+
   function renderWord(info, state, wordData) {
+    const flashcard = renderFlashcard(info, state, wordData);
+    if (flashcard) return flashcard;
+    const remainingDue = engine.dueCards(cardStore(), formatDate(new Date()), data, Number.MAX_SAFE_INTEGER)
+      .filter((word) => !wordData.words.includes(word)).length;
+    const moreReview = remainingDue ? `<div class="review-more"><span>还有 ${remainingDue} 张到期闪卡。</span><button type="button" class="quiet" data-flash-more>再复习 8 张</button></div>` : "";
     let session = state.wordSession;
     if (!session || !Array.isArray(session.queue) || !session.queue.length || session.sourceDate !== selectedDate) {
       session = engine.createSession(wordData.words);
@@ -458,7 +522,7 @@
       const wrong = session.wrong || [];
       const reviewMessage = wrong.length ? `，并重练了 ${wrong.length} 个易错词` : "";
       const reviewHtml = wrong.length ? `<div class="review-chips">${wrong.map((word) => `<button type="button" data-review-word="${esc(word)}">${esc(word)}</button>`).join("")}</div>` : "";
-      return `<div class="practice-heading"><div><p class="eyebrow">STEP 2 · WORDS</p><h2>今天的词汇完成了</h2></div><span class="small muted">${wordData.words.length} 个核心词</span></div>
+      return `<div class="practice-heading"><div><p class="eyebrow">STEP 2 · WORDS</p><h2>今天的词汇完成了</h2></div><span class="small muted">${wordData.words.length} 个核心词</span></div>${moreReview}
         <div class="complete-symbol">✓</div><p class="center completion-note">你已经把今天的词走过一遍${reviewMessage}。</p>
         ${reviewHtml}
         ${stepButtons(1, state, "去做主练习 →")}`;
@@ -474,11 +538,12 @@
     const meaningHtml = revealMeaning
       ? `<p class="word-meaning">${esc(entry.meaning || "释义待核实")}</p>${answered ? `<details class="example"><summary>展开例句</summary><div class="example-line"><p class="english">${esc(entry.example || "暂无例句")}</p>${entry.example ? `<button type="button" class="quiet" data-audio="${esc(entry.example)}">🔊 听一遍</button>` : ""}</div>${entry.translation ? `<p class="muted">${esc(entry.translation)}</p>` : ""}</details>` : ""}`
       : "<p class=\"small muted\">先试着猜意思，再查看释义。</p>";
-    return `<div class="practice-heading"><div><p class="eyebrow">STEP 2 · WORDS</p><h2>一次练一个词</h2></div><span class="word-progress">${progress}</span></div>
+    const useIt = answered ? `<div class="use-it"><label for="ownSentence">听例句、跟读，再用这个词说一句自己的话（可选）</label><textarea id="ownSentence" rows="2" placeholder="例如：I work ...">${esc(state.sentences?.[word] || "")}</textarea><p class="small muted">写下来可带入今天的打卡摘要；也可以直接开口说。</p></div>` : "";
+    return `<div class="practice-heading"><div><p class="eyebrow">STEP 2 · WORDS</p><h2>一次练一个词</h2></div><span class="word-progress">${progress}</span></div>${moreReview}
       <div class="word-stage">${answered ? `<div class="word-label">${esc(word)}</div><div class="phonetic">${esc(entry.phonetic || "美式音标待核实")}</div>` : `<p class="word-listening">先听发音，凭记忆拼写</p>`}
         <div class="audio-controls"><button type="button" class="secondary" data-audio="${esc(word)}">🔊 听发音</button><button type="button" class="quiet" data-toggle-meaning>${revealMeaning ? "收起释义" : "查看释义"}</button></div>
         ${meaningHtml}
-        <form class="spell-form" id="spellForm"><label for="spellInput">听发音后，输入这个词的拼写</label><div class="spell-row"><input id="spellInput" name="spelling" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="输入单词拼写"><button type="submit" class="primary">检查</button></div>${feedback}</form>
+        <form class="spell-form" id="spellForm"><label for="spellInput">听发音后，输入这个词的拼写</label><div class="spell-row"><input id="spellInput" name="spelling" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="输入单词拼写"><button type="submit" class="primary">检查</button></div>${feedback}</form>${useIt}
       </div>`;
   }
 
@@ -486,9 +551,11 @@
     return `<details class="prompt-box"><summary>需要AI陪练？打开复制指令</summary><p class="small muted">复制后，粘贴到豆包或ChatGPT的文字/语音对话中。AI反馈只是练习参考。</p><textarea id="promptText" class="prompt-text" readonly>${esc(prompt)}</textarea><div class="prompt-actions"><button type="button" class="secondary" data-copy-prompt>复制指令</button><button type="button" class="quiet" data-speak-prompt>朗读主题</button></div></details>`;
   }
 
-  function renderPassage(lesson) {
+  function renderPassage(lesson, includeText = true) {
     const questions = (lesson.questions || []).map((item, index) => `<li><span>${esc(item.question)}</span><details><summary>查看答案</summary><p>${esc(item.answer)}</p></details></li>`).join("");
-    return `<div class="lesson-text"><p class="english">${esc(lesson.text)}</p></div><details><summary>查看中文大意</summary><p class="muted">${esc(lesson.translation)}</p></details><ol class="question-list">${questions}</ol>`;
+    const segments = lines(lesson.text).flatMap((line) => line.split(/(?<=[.!?])\s+(?=[A-Z])/).filter(Boolean));
+    const passage = segments.map((line) => `<div class="lesson-line"><span class="english">${esc(line)}</span><button type="button" class="quiet" data-speak="${esc(line)}">🔊 听一句</button></div>`).join("");
+    return `${includeText ? `<p class="small muted">先听一句、跟读一句；再遮住原文，用自己的话说大意。</p><div class="lesson-text">${passage}</div>` : ""}<details><summary>查看中文大意</summary><p class="muted">${esc(lesson.translation)}</p></details><ol class="question-list">${questions}</ol>`;
   }
 
   function renderWriting(lesson, state) {
@@ -501,7 +568,7 @@
     let body = "";
     if (lesson.kind === "letter" || lesson.kind === "essay" || lesson.kind === "diary") body = renderWriting(lesson, state);
     else if (lesson.kind === "speaking") body = `<div class="lesson-text"><p class="english">${esc(lesson.speaking)}</p></div><p class="muted">按 Part 1 → Part 2 → Part 3 练习，一次只答一个问题。Part 2 自己计时准备1分钟，再说1–2分钟。</p>`;
-    else body = lesson.grammar ? `<div class="lesson-text"><p class="english">${esc(lesson.grammar.text)}</p></div><p class="muted">${esc(lesson.grammar.question)}</p><details><summary>查看答案和原因</summary><p class="success">${esc(lesson.grammar.answer)}</p></details>${renderPassage(lesson).replace(/<div class="lesson-text">[\s\S]*?<\/div>/, "")}` : renderPassage(lesson);
+    else body = lesson.grammar ? `<div class="lesson-text"><p class="english">${esc(lesson.grammar.text)}</p></div><p class="muted">${esc(lesson.grammar.question)}</p><details><summary>查看答案和原因</summary><p class="success">${esc(lesson.grammar.answer)}</p></details>${renderPassage(lesson, false)}` : renderPassage(lesson);
     const note = lesson.official ? `<div class="notice">今天开始接触官方题型。这里的短文和题目是自编练习；真实题目请使用资料页的官方入口。</div>` : "";
     const prompt = engine.makePrompt(info, lesson);
     return `<div class="practice-heading"><div><p class="eyebrow">STEP 3 · PRACTICE</p><h2>${esc(lesson.task || "主练习")}</h2></div><span class="small muted">约 ${state.mode === "recovery" ? "12" : "20"} 分钟</span></div><p class="muted">${esc(lesson.instruction || "按自己的速度完成。")}</p>${note}${body}${prompt}${stepButtons(2, state, "进入完成记录 →")}`;
@@ -509,7 +576,8 @@
 
   function makeSummary(info, lesson, wordData, state) {
     const ratings = state.ratings || {};
-    return `${displayDate(selectedDate)} · ${info.phase.id} W${info.week}\n今天的任务：${lesson.task || lesson.title}\n完成：复习${state.stepDone.includes(0) ? "✓" : ""} · 词汇${state.stepDone.includes(1) ? "✓" : ""} · 主练习${state.stepDone.includes(2) ? "✓" : ""}\n词汇：${wordData.words.length}个核心词；模式：${state.mode === "recovery" ? "恢复30分钟" : "日常练习"}\n自评：流畅度 ${ratings.fluency || "未填"}/5，完整度 ${ratings.completeness || "未填"}/5，状态 ${ratings.energy || "未填"}/5\n今天记住的一句话：`;
+    const ownSentence = Object.values(state.sentences || {}).filter((value) => typeof value === "string" && value.trim()).at(-1) || "";
+    return `${displayDate(selectedDate)} · ${info.phase.id} W${info.week}\n今天的任务：${lesson.task || lesson.title}\n完成：复习${state.stepDone.includes(0) ? "✓" : ""} · 词汇${state.stepDone.includes(1) ? "✓" : ""} · 主练习${state.stepDone.includes(2) ? "✓" : ""}\n词汇：${wordData.words.length}个核心词；到期闪卡${state.flashSession?.queue.length || 0}张；模式：${state.mode === "recovery" ? "恢复30分钟" : "日常练习"}\n自评：流畅度 ${ratings.fluency || "未填"}/5，完整度 ${ratings.completeness || "未填"}/5，状态 ${ratings.energy || "未填"}/5\n今天记住的一句话：${ownSentence}`;
   }
 
   function renderCheckin(info, lesson, state, wordData) {
@@ -538,6 +606,28 @@
   function bindPractice(info, lesson, state, wordData) {
     document.querySelectorAll("[data-speak]").forEach((button) => button.addEventListener("click", () => speak(button.dataset.speak)));
     document.querySelectorAll("[data-audio]").forEach((button) => button.addEventListener("click", () => playAudio(button.dataset.audio)));
+    const moreReview = document.querySelector("[data-flash-more]");
+    if (moreReview) moreReview.addEventListener("click", () => {
+      state.flashSession = {
+        today: formatDate(new Date()),
+        queue: engine.dueCards(cardStore(), formatDate(new Date()), data, Number.MAX_SAFE_INTEGER)
+          .filter((word) => !wordData.words.includes(word)).slice(0, 8),
+        index: 0, revealed: false,
+      };
+      saveState();
+      renderPractice(info, state);
+    });
+    const revealCard = document.querySelector("[data-flash-reveal]");
+    if (revealCard) revealCard.addEventListener("click", () => { state.flashSession.revealed = true; saveState(); renderPractice(info, state); });
+    document.querySelectorAll("[data-flash-rating]").forEach((button) => button.addEventListener("click", () => {
+      const session = state.flashSession;
+      engine.recordCard(cardStore(), session.queue[session.index], formatDate(new Date()), button.dataset.flashRating === "remembered");
+      session.index += 1;
+      session.revealed = false;
+      saveState();
+      renderReviewNote(wordData);
+      renderPractice(info, state);
+    }));
     const meaningButton = document.querySelector("[data-toggle-meaning]");
     if (meaningButton) meaningButton.addEventListener("click", () => {
       const draftSpelling = $("spellInput")?.value;
@@ -558,7 +648,13 @@
         const input = $("spellInput");
         const answer = input.value.trim();
         if (!answer) { showToast("先输入你的拼写，再检查。", 2400); input.focus(); return; }
-        wordFeedback = engine.gradeSession(state.wordSession, answer);
+        const session = state.wordSession;
+        const word = session.queue[session.index];
+        const wasWrong = session.wrong.includes(word);
+        wordFeedback = engine.gradeSession(session, answer);
+        if (!wordFeedback.correct && !wasWrong) engine.recordCard(cardStore(), word, formatDate(new Date()), false);
+        if (wordFeedback.correct && !session.wrong.includes(word)) engine.recordCard(cardStore(), word, formatDate(new Date()), true);
+        if (wordFeedback.correct) revealMeaning = true;
         saveState();
         renderPractice(info, state);
       });
@@ -571,6 +667,12 @@
         form.querySelector(".spell-row").replaceChildren(input, button);
       }
     }
+    const ownSentence = $("ownSentence");
+    if (ownSentence) ownSentence.addEventListener("input", () => {
+      state.sentences = state.sentences || {};
+      state.sentences[state.wordSession.queue[state.wordSession.index]] = ownSentence.value;
+      saveState();
+    });
     document.querySelectorAll("[data-review-word]").forEach((button) => button.addEventListener("click", () => {
       const entry = data.words[button.dataset.reviewWord];
       if (entry) showToast(`${entry.word}：${entry.meaning || "释义待核实"}`, 4500);
@@ -590,8 +692,8 @@
     if (finish) finish.addEventListener("click", () => { markStep(3, state); state.started = false; started = false; showToast("今天的学习已完成。记得把摘要存进飞书。", 3600); renderDay(); });
     document.querySelectorAll("[data-action]").forEach((button) => button.addEventListener("click", () => {
       const action = button.dataset.action;
-      if (action === "next") { markStep(currentStep, state); currentStep = Math.min(3, currentStep + 1); wordFeedback = null; renderPractice(info, state); }
-      if (action === "previous") { currentStep = Math.max(0, currentStep - 1); wordFeedback = null; renderPractice(info, state); }
+      if (action === "next") { markStep(currentStep, state); currentStep = Math.min(3, currentStep + 1); state.currentStep = currentStep; wordFeedback = null; saveState(); renderPractice(info, state); }
+      if (action === "previous") { currentStep = Math.max(0, currentStep - 1); state.currentStep = currentStep; wordFeedback = null; saveState(); renderPractice(info, state); }
     }));
   }
 
@@ -601,6 +703,14 @@
     const count = String(value || "").trim() ? String(value).trim().split(/\s+/).length : 0;
     const min = lesson.kind === "letter" ? 150 : lesson.kind === "essay" ? 250 : 60;
     counter.textContent = `${count} 词 · 建议至少 ${min} 词`;
+  }
+
+  function renderReviewNote(wordData) {
+    const dueCount = engine.dueCards(cardStore(), formatDate(new Date()), data, Number.MAX_SAFE_INTEGER)
+      .filter((word) => !wordData.words.includes(word)).length;
+    $("reviewNote").textContent = dueCount
+      ? `今天有 ${dueCount} 张到期闪卡；词汇环节先复习，单次最多 8 张。`
+      : "学过的词会按间隔复习日期，自动回到每天的词汇环节。";
   }
 
   function renderDay() {
@@ -623,6 +733,7 @@
     $("lessonLead").textContent = info.week <= 2 ? "恢复基础：短句、发音和常用词一起练。" : info.phase.goal;
     $("wordCount").textContent = wordData.words.length;
     $("wordCountLabel").textContent = info.day >= 5 ? "个复习词" : "个核心词";
+    renderReviewNote(wordData);
     $("totalMinutes").textContent = state.mode === "recovery" ? "30" : "50";
     $("startLearning").textContent = started ? "继续今天的学习 →" : "开始今天的学习 →";
     renderRhythm(state.mode);
@@ -654,6 +765,25 @@
     const values = Object.values(data.words);
     const usable = values.filter((entry) => ["exact", "curated"].includes(entry.quality)).length;
     $("vocabStats").textContent = `${values.length} 个词条 · ${usable} 个有可用释义 · 核心练习会跳过未核实词条`;
+    const cards = Object.entries(cardStore()).filter(([word]) => data.words[word] && ["exact", "curated"].includes(data.words[word].quality));
+    const mistakes = cards.filter(([, card]) => Number(card?.misses) > 0)
+      .sort((a, b) => b[1].misses - a[1].misses || a[0].localeCompare(b[0]));
+    const due = engine.dueCards(cardStore(), formatDate(new Date()), data, Number.MAX_SAFE_INTEGER).length;
+    $("deckStats").textContent = `${cards.length} 张已学词卡 · ${due} 张到期 · ${mistakes.length} 个曾输错或忘记的词`;
+    $("mistakeList").innerHTML = mistakes.slice(0, 8).map(([word, card]) => `<li><span>${esc(word)}</span><small>错过 ${card.misses} 次 · 下次 ${esc(card.due || "待安排")}</small></li>`).join("");
+    $("reviewMistakes").disabled = !mistakes.length;
+    $("reviewMistakes").onclick = () => {
+      const today = formatDate(new Date());
+      selectedDate = engine.dayInfo(today, data).status === "active" ? today : data.start;
+      const state = dayState(selectedDate);
+      state.started = true;
+      state.currentStep = 1;
+      state.flashSession = { today, queue: mistakes.slice(0, 8).map(([word]) => word), index: 0, revealed: false };
+      saveState();
+      navigate("today");
+      renderDay();
+      $("practice").scrollIntoView({ behavior: "smooth", block: "start" });
+    };
     $("allPhonetics").innerHTML = data.phonetics.map((item) => `<div class="phon-item"><strong>${esc(item.s)}</strong><p>${esc(item.tip)}</p><p>${esc(item.ws)}</p><button type="button" class="secondary" data-phonetic="${esc(item.ws.split(/\s+/)[0] || "")}">听例词</button></div>`).join("");
     $("feishuLink").href = data.feishu;
     document.querySelectorAll("[data-phonetic]").forEach((button) => button.addEventListener("click", () => playAudio(button.dataset.phonetic)));
