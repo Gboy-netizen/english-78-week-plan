@@ -463,10 +463,10 @@
     const entry = data.words[word] || { word, meaning: "释义待核实", phonetic: "", example: "", translation: "" };
     const progress = `${session.index + 1} / ${session.queue.length}`;
     const feedbackMessage = wordFeedback && wordFeedback.word === word
-      ? (wordFeedback.correct ? "答对了。" : `还差一点。正确拼写是 ${esc(word)}。`) : "";
+      ? (wordFeedback.correct ? "答对了。" : "还差一点，再听一遍，重新试试。") : "";
     const feedback = wordFeedback && wordFeedback.word === word
       ? `<p class="spell-feedback ${wordFeedback.correct ? "success" : "error"}" role="status">${feedbackMessage}</p>` : "";
-    const answered = wordFeedback && wordFeedback.word === word;
+    const answered = wordFeedback && wordFeedback.word === word && wordFeedback.correct;
     const meaningHtml = revealMeaning
       ? `<p class="word-meaning">${esc(entry.meaning || "释义待核实")}</p>${answered ? `<details class="example"><summary>展开例句</summary><p class="english">${esc(entry.example || "暂无例句")}</p>${entry.translation ? `<p class="muted">${esc(entry.translation)}</p>` : ""}</details>` : ""}`
       : "<p class=\"small muted\">先试着猜意思，再查看释义。</p>";
@@ -559,8 +559,8 @@
         renderPractice(info, state);
       });
       const input = $("spellInput");
-      if (input && !wordFeedback) input.focus();
-      if (input && wordFeedback) {
+      if (input && !wordFeedback?.correct) input.focus();
+      if (input && wordFeedback?.correct) {
         const button = document.createElement("button");
         button.type = "button"; button.className = "primary"; button.textContent = "下一词 →";
         button.addEventListener("click", () => { engine.advanceSession(state.wordSession); wordFeedback = null; revealMeaning = false; saveState(); renderPractice(info, state); });
