@@ -1,0 +1,866 @@
+[
+  {
+    "phoneme": "i",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/C5WKc4R7mD4?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ee-vowel/",
+    "title": "English: How to Pronounce EE [i] Vowel"
+  },
+  {
+    "phoneme": "i",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/0UAbX_4KWdY?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/i/",
+    "title": "i"
+  },
+  {
+    "phoneme": "i",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/1NIzlLY_rYE?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/i/",
+    "title": "i"
+  },
+  {
+    "phoneme": "ih",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/-km81q6DIlM?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ih-vowel/",
+    "title": "English: How to Pronounce IH [ɪ] Vowel"
+  },
+  {
+    "phoneme": "ih",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/4XCokjRrNLo?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%aa/",
+    "title": "ɪ"
+  },
+  {
+    "phoneme": "eh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/xKxV8XfigaE?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-eh-vowel/",
+    "title": "English: How to Pronounce EH [ɛ] Vowel"
+  },
+  {
+    "phoneme": "eh",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/mYkinCnEx_0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%9b/",
+    "title": "ɛ"
+  },
+  {
+    "phoneme": "ae",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/-i7-DDAW-ok?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-aa-ae-vowel/",
+    "title": "English: How to Pronounce AA [æ] Vowel"
+  },
+  {
+    "phoneme": "ae",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/Ozsy2aJdJ5w?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/ae/",
+    "title": "æ"
+  },
+  {
+    "phoneme": "schwa",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/2BmkUa4Mv60?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-schwa/",
+    "title": "English: How to Pronounce the Schwa [ə]"
+  },
+  {
+    "phoneme": "schwa",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/aEODlIS3KEM?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%99/",
+    "title": "ə"
+  },
+  {
+    "phoneme": "schwa",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/CWcujVm60nM?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%99/",
+    "title": "ə"
+  },
+  {
+    "phoneme": "uh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/_63fTgbG-yQ?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-uh-butter-vowel/",
+    "title": "English: How to Pronounce UH as in BUTTER [ʌ] Vowel"
+  },
+  {
+    "phoneme": "uh",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/fodsh8GzOd8?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%8c/",
+    "title": "ʌ"
+  },
+  {
+    "phoneme": "uh",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/cO1zCu58FMg?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%8c/",
+    "title": "ʌ"
+  },
+  {
+    "phoneme": "ah",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/DEJGBC4xZzI?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ah-vowel/",
+    "title": "English: How to Pronounce [ɑ] AH Vowel"
+  },
+  {
+    "phoneme": "ah",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/iw9Pd6F-lmA?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/a-2/",
+    "title": "ɑ"
+  },
+  {
+    "phoneme": "ah",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/kYQjdBGpkoY?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/a-2/",
+    "title": "ɑ"
+  },
+  {
+    "phoneme": "aw",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/opMab62SybY?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-aw-vowel/",
+    "title": "English: How to Pronounce AW [ɔ] Vowel"
+  },
+  {
+    "phoneme": "aw",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/pvdHiXN9748?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%94/",
+    "title": "ɔ"
+  },
+  {
+    "phoneme": "uu_short",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/phlnzlzCPqE?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-uh-push-vowel/",
+    "title": "English: How to Pronounce UH as in BOOK or PUSH [ʊ] Vowel"
+  },
+  {
+    "phoneme": "uu_short",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/vGsVnlevGnA?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%8a/",
+    "title": "ʊ"
+  },
+  {
+    "phoneme": "uu_short",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/-LpFBfPPoc0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%8a/",
+    "title": "ʊ"
+  },
+  {
+    "phoneme": "oo",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/IwahymIkGJ0?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-oo-vowel/",
+    "title": "English: How to Pronounce the OO [u] Vowel"
+  },
+  {
+    "phoneme": "oo",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/w4DRswZwzt0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/u/",
+    "title": "u"
+  },
+  {
+    "phoneme": "oo",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/8t8ETr8IRjI?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/u/",
+    "title": "u"
+  },
+  {
+    "phoneme": "er",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+    "title": "English: How to Pronounce [ɜ] UR Vowel"
+  },
+  {
+    "phoneme": "er_weak",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+    "title": "English: How to Pronounce [ɜ] UR Vowel"
+  },
+  {
+    "phoneme": "uk_o",
+    "provider": "Rachel's English",
+    "kind": "真人口型参考",
+    "video": "https://www.youtube.com/embed/DEJGBC4xZzI?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ah-vowel/",
+    "title": "美式 /ɑ/ 口型参考（英式 /ɒ/）"
+  },
+  {
+    "phoneme": "uk_o",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/j_8qYnyfEj4?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%92/",
+    "title": "ɒ"
+  },
+  {
+    "phoneme": "uk_o",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/XkGIhq2P7GQ?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%92/",
+    "title": "ɒ"
+  },
+  {
+    "phoneme": "uk_er",
+    "provider": "Rachel's English",
+    "kind": "真人口型参考",
+    "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+    "title": "美式 R 色彩元音口型参考（英式 /ɜː/）"
+  },
+  {
+    "phoneme": "ay",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/XOuD6mFr6sQ?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ay-diphthong/",
+    "title": "English: How to Pronounce AY [eɪ] Diphthong"
+  },
+  {
+    "phoneme": "eye",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/rbQtAWNFy2I?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ai-diphthong/",
+    "title": "English: How to Pronounce AI [aɪ] Diphthong"
+  },
+  {
+    "phoneme": "oy",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/3cdSvIuTxLY?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-oy-diphthong/",
+    "title": "English: How to Pronounce OY [ɔɪ] Diphthong"
+  },
+  {
+    "phoneme": "ow",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/i8KThVR713Q?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ow-diphthong/",
+    "title": "English: How to Pronounce OW [aʊ] Diphthong"
+  },
+  {
+    "phoneme": "oh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/Civ7UBZP99M?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-oh-diphthong/",
+    "title": "English: How to Pronounce OH [oʊ] Diphthong"
+  },
+  {
+    "phoneme": "uk_oh",
+    "provider": "Rachel's English",
+    "kind": "真人口型参考",
+    "video": "https://www.youtube.com/embed/Civ7UBZP99M?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-oh-diphthong/",
+    "title": "美式 /oʊ/ 口型参考（英式 /əʊ/）"
+  },
+  {
+    "phoneme": "uk_ear",
+    "provider": "Rachel's English",
+    "kind": "真人口型参考",
+    "video": "https://www.youtube.com/embed/rbQtAWNFy2I?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ai-diphthong/",
+    "title": "前元音滑动口型参考（英式 /ɪə/）"
+  },
+  {
+    "phoneme": "uk_air",
+    "provider": "Rachel's English",
+    "kind": "真人口型参考",
+    "video": "https://www.youtube.com/embed/xKxV8XfigaE?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-eh-vowel/",
+    "title": "/ɛ/ 起始口型参考（英式 /ɛə/）"
+  },
+  {
+    "phoneme": "uk_ure",
+    "provider": "Rachel's English",
+    "kind": "真人口型参考",
+    "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+    "title": "央元音口型参考（英式 /ʊə/）"
+  },
+  {
+    "phoneme": "p",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/JPUr5MgeDHM?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-b-p-consonants/",
+    "title": "English: How to Pronounce B [b] and P [p] Consonants"
+  },
+  {
+    "phoneme": "p",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/FmZuiFgNxN0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/p/",
+    "title": "p"
+  },
+  {
+    "phoneme": "p",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/LsAjJwC4JTQ?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/p/",
+    "title": "p"
+  },
+  {
+    "phoneme": "b",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/JPUr5MgeDHM?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-b-p-consonants/",
+    "title": "English: How to Pronounce B [b] and P [p] Consonants"
+  },
+  {
+    "phoneme": "b",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/z1aSaxaAiwY?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/b/",
+    "title": "b"
+  },
+  {
+    "phoneme": "b",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/eSaT1Cg1FbU?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/b/",
+    "title": "b"
+  },
+  {
+    "phoneme": "t",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/hGZ9GwrNWmU?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-t-d-consonants/",
+    "title": "How to Pronounce T [t] and D [d] Consonants"
+  },
+  {
+    "phoneme": "t",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/OYMoNkmlvt0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/t/",
+    "title": "t"
+  },
+  {
+    "phoneme": "t",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/rXVXKx3g0m8?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/t/",
+    "title": "t"
+  },
+  {
+    "phoneme": "d",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/hGZ9GwrNWmU?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-t-d-consonants/",
+    "title": "How to Pronounce T [t] and D [d] Consonants"
+  },
+  {
+    "phoneme": "d",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/EMHlfRwD03I?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/d/",
+    "title": "d"
+  },
+  {
+    "phoneme": "d",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/uPoK7ZJ4z9o?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/d/",
+    "title": "d"
+  },
+  {
+    "phoneme": "k",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/O_NisgL1dvY?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-g-k-consonants/",
+    "title": "English: How to Pronounce G [g] and K [k] Consonants"
+  },
+  {
+    "phoneme": "k",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/yRYEoQGT2s4?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/k/",
+    "title": "k"
+  },
+  {
+    "phoneme": "k",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/zz8C5lyE1N4?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/k/",
+    "title": "k"
+  },
+  {
+    "phoneme": "g",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/O_NisgL1dvY?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-g-k-consonants/",
+    "title": "English: How to Pronounce G [g] and K [k] Consonants"
+  },
+  {
+    "phoneme": "g",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/eBrKWhD-3Lw?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%a1/",
+    "title": "ɡ"
+  },
+  {
+    "phoneme": "g",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/AAHHcPGgOrQ?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%a1/",
+    "title": "ɡ"
+  },
+  {
+    "phoneme": "f",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/nR-K3mrHFv0?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-f-v-consonants/",
+    "title": "English: How to Pronounce F [f] and V [v] Consonants"
+  },
+  {
+    "phoneme": "f",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/IQ5cNkjeh_M?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/f/",
+    "title": "f"
+  },
+  {
+    "phoneme": "f",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/Ul_xASeqFKU?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/f/",
+    "title": "f"
+  },
+  {
+    "phoneme": "v",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/nR-K3mrHFv0?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-f-v-consonants/",
+    "title": "English: How to Pronounce F [f] and V [v] Consonants"
+  },
+  {
+    "phoneme": "v",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/DoLrlLB82Vw?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/v/",
+    "title": "v"
+  },
+  {
+    "phoneme": "v",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/jZD6SX49xr8?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/v/",
+    "title": "v"
+  },
+  {
+    "phoneme": "th",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/nlKNo1TGALA?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-th-consonants/",
+    "title": "English: How to Pronounce TH Consonants [θ] + [ð]"
+  },
+  {
+    "phoneme": "th",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/ARP1NkLXy4A?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ce%b8/",
+    "title": "θ"
+  },
+  {
+    "phoneme": "th",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/r3_P_GiwPIw?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ce%b8/",
+    "title": "θ"
+  },
+  {
+    "phoneme": "dh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/nlKNo1TGALA?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-th-consonants/",
+    "title": "English: How to Pronounce TH Consonants [θ] + [ð]"
+  },
+  {
+    "phoneme": "dh",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/hvibX5Vvc1A?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/d-2/",
+    "title": "ð"
+  },
+  {
+    "phoneme": "dh",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/JgSdjlQG9j0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/d-2/",
+    "title": "ð"
+  },
+  {
+    "phoneme": "s",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/xl-7mSeybmI?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-s-z-consonants/",
+    "title": "English: How to Pronounce S [s] and Z [z] Consonants"
+  },
+  {
+    "phoneme": "s",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/fRx0jZ0VHSY?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/s/",
+    "title": "s"
+  },
+  {
+    "phoneme": "s",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/E36bWS7Egag?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/s/",
+    "title": "s"
+  },
+  {
+    "phoneme": "z",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/xl-7mSeybmI?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-s-z-consonants/",
+    "title": "English: How to Pronounce S [s] and Z [z] Consonants"
+  },
+  {
+    "phoneme": "z",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/vBrNM8M3D3A?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/z/",
+    "title": "z"
+  },
+  {
+    "phoneme": "z",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/LVlj-4lIGWM?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/z/",
+    "title": "z"
+  },
+  {
+    "phoneme": "sh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/RxaLKZPPEvY?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-sh-zh-consonants/",
+    "title": "English: How to Pronounce SH [ʃ] and ZH [ʒ] Consonants"
+  },
+  {
+    "phoneme": "sh",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/KrHn_EOOyQ4?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%83/",
+    "title": "ʃ"
+  },
+  {
+    "phoneme": "sh",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/ODgrwg5UkfA?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%83/",
+    "title": "ʃ"
+  },
+  {
+    "phoneme": "zh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/RxaLKZPPEvY?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-sh-zh-consonants/",
+    "title": "English: How to Pronounce SH [ʃ] and ZH [ʒ] Consonants"
+  },
+  {
+    "phoneme": "zh",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/1RwR15ZnNLg?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%92/",
+    "title": "ʒ"
+  },
+  {
+    "phoneme": "zh",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/hszmG-KPPBY?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%ca%92/",
+    "title": "ʒ"
+  },
+  {
+    "phoneme": "h",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/uOG-4ZjR7ic?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-h-consonant/",
+    "title": "English: How to Pronounce the H [h] Consonant"
+  },
+  {
+    "phoneme": "h",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/Y69qYCF6KII?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/h-2/",
+    "title": "h"
+  },
+  {
+    "phoneme": "ch",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/aqHebuRjO0k?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ch-jj-sounds/",
+    "title": "English: How to Pronounce CH [ʧ] and JJ [ʤ] Sounds"
+  },
+  {
+    "phoneme": "jh",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/aqHebuRjO0k?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ch-jj-sounds/",
+    "title": "English: How to Pronounce CH [ʧ] and JJ [ʤ] Sounds"
+  },
+  {
+    "phoneme": "m",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/CoEh8cz-mS4?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-m-consonant/",
+    "title": "English: How to Pronounce M [m] Consonant"
+  },
+  {
+    "phoneme": "m",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/8XLsMyqjq2k?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/m/",
+    "title": "m"
+  },
+  {
+    "phoneme": "m",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/jzXsgd8UpKw?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/m/",
+    "title": "m"
+  },
+  {
+    "phoneme": "n",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/HeMzjC672OA?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-n-consonant/",
+    "title": "English: How to Pronounce N [n] Consonant"
+  },
+  {
+    "phoneme": "n",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/L6C4Dl6dvG4?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/n/",
+    "title": "n"
+  },
+  {
+    "phoneme": "n",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/XZGzoAubnKc?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/n/",
+    "title": "n"
+  },
+  {
+    "phoneme": "ng",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/6ESY7ueSfrc?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-ng-consonant/",
+    "title": "English: How to Pronounce NG [ŋ] Consonant"
+  },
+  {
+    "phoneme": "ng",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/7Y0Yqlkw5Dg?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/n-2/",
+    "title": "ŋ"
+  },
+  {
+    "phoneme": "ng",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/BARV73Q4Yk0?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/n-2/",
+    "title": "ŋ"
+  },
+  {
+    "phoneme": "l",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/FP0jHNoFqWo?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-l-consonant/",
+    "title": "English: How to Pronounce L [l] Consonant"
+  },
+  {
+    "phoneme": "l",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/8QixCkIlrKQ?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/l/",
+    "title": "l"
+  },
+  {
+    "phoneme": "l",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/71gB09o-BWE?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/l/",
+    "title": "l"
+  },
+  {
+    "phoneme": "r",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/G_OQjKLvt0E?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-r-consonant/",
+    "title": "English: How to Pronounce R [ɹ] Consonant"
+  },
+  {
+    "phoneme": "r",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/PknUH79aWFI?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%b9/",
+    "title": "ɹ"
+  },
+  {
+    "phoneme": "r",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/grSPvjex5qg?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/%c9%b9/",
+    "title": "ɹ"
+  },
+  {
+    "phoneme": "y",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/1Yo4BHIIBP8?rel=0",
+    "url": "https://rachelsenglish.com/english-pronounce-y-consonant/",
+    "title": "English: How to Pronounce the Y [j] Consonant"
+  },
+  {
+    "phoneme": "y",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/oX1WsapOe08?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/j/",
+    "title": "j"
+  },
+  {
+    "phoneme": "y",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/1NIzlLY_rYE?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/j/",
+    "title": "j"
+  },
+  {
+    "phoneme": "w",
+    "provider": "Rachel's English",
+    "kind": "真人口型",
+    "video": "https://www.youtube.com/embed/RW94L6606DE?rel=0",
+    "url": "https://rachelsenglish.com/pronounce-w-consonant/",
+    "title": "How to Pronounce the W [w] Consonant"
+  },
+  {
+    "phoneme": "w",
+    "provider": "UBC eNunciate",
+    "kind": "舌位/口腔动画",
+    "video": "https://www.youtube.com/embed/IUNdjUiqNRk?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/w/",
+    "title": "w"
+  },
+  {
+    "phoneme": "w",
+    "provider": "UBC eNunciate",
+    "kind": "超声或动作示范",
+    "video": "https://www.youtube.com/embed/8t8ETr8IRjI?rel=0",
+    "url": "https://enunciate.arts.ubc.ca/w/",
+    "title": "w"
+  }
+]

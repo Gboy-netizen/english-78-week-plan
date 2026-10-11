@@ -1,0 +1,386 @@
+[
+  {
+    "s": "i",
+    "g": "单元音",
+    "tip": "嘴角向两侧展开，舌前部抬高；美式音标常记作 i",
+    "sp": "ee·ea·e·ie（see·sea·me·field）",
+    "ws": "see  sea  me  tea  three",
+    "mis": "与短音 ɪ 区分，别发成中文“衣”"
+  },
+  {
+    "s": "ɪ",
+    "g": "单元音",
+    "tip": "比 i 低一点、松一点，短促放松",
+    "sp": "i·y·e（sit·very·English）",
+    "ws": "sit  big  six  fish  city",
+    "mis": "与 i 混淆：sit/seat 是两个词"
+  },
+  {
+    "s": "ɛ",
+    "g": "单元音",
+    "tip": "嘴唇微张，舌前部稍抬，短促",
+    "sp": "e·ea·a（pen·bread·many）",
+    "ws": "pen  ten  bed  red  bread",
+    "mis": "嘴型别张太大（那是 æ）"
+  },
+  {
+    "s": "æ",
+    "g": "单元音",
+    "tip": "嘴张大，舌尖抵下齿，短促（美音常拉长）",
+    "sp": "a（cat·bag·man）",
+    "ws": "cat  bag  hat  man  apple",
+    "mis": "中国人易发成 ɛ：bad/bed 不同"
+  },
+  {
+    "s": "ɝ",
+    "g": "卷舌元音",
+    "tip": "舌中部抬起并带 r 色彩，读 her、bird 时保持卷舌",
+    "sp": "er·ir·ur·ear（her·bird·turn·learn）",
+    "ws": "her  bird  girl  turn  learn",
+    "mis": "这是美式重读卷舌元音，别读成不卷舌的 ɜː"
+  },
+  {
+    "s": "ə",
+    "g": "单元音",
+    "tip": "最轻松的元音，任何弱读都像它",
+    "sp": "a·o（about·today）",
+    "ws": "about  today  sofa  banana",
+    "mis": "读太用力就错了，越轻越好"
+  },
+  {
+    "s": "ʌ",
+    "g": "单元音",
+    "tip": "短促，比 ɑ 高一点，舌中部偏后抬起",
+    "sp": "u·o·ou（cup·son·touch）",
+    "ws": "cup  bus  sun  love  money",
+    "mis": "与 ɑ、æ 混淆"
+  },
+  {
+    "s": "ɑ",
+    "g": "单元音",
+    "tip": "嘴张大，舌身放低靠后；car 中还要接 r",
+    "sp": "a·o（father·hot）",
+    "ws": "father  hot  box  clock  want",
+    "mis": "car 的美式发音是 ɑr，词尾 r 要读出来"
+  },
+  {
+    "s": "ɔ",
+    "g": "单元音",
+    "tip": "嘴唇收圆，舌后部抬起；不同美式口音可能与 ɑ 合并",
+    "sp": "or·aw·au·al（short·law·talk）",
+    "ws": "short  door  law  talk  August",
+    "mis": "注意 law 与 low 的区别；有些美式口音会将 ɔ 与 ɑ 合并"
+  },
+  {
+    "s": "ɚ",
+    "g": "卷舌元音",
+    "tip": "非重读的卷舌元音，轻读但保留 r 色彩",
+    "sp": "er·or（teacher·doctor）",
+    "ws": "teacher  doctor  mother  better",
+    "mis": "与重读的 ɝ 区分；词尾 r 不要完全省掉"
+  },
+  {
+    "s": "ʊ",
+    "g": "单元音",
+    "tip": "嘴唇微圆，短促放松",
+    "sp": "oo·u·oul（book·put·should）",
+    "ws": "book  good  look  put  should",
+    "mis": "别读成 u"
+  },
+  {
+    "s": "u",
+    "g": "单元音",
+    "tip": "嘴唇收圆，舌后部抬高；美式音标常记作 u",
+    "sp": "oo·u·ew·ui（food·blue·fruit）",
+    "ws": "food  blue  moon  school  fruit",
+    "mis": "与 ʊ 区分：food/foot"
+  },
+  {
+    "s": "eɪ",
+    "g": "双元音",
+    "tip": "从 ɛ 附近滑向 ɪ，前重后轻",
+    "sp": "a·ai·ay·ey（name·rain·day·they）",
+    "ws": "name  rain  day  play  eight",
+    "mis": "滑不到位就变成单音"
+  },
+  {
+    "s": "aɪ",
+    "g": "双元音",
+    "tip": "从 a 滑向 ɪ",
+    "sp": "i·y·igh·ie（time·my·light·tie）",
+    "ws": "time  my  light  five  right",
+    "mis": "起点别太低、别滑太快"
+  },
+  {
+    "s": "ɔɪ",
+    "g": "双元音",
+    "tip": "从 ɔ 滑向 ɪ",
+    "sp": "oi·oy（oil·toy）",
+    "ws": "boy  toy  oil  voice  join",
+    "mis": "嘴唇由圆到扁"
+  },
+  {
+    "s": "aʊ",
+    "g": "双元音",
+    "tip": "从 a 滑向 ʊ，嘴巴由大到圆",
+    "sp": "ou·ow（house·cow）",
+    "ws": "house  cow  now  how  town",
+    "mis": "别发成单音“奥”"
+  },
+  {
+    "s": "oʊ",
+    "g": "双元音",
+    "tip": "从 o 滑向 ʊ，前重后轻",
+    "sp": "o·oa·ow（go·boat·low）",
+    "ws": "go  no  home  boat  show",
+    "mis": "美音用 oʊ：go、home、boat"
+  },
+  {
+    "s": "ɪr",
+    "g": "卷舌组合",
+    "tip": "先读 ɪ，再带出清晰的 r",
+    "sp": "ear·eer·ere（hear·beer·here）",
+    "ws": "hear  here  beer  near  year",
+    "mis": "美音中 hear 的 r 要读出来"
+  },
+  {
+    "s": "ɛr",
+    "g": "卷舌组合",
+    "tip": "先读 ɛ，再带出清晰的 r",
+    "sp": "air·are·ear（hair·share·pear）",
+    "ws": "hair  air  share  pear  where",
+    "mis": "与 ɪr 区分：hear/hair"
+  },
+  {
+    "s": "ʊr",
+    "g": "卷舌组合",
+    "tip": "先读 ʊ，再带出 r；不同美式口音也可能合并为 ɔr",
+    "sp": "ure·oor·our（sure·poor·tour）",
+    "ws": "sure  poor  tour  pure",
+    "mis": "sure、poor 的元音有口音差异，重点是保留 r"
+  },
+  {
+    "s": "p",
+    "g": "清爆破",
+    "tip": "双唇紧闭憋气，突然放开，送气强",
+    "sp": "p·pp（pig·apple）",
+    "ws": "pig  pen  apple  cup  happy",
+    "mis": "送气要明显"
+  },
+  {
+    "s": "b",
+    "g": "浊爆破",
+    "tip": "同 p 但声带振动，送气弱",
+    "sp": "b·bb（big·rubber）",
+    "ws": "big  book  baby  bus  job",
+    "mis": "声带要振动"
+  },
+  {
+    "s": "t",
+    "g": "清爆破",
+    "tip": "舌尖抵上齿龈，爆破送气",
+    "sp": "t·tt（tea·letter）",
+    "ws": "tea  time  ten  city  hot",
+    "mis": "美音中间的 t（如 water）常弱化，先把词首和词尾 t 读清"
+  },
+  {
+    "s": "d",
+    "g": "浊爆破",
+    "tip": "同 t 声带振动",
+    "sp": "d·dd（dog·ladder）",
+    "ws": "dog  day  red  bed  father",
+    "mis": ""
+  },
+  {
+    "s": "k",
+    "g": "清爆破",
+    "tip": "舌后部抵软腭，爆破送气",
+    "sp": "k·c·ck·qu（keep·cat·black·queen）",
+    "ws": "cat  keep  black  school  king",
+    "mis": "ck 读 k"
+  },
+  {
+    "s": "g",
+    "g": "浊爆破",
+    "tip": "同 k 声带振动",
+    "sp": "g·gg·gu（go·egg·guest）",
+    "ws": "go  girl  egg  big  bag",
+    "mis": ""
+  },
+  {
+    "s": "f",
+    "g": "清擦音",
+    "tip": "上齿轻触下唇，气流摩擦",
+    "sp": "f·ph·gh（fish·photo·laugh）",
+    "ws": "fish  five  photo  coffee  laugh",
+    "mis": "ph 读 f"
+  },
+  {
+    "s": "v",
+    "g": "浊擦音",
+    "tip": "同 f 声带振动",
+    "sp": "v·ve（very·five）",
+    "ws": "very  five  video  love  visit",
+    "mis": "别发成 w：vine/wine"
+  },
+  {
+    "s": "s",
+    "g": "清擦音",
+    "tip": "舌尖靠近上齿龈，气流从窄缝挤出",
+    "sp": "s·ss·c·ce（sun·glass·city·face）",
+    "ws": "sun  see  city  glass  face",
+    "mis": "c 在 e/i/y 前读 s"
+  },
+  {
+    "s": "z",
+    "g": "浊擦音",
+    "tip": "同 s 声带振动",
+    "sp": "z·s·zz（zoo·is·quiz）",
+    "ws": "zoo  is  has  quiz  zero",
+    "mis": "名词复数 -s 常读 z"
+  },
+  {
+    "s": "θ",
+    "g": "清齿音",
+    "tip": "舌尖轻触上齿边缘，气流从齿间挤出",
+    "sp": "th（three·think）",
+    "ws": "three  think  thank  mouth  bath",
+    "mis": "别发成 s 或 t：thin/sin"
+  },
+  {
+    "s": "ð",
+    "g": "浊齿音",
+    "tip": "同 θ 声带振动",
+    "sp": "th（this·mother）",
+    "ws": "this  that  mother  father  the",
+    "mis": "别发成 z 或 d：this/zis"
+  },
+  {
+    "s": "ʃ",
+    "g": "清擦音",
+    "tip": "舌面抬起靠近上颚，嘴唇微突",
+    "sp": "sh·ti·ss（she·nation·mission）",
+    "ws": "she  fish  shop  wash  nation",
+    "mis": "嘴唇要突出来"
+  },
+  {
+    "s": "ʒ",
+    "g": "浊擦音",
+    "tip": "同 ʃ 声带振动",
+    "sp": "s·si·ge（usually·television·garage）",
+    "ws": "usually  television  garage  pleasure",
+    "mis": "中文里没有，多模仿"
+  },
+  {
+    "s": "tʃ",
+    "g": "塞擦音",
+    "tip": "先 t 后 ʃ 快速连发",
+    "sp": "ch·tch（chair·watch）",
+    "ws": "chair  China  watch  teacher  chicken",
+    "mis": ""
+  },
+  {
+    "s": "dʒ",
+    "g": "塞擦音",
+    "tip": "先 d 后 ʒ 连发，浊音",
+    "sp": "j·g·ge·dge（job·gym·large·bridge）",
+    "ws": "job  gym  large  bridge  orange",
+    "mis": "g 在 e/i/y 前常读 dʒ"
+  },
+  {
+    "s": "tr",
+    "g": "塞擦音",
+    "tip": "t + r 连读，舌尖卷起",
+    "sp": "tr（tree·train）",
+    "ws": "tree  train  try  true  street",
+    "mis": ""
+  },
+  {
+    "s": "dr",
+    "g": "塞擦音",
+    "tip": "d + r 连读",
+    "sp": "dr（driver·drink）",
+    "ws": "driver  drink  dream  dress  dry",
+    "mis": ""
+  },
+  {
+    "s": "ts",
+    "g": "塞擦音",
+    "tip": "t + s 连读，清音",
+    "sp": "ts·tes（cats·students）",
+    "ws": "cats  hats  students",
+    "mis": "别发成 s"
+  },
+  {
+    "s": "dz",
+    "g": "塞擦音",
+    "tip": "d + z 连读，浊音",
+    "sp": "ds·des（beds·words）",
+    "ws": "beds  words  friends  hands",
+    "mis": ""
+  },
+  {
+    "s": "m",
+    "g": "鼻音",
+    "tip": "双唇闭合，鼻腔共鸣",
+    "sp": "m·mm（mother·summer）",
+    "ws": "mother  milk  man  summer  home",
+    "mis": ""
+  },
+  {
+    "s": "n",
+    "g": "鼻音",
+    "tip": "舌尖抵上齿龈，鼻腔共鸣",
+    "sp": "n·nn（night·dinner）",
+    "ws": "night  name  ten  dinner  sun",
+    "mis": ""
+  },
+  {
+    "s": "ŋ",
+    "g": "鼻音",
+    "tip": "舌后部抵软腭，鼻腔共鸣，嘴不张开",
+    "sp": "ng·n·nk（sing·bank·drink）",
+    "ws": "sing  long  bank  drink  morning",
+    "mis": "别加 g：sing/sin 不同"
+  },
+  {
+    "s": "h",
+    "g": "擦音",
+    "tip": "气流轻擦声带，几乎无声",
+    "sp": "h·wh（home·who）",
+    "ws": "home  hat  hello  who  hot",
+    "mis": "别发成中文“喝”那么重"
+  },
+  {
+    "s": "l",
+    "g": "边音",
+    "tip": "舌尖抵上齿龈，气流从舌侧通过；词尾舌后部抬起",
+    "sp": "l·ll（like·mill）",
+    "ws": "like  hello  milk  small  girl",
+    "mis": "词尾 l（milk/girl）别漏或发成“欧”"
+  },
+  {
+    "s": "r",
+    "g": "卷舌",
+    "tip": "舌尖卷向上齿龈后方但不接触（美音卷舌）",
+    "sp": "r·rr（red·carrot）",
+    "ws": "red  right  run  car  girl",
+    "mis": "别发成中文“日”"
+  },
+  {
+    "s": "j",
+    "g": "半元音",
+    "tip": "舌面抬向硬腭，像“衣”但更轻更短",
+    "sp": "y·u·ew（yes·use·new）",
+    "ws": "yes  you  use  new  few",
+    "mis": ""
+  },
+  {
+    "s": "w",
+    "g": "半元音",
+    "tip": "双唇收圆突出，像“屋”但更轻",
+    "sp": "w·wh·q（we·what·quick）",
+    "ws": "we  what  water  quick  window",
+    "mis": "与 v 区分：vest/west"
+  }
+]

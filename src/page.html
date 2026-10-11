@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta name="description" content="面向 IELTS General 6.5 的78周英语学习计划。每天一小步，按当天任务直接开始学习。">
+  <title>每天一点英语 · 78周学习计划</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' text-anchor='middle' fill='white' font-family='serif' font-size='48'%3Ea%3C/text%3E%3C/svg%3E">
+  <script>
+    // src/page.html is the build template. Redirect accidental direct opens to the usable offline page.
+    (function () {
+      if (location.pathname.toLowerCase().endsWith("/src/page.html")) {
+        var target = new URL("../index.html", location.href);
+        target.hash = location.hash;
+        location.replace(target.href);
+      }
+    }());
+  </script>
+  <style>/*__STYLES__*/</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到学习内容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#today" aria-label="每天一点英语首页"><span class="brand-mark" aria-hidden="true">a</span><span>每天一点英语<small>A LITTLE, EVERY DAY</small></span></a>
+      <nav aria-label="主导航">
+        <a href="#today" data-view="today" aria-current="page">今日学习</a>
+        <a href="#route" data-view="route">学习路线</a>
+        <a href="#mistakes" data-view="mistakes">错题本</a>
+        <a href="#reading" data-view="reading">短文</a>
+        <a href="#grammar" data-view="grammar">语法训练</a>
+        <a href="#diagnostic" data-view="diagnostic">入学诊断</a>
+        <a href="#phonetics" data-view="phonetics">发音</a>
+        <a href="#resources" data-view="resources">资料库</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell">
+    <section id="view-today" class="view">
+      <div class="page-heading">
+        <div><p class="eyebrow">YOUR DAILY PRACTICE</p><h1>今天，向前一小步。</h1><p class="muted" id="todayMeta">正在准备今天的学习内容…</p></div>
+        <div class="date-control"><label for="studyDate">学习日期</label><div><input id="studyDate" type="date" aria-describedby="dateHint"><button id="backToday" class="quiet" type="button">回到今天</button></div><span id="dateHint" class="sr-only">更改日期会切换当天任务和素材。</span></div>
+      </div>
+      <div id="dateMessage" class="notice" role="status" hidden></div>
+      <div class="learning-shortcuts" aria-label="学习入口"><a href="#mistakes">错题本 · 回看与重练 →</a><a href="#reading">短文 · 听读与理解 →</a><a href="#phonetics">美式发音 · 字母与音标 →</a><a href="#resources">资料库 · 词汇与课程 →</a></div>
+      <div id="dayContent" class="dashboard" hidden>
+        <div class="main-column">
+          <section id="dayOverview" class="card day-overview">
+            <div class="overline"><span class="pill" id="phaseLabel"></span><span id="dayLabel" class="muted"></span></div>
+            <h2 id="lessonTitle"></h2><p id="lessonLead" class="muted"></p>
+            <div class="daily-facts"><span><b id="wordCount"></b><small id="wordCountLabel">核心词</small></span><span><b id="totalMinutes"></b><small>分钟 · 建议预算</small></span><span><b>1</b><small>个小目标</small></span></div>
+            <p id="reviewNote" class="small muted" aria-live="polite"></p>
+            <div id="courseWeekNav" class="course-week-nav" aria-label="本周七天训练"></div>
+            <div class="overview-bottom"><button id="startLearning" class="primary" type="button">开始今天的学习 <span aria-hidden="true">→</span></button><span class="small muted">不用先学会，先试一次。</span></div>
+          </section>
+          <section class="study-workspace" aria-label="今日练习">
+            <ol id="stepNav" class="step-nav" aria-label="学习步骤"></ol>
+            <div id="practice" class="card practice-card" hidden></div>
+            <div id="preview" class="card preview-card"><div class="preview-icon" aria-hidden="true">Aa</div><div><h3>材料已经放好了</h3><p class="muted">复习、单词、开口练习，按顺序做就好。</p><p class="small muted">完成后，把今天的一点进步记到飞书。</p></div></div>
+          </section>
+        </div>
+        <aside class="side-column" aria-label="学习提醒">
+          <section class="card rhythm-card"><h2 class="side-title">今天的节奏</h2><div class="mode-switch" role="group" aria-label="学习时长"><button type="button" data-mode="normal" aria-pressed="true">日常练习</button><button type="button" data-mode="recovery" aria-pressed="false">恢复 · 30分钟</button></div><ol id="rhythmList" class="rhythm-list"></ol><p id="modeNote" class="small muted"></p></section>
+          <section class="card journey-card"><div class="overline"><h2 class="side-title">正在路上</h2><span id="weekLabel" class="small"></span></div><div class="track" aria-hidden="true"><div id="journeyBar"></div></div><p id="phaseGoal" class="small muted"></p><a href="#route" class="text-link">看看接下来的路 <span aria-hidden="true">↗</span></a><p class="tiny muted">这里显示计划位置，完成情况以飞书为准。</p></section>
+          <div class="gentle-note"><span aria-hidden="true">“</span><p>不求一遍记住。<br>下次再见，就会更熟一点。</p></div>
+        </aside>
+      </div>
+    </section>
+    <section id="view-route" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">ONE STEP AT A TIME</p><h1>把远处，拆成小步。</h1><p class="muted">78周 · 8个阶段 · IELTS General 6.5</p></div></div>
+      <div class="notice">计划起点：2026年9月16日（周三）。每7天是一轮，第6、7天以复习为主。日历显示计划位置，正式学习记录在飞书。</div>
+      <section class="card secondary-section"><h2>78周 · 系统训练</h2><p class="muted">每周两篇核心阅读、听力、语法、写说与陌生迁移检查。阶段检查用于调整课程；完成课程不等于获得雅思6.5。</p><div id="courseCatalog" class="catalog-grid"></div></section>
+      <div id="phaseList" class="phase-list"></div>
+      <section class="card secondary-section"><h2>留出调整的空间</h2><p>断档超过7天，手动切换“恢复 · 30分钟”，不追补旧任务。连续4周恢复正常节奏后，再切回日常练习。</p><p>每阶段结束查看飞书周汇总：练习完成度、最常见的卡点，以及两次录音的变化。给自己一个小奖励，金额由你决定。</p><p>阶段练习指标用于自查，不等同于官方雅思分数。完整模考另约时间，预留约2小时45分钟；日常仍按分项练习进行。</p></section>
+    </section>
+    <section id="view-mistakes" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">RECALL & REVIEW</p><h1>错过的，再练一次。</h1><p class="muted">拼写错误、忘记的词和入门短文错题，都在这里。</p></div></div>
+      <section class="card"><h2>单词错题</h2><p id="deckStats" class="muted"></p><button id="reviewMistakes" type="button" class="secondary">再练最常错的词</button><div id="mistakeList" class="mistake-cards"></div><p class="small muted">保留曾经出错的记录；答对后按间隔安排复习。仅保存在当前浏览器，手机与电脑不会自动同步。</p></section>
+      <section class="card secondary-section"><h2>短文理解错题</h2><div id="readingMistakes"></div></section>
+      <section class="card secondary-section"><h2>系统课程错题 · W1–W78</h2><div id="courseMistakes"></div></section>
+    </section>
+    <section id="view-reading" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">LISTEN · READ · RETELL</p><h1>读懂一小段，说出自己的话。</h1><p class="muted">156 篇核心阅读 · 按阶段与主题查找 · 自编学习材料，不是官方试题。</p></div></div>
+      <p class="notice">所有核心阅读与<a href="#route">78周系统训练</a>共用材料和首次成绩。陌生周测放在每周第7天，提交前不展示解析。</p>
+      <div id="readingFilters" class="library-filters"></div><div id="readingCatalog" class="catalog-grid"></div><details class="card secondary-section"><summary>旧版 15 篇补充材料（保留原练习记录）</summary><div id="legacyReadingCatalog" class="catalog-grid"></div></details><section id="readingDetail" class="card secondary-section" hidden></section>
+    </section>
+    <section id="view-grammar" class="view" hidden><div class="page-heading"><div><p class="eyebrow">NOTICE · PRACTISE · USE</p><h1>语法，放进自己的句子。</h1><p>40 个系统知识单元，38 周综合运用。选择、填空、改错与自主表达一起练。</p></div></div><div id="grammarFilters" class="library-filters"></div><div id="grammarCatalog" class="catalog-grid"></div><section id="grammarDetail" class="card secondary-section" hidden></section></section>
+    <section id="view-diagnostic" class="view" hidden><div class="page-heading"><div><p class="eyebrow">START WITH EVIDENCE</p><h1>先找到起点，再向 6.5 前进。</h1></div></div><section class="card" id="diagnosticBody"></section></section>
+    <section id="view-phonetics" class="view" hidden>
+      <div class="page-heading pronunciation-heading"><div><p class="eyebrow">PRONUNCIATION</p><h1>发音练习</h1><p class="muted">美式为主，英式对照。听单音、看口型、跟读例词，再练辨音。</p></div><div class="accent-switch" role="group" aria-label="例词发音口音"><button type="button" data-pron-accent="US" aria-pressed="true">US 美式</button><button type="button" data-pron-accent="UK" aria-pressed="false">UK 英式</button></div></div>
+      <div class="pron-tabs" role="tablist" aria-label="发音学习内容"><button type="button" role="tab" data-pron-tab="alphabet" aria-selected="true">字母</button><button type="button" role="tab" data-pron-tab="ipa" aria-selected="false">IPA 音标</button><button type="button" role="tab" data-pron-tab="american" aria-selected="false">美式特色音</button><button type="button" role="tab" data-pron-tab="pairs" aria-selected="false">辨音训练</button></div>
+      <p id="pronunciationProgress" class="pron-progress" role="status"></p>
+      <section id="pron-panel-alphabet" class="pron-panel" role="tabpanel"><div class="pron-section-heading"><h2>Alphabet · 字母名称</h2><p>从 A 到 Z。这里练的是字母名，不是字母在单词中的所有读音。</p></div><div id="alphabetCatalog" class="alphabet-grid"></div></section>
+      <section id="pron-panel-ipa" class="pron-panel" role="tabpanel" hidden><div class="pron-section-heading"><h2>IPA · 国际音标</h2><p>先听单音，再听例词；斜线是音位，方括号是更细的实际读音。</p></div><div id="ipaCatalog"></div><section id="phonemeDetail" class="phoneme-detail" hidden aria-live="polite"></section><details class="legacy-phonetics"><summary>原有 48 张发音学习卡</summary><label for="phoneticGroup">筛选旧卡分类</label><select id="phoneticGroup"></select><div id="phoneticCatalog" class="phon-grid"></div></details></section>
+      <section id="pron-panel-american" class="pron-panel" role="tabpanel" hidden><div class="pron-section-heading"><h2>American Sounds · 美式特色音</h2><p>用整词和短语听语流变化；[ɾ]、[ɫ] 是实际语音，不是额外音位。</p></div><div id="americanCatalog" class="american-list"></div></section>
+      <section id="pron-panel-pairs" class="pron-panel" role="tabpanel" hidden><div class="pron-section-heading"><h2>Minimal Pairs · 辨音训练</h2><p>听一个词后选择你听到的词；答完再对照两种口音。</p></div><div id="minimalPairQuiz" class="pair-quiz"></div><details class="legacy-phonetics"><summary>原有 8 组易混音练习</summary><div id="soundQuiz"></div></details></section>
+      <p class="small muted pron-source-note">单音录音来自 Wikimedia Commons；字母和词音优先使用相应地区的设备语音，必要时尝试在线词典。英式词条音标来自混合词典，未逐条人工审定。完整来源与许可见 <a href="SOURCES.md" target="_blank" rel="noopener">来源说明</a>。</p>
+      <details class="audio-credits"><summary>单音录音署名与许可</summary><div id="phonemeCredits"></div></details>
+    </section>
+    <section id="view-resources" class="view" hidden>
+      <section class="card secondary-section"><h2>学习记录备份</h2><p>普通 JSON 适合文字进度；学习包会把本机录音一起打包，便于换电脑或长期保存。网页不会自动同步到飞书。</p><div class="backup-actions"><button id="exportProgress" type="button">导出文字 JSON</button><button id="exportBundle" type="button" class="secondary">导出学习包（含录音）</button></div><label>选择进度或学习包备份<input type="file" id="importProgress" accept=".json,application/json"></label><button id="confirmRestore" type="button" hidden>备份当前记录并恢复所选文件</button><p id="backupStatus" role="status"></p></section>
+      <div class="page-heading"><div><p class="eyebrow">WHEN YOU NEED A LITTLE HELP</p><h1>需要时，再来翻一翻。</h1><p class="muted">日常材料已经在练习里，这里留给查阅和拓展。</p></div></div>
+      <section class="card"><h2>课程资料库</h2><p class="muted">直接选择材料学习，无需等待计划排到那一周。基础词详解目前覆盖前两周100词。</p><div class="library-filters"><label>材料类型<select id="materialType"><option value="foundationLessons">基础短句 · 10课</option><option value="scenarios">生活对话 · 10课</option><option value="grammar">旧版语法速查 · 10课</option><option value="letters">书信写作 · 10题</option><option value="essays">议论文写作 · 10题</option><option value="words">基础词用法 · 100词</option></select></label><label>搜索材料<input id="materialSearch" type="search" placeholder="输入主题或单词"></label></div><div id="materialList" class="catalog-grid"></div><div id="materialDetail" class="secondary-section" hidden></div><div class="learning-shortcuts"><a href="#reading">浏览156篇核心阅读 →</a><a href="#phonetics">打开美式音标课程 →</a></div></section>
+      <section class="card readiness-card"><div class="overline"><div><p class="eyebrow">IELTS GENERAL · TARGET 6.5</p><h2>6.5 准备度记录</h2></div><span class="pill">四项证据</span></div><p class="muted">区分正式成绩、完整模考、分科模考、AI估计和自评。只有完整四科、来源清楚且未见材料的记录，才会进入“准备度证据”。这不是官方成绩预测。</p><form id="readinessForm"><div class="readiness-fields"><label>阶段<select id="readinessStage"></select></label><label>日期<input id="readinessDate" type="date"></label><label>听力 Listening<input id="readinessListening" type="number" min="0" max="9" step="0.5" inputmode="decimal"></label><label>阅读 Reading<input id="readinessReading" type="number" min="0" max="9" step="0.5" inputmode="decimal"></label><label>写作 Writing<input id="readinessWriting" type="number" min="0" max="9" step="0.5" inputmode="decimal"></label><label>口语 Speaking<input id="readinessSpeaking" type="number" min="0" max="9" step="0.5" inputmode="decimal"></label></div><div class="readiness-fields readiness-evidence-fields"><label>测试批次/材料编号<input id="readinessBatch" placeholder="例如 GT-Test-03"></label><label>材料状态<select id="readinessMaterial"><option value="unseen">未见材料</option><option value="repeated">重复练习</option><option value="unknown">未确认</option></select></label><label>完成条件<select id="readinessCondition"><option value="full">四科连续完成</option><option value="section">分科完成</option><option value="untimed">非计时练习</option></select></label><label>评分/反馈来源<input id="readinessRater" placeholder="官方换算、老师、AI或自评"></label></div><label>记录来源<select id="readinessSource"><option value="self">自评</option><option value="ai">AI估计（非官方）</option><option value="mock">带来源的模考</option><option value="official">官方考试成绩</option></select></label><label>建议单项底线<input id="readinessMinimum" type="number" min="0" max="9" step="0.5" value="6"></label><label for="readinessEvidence">证据与反馈来源<textarea id="readinessEvidence" rows="3" placeholder="记录题目来源、用时、是否看过答案、写作/口语评分依据和复盘链接"></textarea></label><button class="primary" type="submit">保存这次记录</button><button id="cancelReadinessEdit" type="button" hidden>取消编辑</button><p id="readinessMessage" role="status"></p></form><div id="readinessStatus"></div><div id="readinessHistory"></div></section>
+      <div class="resource-grid secondary-section">
+        <section class="card"><h2>词汇与美式发音</h2><p class="muted" id="vocabStats"></p><label for="wordSearch">查一个词</label><div class="search-row"><input id="wordSearch" type="search" placeholder="例如 notes" autocomplete="off"><button class="secondary" id="searchWord" type="button">查词</button></div><div id="searchResult" aria-live="polite"></div><div class="resource-links"><a href="教案素材/02-7000分级词表.csv" download>下载完整词表 CSV ↗</a><a href="教案素材/words-分阶段词表.zip" download>下载分阶段词表 ↗</a><a href="教案素材/01-48音标学习包.html" target="_blank" rel="noopener">美式发音学习卡 ↗</a></div><details><summary>美式发音学习卡（48张）</summary><div id="allPhonetics" class="phon-grid"></div><p class="small muted">包含单音和常见组合音；不代表美式英语有48个独立音位。个别词的读音会因美国地区口音而略有不同。</p></details></section>
+        <section class="card"><h2>打卡与AI练习</h2><p class="muted">每日结束时复制摘要，到飞书记录完成情况、评分和录音。页面不会代替你提交记录。</p><a id="feishuLink" class="secondary feishu-link" target="_blank" rel="noopener">打开飞书打卡 ↗</a><div class="resource-links"><a href="https://www.elsaspeak.com/" target="_blank" rel="noopener">ELSA · 发音反馈 ↗</a><a href="https://typewords.cc" target="_blank" rel="noopener">TypeWords · 更多拼写练习 ↗</a></div><p class="small muted">AI教学指令会出现在当天练习里。用豆包或ChatGPT等工具练习时，自行复制过去即可。免费额度与服务可用性以各平台为准。</p></section>
+        <section class="card"><h2>美式听读拓展</h2><p class="muted">先完成当天练习，再用美式范音跟读。</p><div class="resource-links"><a href="https://www.youtube.com/@rachelsenglish" target="_blank" rel="noopener">Rachel's English · 美式发音 ↗</a><a href="https://learningenglish.voanews.com/" target="_blank" rel="noopener">VOA Learning English · 美式听力 ↗</a></div></section>
+        <section class="card"><h2>雅思 General</h2><p class="muted">Task 1：书信至少150词，建议约20分钟。Task 2：议论文至少250词，建议约40分钟。完整写作共60分钟。</p><div class="resource-links"><a href="https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/general-training" target="_blank" rel="noopener">British Council · General官方练习 ↗</a><a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test" target="_blank" rel="noopener">IELTS · 考试说明 ↗</a></div><p class="small muted">先选择 General Training 材料。页面内短文和题目为自编练习，并非雅思历年真题。考试形式、费用和报名条件请以报考地区官网为准。</p></section>
+      </div>
+      <details class="card secondary-section"><summary>使用说明、数据来源与本机保存</summary><p>文字和练习可以离线查看。单词发音优先调用设备的英语（美国）语音；不可用时尝试在线美音，外部视频和飞书仍需联网。若设备没有美式语音且在线服务受阻，请先安装设备的英语（美国）语音。</p><p>词汇复习采用 1、3、7、14、30、60 天的间隔；答错或忘记会在次日再出现。每天先做最多 8 张到期闪卡，再做计划内词汇；这套规则不是 TypeWords 的 FSRS 算法。</p><p>进度、闪卡复习日期、自写句子、草稿和评分保存在本机浏览器，不会自动在手机与电脑间同步，也不会写入发布页面。清除浏览器数据会删除本机记录；禁止存储时仍可练习，但刷新后状态可能丢失。正式记录请保存到飞书。</p><p>词注释来自TypeWords原词典的直接词条，基础恢复例句与校正词条为本项目自编；展示的美式音标由 CMU Pronouncing Dictionary 校正。未核实词形不进入核心练习；不会用原形音标冒充变形单词的读音。</p><p>教学词表的来源是 first20hours/google-10000-english；它是语料词频参考，不等同于掌握词汇量或雅思词汇要求。识别参考词单独保留在离线素材包。</p><a href="LICENSE" target="_blank" rel="noopener">GPL-3.0 许可证</a> · <a href="SOURCES.md" target="_blank" rel="noopener">来源说明</a></details>
+    </section>
+    <noscript><div class="notice">这个学习页需要在支持 JavaScript 的浏览器中打开。请使用Chrome、Edge或Safari，避免只显示附件预览的应用。</div></noscript>
+  </main>
+  <footer class="site-footer">每天一点英语 <span>·</span> 慢慢来，也在向前 <span>·</span> <a href="#resources">使用与来源</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script id="planData" type="application/json">__PLAN_DATA__</script>
+  <script>/*__ENGINE__*/</script>
+  <script>/*__PRONUNCIATION_AUDIO__*/</script>
+  <script>/*__COURSE__*/</script>
+  <script>/*__LEARNING__*/</script>
+  <script>/*__APP__*/</script>
+</body>
+</html>

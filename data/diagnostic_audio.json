@@ -1,0 +1,104 @@
+{
+  "id": "v3-diagnostic-listening",
+  "version": 3,
+  "title": "三句简单真人短句",
+  "text": "what are you doing here he asked there is a seat in the garden at the side of the house again she hesitated i am free to admit that i am hungry too",
+  "segments": [
+    {
+      "id": "8297-275156-0000",
+      "start": 0,
+      "end": 3.58,
+      "text": "what are you doing here he asked"
+    },
+    {
+      "id": "6345-93306-0005",
+      "start": 3.58,
+      "end": 8.094999999999999,
+      "text": "there is a seat in the garden at the side of the house again she hesitated"
+    },
+    {
+      "id": "6313-66129-0007",
+      "start": 8.094999999999999,
+      "end": 10.549999999999999,
+      "text": "i am free to admit that i am hungry too"
+    }
+  ],
+  "questions": [
+    {
+      "id": "diagnostic-listen-q1",
+      "prompt": "Which question did you hear?",
+      "options": [
+        "What are you doing here?",
+        "What do you do every day?",
+        "Where are you going?"
+      ],
+      "correct": 0,
+      "explanation": "询问对方正在这里做什么。",
+      "evidence": {
+        "quote": "what are you doing here he asked",
+        "audioStart": 0,
+        "audioEnd": 3.58,
+        "humanReviewed": false,
+        "start": 0,
+        "end": 32
+      },
+      "reviewStatus": "authored"
+    },
+    {
+      "id": "diagnostic-listen-q2",
+      "prompt": "Where is the seat?",
+      "options": [
+        "In a shop.",
+        "In the garden.",
+        "On a bus."
+      ],
+      "correct": 1,
+      "explanation": "座位在花园里，房子一侧。",
+      "evidence": {
+        "quote": "there is a seat in the garden at the side of the house again she hesitated",
+        "audioStart": 3.58,
+        "audioEnd": 8.094999999999999,
+        "humanReviewed": false,
+        "start": 33,
+        "end": 107
+      },
+      "reviewStatus": "authored"
+    },
+    {
+      "id": "diagnostic-listen-q3",
+      "prompt": "How does the speaker feel?",
+      "options": [
+        "Tired.",
+        "Cold.",
+        "Hungry."
+      ],
+      "correct": 2,
+      "explanation": "说话者承认自己也饿了。",
+      "evidence": {
+        "quote": "i am free to admit that i am hungry too",
+        "audioStart": 8.094999999999999,
+        "audioEnd": 10.549999999999999,
+        "humanReviewed": false,
+        "start": 108,
+        "end": 147
+      },
+      "reviewStatus": "authored"
+    }
+  ],
+  "audio": "assets/human/diagnostic.mp3",
+  "duration": 10.549999999999999,
+  "audioKind": "human-audio",
+  "sourceId": "librispeech/diagnostic/8297-275156-0000,6345-93306-0005,6313-66129-0007",
+  "sourceUrl": "https://www.openslr.org/12",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "LibriSpeech (Vassil Panayotov); LibriVox readers 8297, 6345, 6313, individually identified in SPEAKERS.TXT",
+  "adaptation": "Three different reader utterances concatenated for a word/meaning recognition diagnostic; not a dialogue.",
+  "verified": {
+    "fileDecodedOn": "2026-10-10",
+    "humanListenedOn": null
+  },
+  "sha256": "31436ba250b6eba7381c2b9eee472afb2b361ad45d77c8137506b36b13927260",
+  "bytes": 64196,
+  "examEvidence": false
+}

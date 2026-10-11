@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "python build_plan.py",
+    "check": "python build_plan.py --check",
+    "serve": "python tools/start_site.py",
+    "test": "npm run test:engine && npm run test:course && npm run test:browser",
+    "test:engine": "node tools/qa_v3_engine.js",
+    "test:course": "python tools/audit_v3.py",
+    "test:readiness": "node tools/qa_v3_engine.js",
+    "test:maturity": "npm test",
+    "test:browser": "node tools/qa_v3_browser.js",
+    "test:legacy:engine": "node tools/qa_engine.js",
+    "audit:media": "python tools/audit_v3.py --decode",
+    "release:sync": "python tools/sync_release_v3.py",
+    "check:packages": "python tools/check_release_packages_v3.py",
+    "check:links": "python tools/check_online_media_v3.py"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  },
+  "dependencies": {
+    "fflate": "0.8.3"
+  }
+}

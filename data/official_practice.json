@@ -1,0 +1,15 @@
+{
+  "verifiedOn": "2026-10-06",
+  "source": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/general-training-test",
+  "note": "链接与题目说明在官方页面核验；未重发布音频，不表示所有播放器在离线环境可用。页面下方部分机考体验使用Academic阅读写作，G类学习者应选择上方General Training样题。",
+  "listening": [
+    {"name":"Part 1 · 图书馆指南 · 多选","url":"https://ielts.inspera.com/player/?assessmentRunId=189696950&context=exam#/section/171824485/question/145454275/scorableItem/1"},
+    {"name":"Part 1 · 二手家具 · 笔记填空","url":"https://ielts.inspera.com/player/?assessmentRunId=189696078&context=exam#/section/184163671/question/184163670/scorableItem/1"},
+    {"name":"Part 2 · 美国城镇导览 · 地图标注","url":"https://ielts.inspera.com/player/?assessmentRunId=189695339&context=exam#/section/174541820/question/174541819/scorableItem/1"},
+    {"name":"Part 2 · 服装企业介绍 · 简答","url":"https://ielts.inspera.com/player/?assessmentRunId=189694459&context=exam#/section/174309255/question/174309254/scorableItem/1"},
+    {"name":"Part 3 · Judy研究讨论 · 单选","url":"https://ielts.inspera.com/player/?assessmentRunId=189697549&context=exam#/section/171826252/question/145591537/scorableItem/1"},
+    {"name":"Part 3 · 开放大学学习 · 句子填空","url":"https://ielts.inspera.com/player/?assessmentRunId=189694885&context=exam#/section/184163445/question/171795621/scorableItem/1"},
+    {"name":"Part 3 · 生物研究比较 · 流程图","url":"https://ielts.inspera.com/player/?assessmentRunId=189697842&context=exam#/section/181951855/question/181951854/scorableItem/1"},
+    {"name":"Part 4 · 学习坚持性研究 · 表格填空","url":"https://ielts.inspera.com/player/?assessmentRunId=189652254&context=exam#/section/181038775/question/181038772/scorableItem/1"}
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+_cache/
+_backup/
+_shots/
+playwright-report/
+test-results/
+release-v3.json
+*.tmp

@@ -1,0 +1,130 @@
+[
+  {
+    "label": "A1 source",
+    "url": "https://elllo.org/book/A1/A1-01-Be-Verbs-Introductions.html",
+    "checkedAt": "2026-10-10T03:57:46.586077+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "text/html",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "A1 stream",
+    "url": "https://elllo.org/Audio/SoundGrammar/A1-Audio4x/A1-01-1-Be-Verbs-First-Day.mp3",
+    "checkedAt": "2026-10-10T03:57:46.587176+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "audio/mpeg",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "A2 source",
+    "url": "https://elllo.org/book/A2/A2-01-Present-Simple.html",
+    "checkedAt": "2026-10-10T03:57:46.588183+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "text/html",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "A2 stream",
+    "url": "https://elllo.org/Audio/SoundGrammar/A2-Audio4x/A2-01-1-Present-Simple-Job.mp3",
+    "checkedAt": "2026-10-10T03:57:46.589183+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "audio/mpeg",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "B1 source",
+    "url": "https://elllo.org/book/B1/B1-01-Do-Emphasis.html",
+    "checkedAt": "2026-10-10T03:57:46.676227+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "text/html",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "B1 stream",
+    "url": "https://elllo.org/Audio/SoundGrammar/B1-Audio4x/B1-01-2-Do-Emphasis-Cooking.mp3",
+    "checkedAt": "2026-10-10T03:57:46.713162+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "audio/mpeg",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "B2 source",
+    "url": "https://elllo.org/book/B2/B2-01-Passive-Simple.html",
+    "checkedAt": "2026-10-10T03:57:47.662877+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "text/html",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "B2 stream",
+    "url": "https://elllo.org/Audio/SoundGrammar/B2-Audio4x/B2-01-1-Passive-Present-Restaurant.mp3",
+    "checkedAt": "2026-10-10T03:57:47.775696+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "audio/mpeg",
+    "sampleBytes": 4096,
+    "accessible": true
+  },
+  {
+    "label": "General sample",
+    "url": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/general-training-test",
+    "checkedAt": "2026-10-10T03:57:47.776698+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "accessible": false,
+    "error": "The read operation timed out"
+  },
+  {
+    "label": "Rachel pronunciation",
+    "url": "https://rachelsenglish.com/english-pronounce-ee-vowel/",
+    "checkedAt": "2026-10-10T03:57:47.776698+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "accessible": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "label": "UBC pronunciation",
+    "url": "https://enunciate.arts.ubc.ca/i/",
+    "checkedAt": "2026-10-10T03:57:47.779808+00:00",
+    "kind": "HTTP access only",
+    "played": false,
+    "humanListened": false,
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "sampleBytes": 4096,
+    "accessible": true
+  }
+]

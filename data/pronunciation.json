@@ -1,0 +1,2498 @@
+{
+  "convention": {
+    "us": "General American 宽式音位记法：/i u ɑ ɔ oʊ ɝ ɚ/；音位表用 /ɹ/ 表示美式 R，现有词典的 /r/ 为常见简写。",
+    "uk": "英式对照采用非卷舌的传统 RP 宽式记法；/ɪə ɛə ʊə/ 在当代口音中有合并或单元音化，实际读音因地区而异。",
+    "detail": "斜线 / / 是音位，方括号 [ ] 是更细的实际语音。[ɾ] 和 [ɫ] 是常见语音变体，不另算英语音位。"
+  },
+  "extraWords": {
+    "banana": {
+      "us": "/bəˈnænə/",
+      "uk": "/bəˈnɑːnə/",
+      "meaning": "香蕉"
+    },
+    "sofa": {
+      "us": "/ˈsoʊfə/",
+      "uk": "/ˈsəʊfə/",
+      "meaning": "沙发"
+    },
+    "vine": {
+      "us": "/vaɪn/",
+      "uk": "/vaɪn/",
+      "meaning": "藤蔓"
+    },
+    "vest": {
+      "us": "/vɛst/",
+      "uk": "/vest/",
+      "meaning": "背心"
+    },
+    "lice": {
+      "us": "/laɪs/",
+      "uk": "/laɪs/",
+      "meaning": "虱子（复数）"
+    },
+    "cot": {
+      "us": "/kɑt/",
+      "uk": "/kɒt/",
+      "meaning": "简易床；婴儿床"
+    },
+    "pick it up": {
+      "us": "/pɪk ɪt ʌp/",
+      "uk": "/pɪk ɪt ʌp/",
+      "meaning": "把它拿起来"
+    },
+    "turn it off": {
+      "us": "/tɝn ɪt ɔf/",
+      "uk": "/tɜːn ɪt ɒf/",
+      "meaning": "把它关掉"
+    }
+  },
+  "alphabet": [
+    {
+      "letter": "A",
+      "us": "/eɪ/",
+      "uk": "/eɪ/",
+      "example": "apple"
+    },
+    {
+      "letter": "B",
+      "us": "/bi/",
+      "uk": "/biː/",
+      "example": "book"
+    },
+    {
+      "letter": "C",
+      "us": "/si/",
+      "uk": "/siː/",
+      "example": "cat"
+    },
+    {
+      "letter": "D",
+      "us": "/di/",
+      "uk": "/diː/",
+      "example": "dog"
+    },
+    {
+      "letter": "E",
+      "us": "/i/",
+      "uk": "/iː/",
+      "example": "egg"
+    },
+    {
+      "letter": "F",
+      "us": "/ɛf/",
+      "uk": "/ef/",
+      "example": "fish"
+    },
+    {
+      "letter": "G",
+      "us": "/dʒi/",
+      "uk": "/dʒiː/",
+      "example": "go"
+    },
+    {
+      "letter": "H",
+      "us": "/eɪtʃ/",
+      "uk": "/eɪtʃ/",
+      "example": "hello"
+    },
+    {
+      "letter": "I",
+      "us": "/aɪ/",
+      "uk": "/aɪ/",
+      "example": "ice"
+    },
+    {
+      "letter": "J",
+      "us": "/dʒeɪ/",
+      "uk": "/dʒeɪ/",
+      "example": "job"
+    },
+    {
+      "letter": "K",
+      "us": "/keɪ/",
+      "uk": "/keɪ/",
+      "example": "key"
+    },
+    {
+      "letter": "L",
+      "us": "/ɛl/",
+      "uk": "/el/",
+      "example": "like"
+    },
+    {
+      "letter": "M",
+      "us": "/ɛm/",
+      "uk": "/em/",
+      "example": "milk"
+    },
+    {
+      "letter": "N",
+      "us": "/ɛn/",
+      "uk": "/en/",
+      "example": "name"
+    },
+    {
+      "letter": "O",
+      "us": "/oʊ/",
+      "uk": "/əʊ/",
+      "example": "open"
+    },
+    {
+      "letter": "P",
+      "us": "/pi/",
+      "uk": "/piː/",
+      "example": "pen"
+    },
+    {
+      "letter": "Q",
+      "us": "/kju/",
+      "uk": "/kjuː/",
+      "example": "queen"
+    },
+    {
+      "letter": "R",
+      "us": "/ɑɹ/",
+      "uk": "/ɑː/",
+      "example": "red"
+    },
+    {
+      "letter": "S",
+      "us": "/ɛs/",
+      "uk": "/es/",
+      "example": "sun"
+    },
+    {
+      "letter": "T",
+      "us": "/ti/",
+      "uk": "/tiː/",
+      "example": "time"
+    },
+    {
+      "letter": "U",
+      "us": "/ju/",
+      "uk": "/juː/",
+      "example": "use"
+    },
+    {
+      "letter": "V",
+      "us": "/vi/",
+      "uk": "/viː/",
+      "example": "very"
+    },
+    {
+      "letter": "W",
+      "us": "/ˈdʌbəl.ju/",
+      "uk": "/ˈdʌbəl.juː/",
+      "example": "water"
+    },
+    {
+      "letter": "X",
+      "us": "/ɛks/",
+      "uk": "/eks/",
+      "example": "box"
+    },
+    {
+      "letter": "Y",
+      "us": "/waɪ/",
+      "uk": "/waɪ/",
+      "example": "yes"
+    },
+    {
+      "letter": "Z",
+      "us": "/zi/",
+      "uk": "/zed/",
+      "example": "zoo"
+    }
+  ],
+  "phonemes": [
+    {
+      "id": "i",
+      "symbol": "i",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/i/",
+      "uk": "/iː/",
+      "name": "close front unrounded vowel",
+      "zh": "高前不圆唇元音",
+      "tip": "舌前部抬高，嘴角自然向两侧。英式词典常加长音符号；不要只按时长区分。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "前部高抬，不碰上颚",
+        "lips": "自然展开",
+        "voiced": true
+      },
+      "examples": [
+        "see",
+        "sheep",
+        "tea",
+        "me"
+      ],
+      "contrasts": [
+        "ih"
+      ],
+      "audio": "i",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ee-vowel/",
+          "video": "https://www.youtube.com/embed/C5WKc4R7mD4?rel=0",
+          "title": "English: How to Pronounce EE [i] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/i/",
+          "video": "https://www.youtube.com/embed/0UAbX_4KWdY?rel=0",
+          "title": "i"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/i/",
+          "video": "https://www.youtube.com/embed/1NIzlLY_rYE?rel=0",
+          "title": "i"
+        }
+      ]
+    },
+    {
+      "id": "ih",
+      "symbol": "ɪ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ɪ/",
+      "uk": "/ɪ/",
+      "name": "near-close near-front unrounded vowel",
+      "zh": "次高前元音",
+      "tip": "比 /i/ 更松、更低；ship 与 sheep 要分开。",
+      "mouth": {
+        "jaw": "微开，比 /i/ 稍大",
+        "tongue": "前部稍低且放松",
+        "lips": "自然，不刻意咧嘴",
+        "voiced": true
+      },
+      "examples": [
+        "ship",
+        "sit",
+        "bit",
+        "fish"
+      ],
+      "contrasts": [
+        "i"
+      ],
+      "audio": "ih",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ih-vowel/",
+          "video": "https://www.youtube.com/embed/-km81q6DIlM?rel=0",
+          "title": "English: How to Pronounce IH [ɪ] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%aa/",
+          "video": "https://www.youtube.com/embed/4XCokjRrNLo?rel=0",
+          "title": "ɪ"
+        }
+      ]
+    },
+    {
+      "id": "eh",
+      "symbol": "ɛ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ɛ/",
+      "uk": "/e/",
+      "name": "open-mid front unrounded vowel",
+      "zh": "半开前元音",
+      "tip": "美式常写 /ɛ/，英式词典常写 /e/；实际音值有口音差异。",
+      "mouth": {
+        "jaw": "中等张开",
+        "tongue": "前部中低位",
+        "lips": "自然展开",
+        "voiced": true
+      },
+      "examples": [
+        "bed",
+        "pen",
+        "red",
+        "men"
+      ],
+      "contrasts": [
+        "ae"
+      ],
+      "audio": "eh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-eh-vowel/",
+          "video": "https://www.youtube.com/embed/xKxV8XfigaE?rel=0",
+          "title": "English: How to Pronounce EH [ɛ] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%9b/",
+          "video": "https://www.youtube.com/embed/mYkinCnEx_0?rel=0",
+          "title": "ɛ"
+        }
+      ]
+    },
+    {
+      "id": "ae",
+      "symbol": "æ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/æ/",
+      "uk": "/æ/",
+      "name": "near-open front unrounded vowel",
+      "zh": "次低前元音",
+      "tip": "嘴比 /ɛ/ 张得更大；不要把 bad 读成 bed。",
+      "mouth": {
+        "jaw": "明显张开",
+        "tongue": "前部低、舌尖靠下齿",
+        "lips": "自然展开，不圆唇",
+        "voiced": true
+      },
+      "examples": [
+        "cat",
+        "bad",
+        "map",
+        "apple"
+      ],
+      "contrasts": [
+        "eh"
+      ],
+      "audio": "ae",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-aa-ae-vowel/",
+          "video": "https://www.youtube.com/embed/-i7-DDAW-ok?rel=0",
+          "title": "English: How to Pronounce AA [æ] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/ae/",
+          "video": "https://www.youtube.com/embed/Ozsy2aJdJ5w?rel=0",
+          "title": "æ"
+        }
+      ]
+    },
+    {
+      "id": "schwa",
+      "symbol": "ə",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ə/",
+      "uk": "/ə/",
+      "name": "mid central vowel",
+      "zh": "中央弱元音",
+      "tip": "只在弱读音节中自然出现；about 的第一个音要轻。",
+      "mouth": {
+        "jaw": "放松微开",
+        "tongue": "居中、无明显紧张",
+        "lips": "中性",
+        "voiced": true
+      },
+      "examples": [
+        "about",
+        "banana",
+        "support",
+        "sofa"
+      ],
+      "contrasts": [
+        "uh"
+      ],
+      "audio": "schwa",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-schwa/",
+          "video": "https://www.youtube.com/embed/2BmkUa4Mv60?rel=0",
+          "title": "English: How to Pronounce the Schwa [ə]"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%99/",
+          "video": "https://www.youtube.com/embed/aEODlIS3KEM?rel=0",
+          "title": "ə"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%99/",
+          "video": "https://www.youtube.com/embed/CWcujVm60nM?rel=0",
+          "title": "ə"
+        }
+      ]
+    },
+    {
+      "id": "uh",
+      "symbol": "ʌ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ʌ/",
+      "uk": "/ʌ/",
+      "name": "open-mid back unrounded vowel",
+      "zh": "半开后不圆唇元音",
+      "tip": "重读的 STRUT 元音；实际美音常更靠中央，不等同于弱读 /ə/。",
+      "mouth": {
+        "jaw": "中等张开",
+        "tongue": "中后部偏低、放松",
+        "lips": "不圆唇",
+        "voiced": true
+      },
+      "examples": [
+        "cup",
+        "sun",
+        "love",
+        "bus"
+      ],
+      "contrasts": [
+        "schwa",
+        "ah"
+      ],
+      "audio": "uh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-uh-butter-vowel/",
+          "video": "https://www.youtube.com/embed/_63fTgbG-yQ?rel=0",
+          "title": "English: How to Pronounce UH as in BUTTER [ʌ] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%8c/",
+          "video": "https://www.youtube.com/embed/fodsh8GzOd8?rel=0",
+          "title": "ʌ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%8c/",
+          "video": "https://www.youtube.com/embed/cO1zCu58FMg?rel=0",
+          "title": "ʌ"
+        }
+      ]
+    },
+    {
+      "id": "ah",
+      "symbol": "ɑ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ɑ/",
+      "uk": "/ɑː/",
+      "name": "open back unrounded vowel",
+      "zh": "开后不圆唇元音",
+      "tip": "father 的元音；美式 car 还要接可听见的 R。",
+      "mouth": {
+        "jaw": "大幅张开",
+        "tongue": "低而靠后",
+        "lips": "自然不圆",
+        "voiced": true
+      },
+      "examples": [
+        "father",
+        "hot",
+        "car",
+        "box"
+      ],
+      "contrasts": [
+        "aw"
+      ],
+      "audio": "ah",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ah-vowel/",
+          "video": "https://www.youtube.com/embed/DEJGBC4xZzI?rel=0",
+          "title": "English: How to Pronounce [ɑ] AH Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/a-2/",
+          "video": "https://www.youtube.com/embed/iw9Pd6F-lmA?rel=0",
+          "title": "ɑ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/a-2/",
+          "video": "https://www.youtube.com/embed/kYQjdBGpkoY?rel=0",
+          "title": "ɑ"
+        }
+      ]
+    },
+    {
+      "id": "aw",
+      "symbol": "ɔ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ɔ/",
+      "uk": "/ɔː/",
+      "name": "open-mid back rounded vowel",
+      "zh": "半开后圆唇元音",
+      "tip": "law 一类词常见；部分美式口音把 /ɔ/ 与 /ɑ/ 合并。",
+      "mouth": {
+        "jaw": "中等张开",
+        "tongue": "后部中低位",
+        "lips": "收圆",
+        "voiced": true
+      },
+      "examples": [
+        "law",
+        "talk",
+        "caught",
+        "short"
+      ],
+      "contrasts": [
+        "ah"
+      ],
+      "audio": "aw",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-aw-vowel/",
+          "video": "https://www.youtube.com/embed/opMab62SybY?rel=0",
+          "title": "English: How to Pronounce AW [ɔ] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%94/",
+          "video": "https://www.youtube.com/embed/pvdHiXN9748?rel=0",
+          "title": "ɔ"
+        }
+      ]
+    },
+    {
+      "id": "uu_short",
+      "symbol": "ʊ",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/ʊ/",
+      "uk": "/ʊ/",
+      "name": "near-close near-back rounded vowel",
+      "zh": "次高后圆唇元音",
+      "tip": "book、foot 的元音，比 /u/ 更松。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "后部略抬、放松",
+        "lips": "轻微收圆",
+        "voiced": true
+      },
+      "examples": [
+        "book",
+        "foot",
+        "good",
+        "put"
+      ],
+      "contrasts": [
+        "oo"
+      ],
+      "audio": "uu_short",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-uh-push-vowel/",
+          "video": "https://www.youtube.com/embed/phlnzlzCPqE?rel=0",
+          "title": "English: How to Pronounce UH as in BOOK or PUSH [ʊ] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%8a/",
+          "video": "https://www.youtube.com/embed/vGsVnlevGnA?rel=0",
+          "title": "ʊ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%8a/",
+          "video": "https://www.youtube.com/embed/-LpFBfPPoc0?rel=0",
+          "title": "ʊ"
+        }
+      ]
+    },
+    {
+      "id": "oo",
+      "symbol": "u",
+      "category": "vowel",
+      "subtype": "monophthong",
+      "us": "/u/",
+      "uk": "/uː/",
+      "name": "close back rounded vowel",
+      "zh": "高后圆唇元音",
+      "tip": "food、fool 的元音；英式词典常标 /uː/。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "后部高抬",
+        "lips": "明显收圆",
+        "voiced": true
+      },
+      "examples": [
+        "food",
+        "fool",
+        "blue",
+        "moon"
+      ],
+      "contrasts": [
+        "uu_short"
+      ],
+      "audio": "oo",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-oo-vowel/",
+          "video": "https://www.youtube.com/embed/IwahymIkGJ0?rel=0",
+          "title": "English: How to Pronounce the OO [u] Vowel"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/u/",
+          "video": "https://www.youtube.com/embed/w4DRswZwzt0?rel=0",
+          "title": "u"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/u/",
+          "video": "https://www.youtube.com/embed/8t8ETr8IRjI?rel=0",
+          "title": "u"
+        }
+      ]
+    },
+    {
+      "id": "er",
+      "symbol": "ɝ",
+      "category": "vowel",
+      "subtype": "rhotic",
+      "us": "/ɝ/",
+      "uk": "/ɜː/",
+      "name": "stressed r-colored vowel",
+      "zh": "重读卷舌元音",
+      "tip": "bird、word 的重读元音带 R 色彩；英式非卷舌口音对应 /ɜː/。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌身后缩或舌尖略抬，不碰上颚",
+        "lips": "可轻微收圆",
+        "voiced": true
+      },
+      "examples": [
+        "bird",
+        "word",
+        "turn",
+        "her"
+      ],
+      "contrasts": [
+        "er_weak",
+        "uk_er"
+      ],
+      "audio": "er",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+          "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+          "title": "English: How to Pronounce [ɜ] UR Vowel"
+        }
+      ]
+    },
+    {
+      "id": "er_weak",
+      "symbol": "ɚ",
+      "category": "vowel",
+      "subtype": "rhotic",
+      "us": "/ɚ/",
+      "uk": "/ə/",
+      "name": "unstressed r-colored vowel",
+      "zh": "弱读卷舌元音",
+      "tip": "teacher 末尾的弱读 R。单独录音只示范卷舌音质；重读与弱读的差异要结合例词听。",
+      "mouth": {
+        "jaw": "放松微开",
+        "tongue": "居中并保持轻微 R 色彩",
+        "lips": "中性",
+        "voiced": true
+      },
+      "examples": [
+        "teacher",
+        "better",
+        "mother",
+        "doctor"
+      ],
+      "contrasts": [
+        "er",
+        "schwa"
+      ],
+      "audio": "er",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+          "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+          "title": "English: How to Pronounce [ɜ] UR Vowel"
+        }
+      ]
+    },
+    {
+      "id": "uk_o",
+      "symbol": "ɒ",
+      "category": "vowel",
+      "subtype": "uk-only",
+      "us": null,
+      "uk": "/ɒ/",
+      "name": "open back rounded vowel",
+      "zh": "英式开后圆唇元音",
+      "tip": "传统 RP 的 LOT 元音；美式 hot 多用 /ɑ/，不把 /ɒ/ 当作通用美式音位。",
+      "mouth": {
+        "jaw": "大幅张开",
+        "tongue": "低而靠后",
+        "lips": "轻微收圆",
+        "voiced": true
+      },
+      "examples": [
+        "hot",
+        "lot",
+        "dog",
+        "job"
+      ],
+      "contrasts": [
+        "ah"
+      ],
+      "audio": "uk_o",
+      "media": [
+        {
+          "kind": "真人口型参考",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ah-vowel/",
+          "video": "https://www.youtube.com/embed/DEJGBC4xZzI?rel=0",
+          "title": "美式 /ɑ/ 口型参考（英式 /ɒ/）"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%92/",
+          "video": "https://www.youtube.com/embed/j_8qYnyfEj4?rel=0",
+          "title": "ɒ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%92/",
+          "video": "https://www.youtube.com/embed/XkGIhq2P7GQ?rel=0",
+          "title": "ɒ"
+        }
+      ]
+    },
+    {
+      "id": "uk_er",
+      "symbol": "ɜː",
+      "category": "vowel",
+      "subtype": "uk-only",
+      "us": null,
+      "uk": "/ɜː/",
+      "name": "open-mid central unrounded vowel",
+      "zh": "英式重读央元音",
+      "tip": "英式 bird 不卷舌；与美式 /ɝ/ 对照。",
+      "mouth": {
+        "jaw": "中等微开",
+        "tongue": "居中",
+        "lips": "自然不圆",
+        "voiced": true
+      },
+      "examples": [
+        "bird",
+        "word",
+        "her",
+        "work"
+      ],
+      "contrasts": [
+        "er"
+      ],
+      "audio": "uk_er",
+      "media": [
+        {
+          "kind": "真人口型参考",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+          "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+          "title": "美式 R 色彩元音口型参考（英式 /ɜː/）"
+        }
+      ]
+    },
+    {
+      "id": "ay",
+      "symbol": "eɪ",
+      "category": "vowel",
+      "subtype": "diphthong",
+      "us": "/eɪ/",
+      "uk": "/eɪ/",
+      "name": "FACE diphthong",
+      "zh": "前元音滑向 /ɪ/",
+      "tip": "从中前元音滑向高前位置；录音是美式字母 A 的完整字母名。",
+      "mouth": {
+        "jaw": "由中开到微开",
+        "tongue": "前部逐渐抬高",
+        "lips": "自然展开",
+        "voiced": true
+      },
+      "examples": [
+        "day",
+        "name",
+        "rain",
+        "late"
+      ],
+      "contrasts": [
+        "eh"
+      ],
+      "audio": "ay",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ay-diphthong/",
+          "video": "https://www.youtube.com/embed/XOuD6mFr6sQ?rel=0",
+          "title": "English: How to Pronounce AY [eɪ] Diphthong"
+        }
+      ]
+    },
+    {
+      "id": "eye",
+      "symbol": "aɪ",
+      "category": "vowel",
+      "subtype": "diphthong",
+      "us": "/aɪ/",
+      "uk": "/aɪ/",
+      "name": "PRICE diphthong",
+      "zh": "开元音滑向 /ɪ/",
+      "tip": "从开口向前高位滑动；录音是美式字母 I 的完整字母名。",
+      "mouth": {
+        "jaw": "由大开逐渐收小",
+        "tongue": "从低位向前上方移动",
+        "lips": "自然展开",
+        "voiced": true
+      },
+      "examples": [
+        "time",
+        "my",
+        "right",
+        "five"
+      ],
+      "contrasts": [
+        "ay"
+      ],
+      "audio": "eye",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ai-diphthong/",
+          "video": "https://www.youtube.com/embed/rbQtAWNFy2I?rel=0",
+          "title": "English: How to Pronounce AI [aɪ] Diphthong"
+        }
+      ]
+    },
+    {
+      "id": "oy",
+      "symbol": "ɔɪ",
+      "category": "vowel",
+      "subtype": "diphthong",
+      "us": "/ɔɪ/",
+      "uk": "/ɔɪ/",
+      "name": "CHOICE diphthong",
+      "zh": "圆唇元音滑向 /ɪ/",
+      "tip": "从圆唇的 /ɔ/ 滑向前高位置；录音是独立感叹词 oi。",
+      "mouth": {
+        "jaw": "由中开逐渐收小",
+        "tongue": "从后向前上方移动",
+        "lips": "由圆到自然展开",
+        "voiced": true
+      },
+      "examples": [
+        "boy",
+        "toy",
+        "oil",
+        "voice"
+      ],
+      "contrasts": [
+        "ay"
+      ],
+      "audio": "oy",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-oy-diphthong/",
+          "video": "https://www.youtube.com/embed/3cdSvIuTxLY?rel=0",
+          "title": "English: How to Pronounce OY [ɔɪ] Diphthong"
+        }
+      ]
+    },
+    {
+      "id": "ow",
+      "symbol": "aʊ",
+      "category": "vowel",
+      "subtype": "diphthong",
+      "us": "/aʊ/",
+      "uk": "/aʊ/",
+      "name": "MOUTH diphthong",
+      "zh": "开元音滑向 /ʊ/",
+      "tip": "从大开口滑向收圆；本卡使用独立双元音录音。",
+      "mouth": {
+        "jaw": "由大开逐渐收小",
+        "tongue": "从低位向后上方移动",
+        "lips": "逐渐收圆",
+        "voiced": true
+      },
+      "examples": [
+        "now",
+        "house",
+        "cow",
+        "out"
+      ],
+      "contrasts": [
+        "oh"
+      ],
+      "audio": "ow",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ow-diphthong/",
+          "video": "https://www.youtube.com/embed/i8KThVR713Q?rel=0",
+          "title": "English: How to Pronounce OW [aʊ] Diphthong"
+        }
+      ]
+    },
+    {
+      "id": "oh",
+      "symbol": "oʊ",
+      "category": "vowel",
+      "subtype": "diphthong",
+      "us": "/oʊ/",
+      "uk": "/əʊ/",
+      "name": "GOAT diphthong",
+      "zh": "后元音滑向 /ʊ/",
+      "tip": "美式常写 /oʊ/，英式常写 /əʊ/；录音是美式字母 O 的完整字母名。",
+      "mouth": {
+        "jaw": "由中开逐渐收小",
+        "tongue": "后部逐渐抬高",
+        "lips": "逐渐收圆",
+        "voiced": true
+      },
+      "examples": [
+        "go",
+        "home",
+        "boat",
+        "show"
+      ],
+      "contrasts": [
+        "ow",
+        "uk_oh"
+      ],
+      "audio": "oh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-oh-diphthong/",
+          "video": "https://www.youtube.com/embed/Civ7UBZP99M?rel=0",
+          "title": "English: How to Pronounce OH [oʊ] Diphthong"
+        }
+      ]
+    },
+    {
+      "id": "uk_oh",
+      "symbol": "əʊ",
+      "category": "vowel",
+      "subtype": "uk-only",
+      "us": null,
+      "uk": "/əʊ/",
+      "name": "British GOAT diphthong",
+      "zh": "英式 GOAT 双元音",
+      "tip": "非卷舌英式常从中央位置起滑；录音是英式 oh。",
+      "mouth": {
+        "jaw": "由放松微开逐渐收小",
+        "tongue": "从中央向后上方移动",
+        "lips": "逐渐收圆",
+        "voiced": true
+      },
+      "examples": [
+        "go",
+        "home",
+        "no",
+        "boat"
+      ],
+      "contrasts": [
+        "oh"
+      ],
+      "audio": "uk_oh",
+      "media": [
+        {
+          "kind": "真人口型参考",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-oh-diphthong/",
+          "video": "https://www.youtube.com/embed/Civ7UBZP99M?rel=0",
+          "title": "美式 /oʊ/ 口型参考（英式 /əʊ/）"
+        }
+      ]
+    },
+    {
+      "id": "uk_ear",
+      "symbol": "ɪə",
+      "category": "vowel",
+      "subtype": "uk-only",
+      "us": null,
+      "uk": "/ɪə/",
+      "name": "British NEAR centering diphthong",
+      "zh": "英式 NEAR 向央双元音",
+      "tip": "传统非卷舌 RP 的写法；当代英音可能单元音化。录音是英式 ear。",
+      "mouth": {
+        "jaw": "由微开到放松",
+        "tongue": "由前高位移向中央",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "near",
+        "ear",
+        "here",
+        "beer"
+      ],
+      "contrasts": [
+        "uk_air"
+      ],
+      "audio": "uk_ear",
+      "media": [
+        {
+          "kind": "真人口型参考",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ai-diphthong/",
+          "video": "https://www.youtube.com/embed/rbQtAWNFy2I?rel=0",
+          "title": "前元音滑动口型参考（英式 /ɪə/）"
+        }
+      ]
+    },
+    {
+      "id": "uk_air",
+      "symbol": "ɛə",
+      "category": "vowel",
+      "subtype": "uk-only",
+      "us": null,
+      "uk": "/ɛə/",
+      "name": "British SQUARE centering diphthong",
+      "zh": "英式 SQUARE 向央双元音",
+      "tip": "传统非卷舌 RP 的宽式对照；当代英音也常单元音化。",
+      "mouth": {
+        "jaw": "由中开到放松",
+        "tongue": "由前中低位移向中央",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "air",
+        "hair",
+        "care",
+        "where"
+      ],
+      "contrasts": [
+        "uk_ear"
+      ],
+      "audio": "uk_air",
+      "media": [
+        {
+          "kind": "真人口型参考",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-eh-vowel/",
+          "video": "https://www.youtube.com/embed/xKxV8XfigaE?rel=0",
+          "title": "/ɛ/ 起始口型参考（英式 /ɛə/）"
+        }
+      ]
+    },
+    {
+      "id": "uk_ure",
+      "symbol": "ʊə",
+      "category": "vowel",
+      "subtype": "uk-only",
+      "us": null,
+      "uk": "/ʊə/",
+      "name": "British CURE centering diphthong",
+      "zh": "英式 CURE 向央双元音",
+      "tip": "传统 RP 的读法；许多现代英音将其并入 /ɔː/ 等，词典标注会不同。",
+      "mouth": {
+        "jaw": "由微开到放松",
+        "tongue": "由后高位移向中央",
+        "lips": "由微圆到自然",
+        "voiced": true
+      },
+      "examples": [
+        "pure",
+        "tour",
+        "cure",
+        "sure"
+      ],
+      "contrasts": [
+        "uu_short"
+      ],
+      "audio": "uk_ure",
+      "media": [
+        {
+          "kind": "真人口型参考",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ur-vowel/",
+          "video": "https://www.youtube.com/embed/Ehn6XixUBKs?rel=0",
+          "title": "央元音口型参考（英式 /ʊə/）"
+        }
+      ]
+    },
+    {
+      "id": "p",
+      "symbol": "p",
+      "category": "consonant",
+      "subtype": "stop",
+      "us": "/p/",
+      "uk": "/p/",
+      "name": "voiceless bilabial stop",
+      "zh": "清双唇塞音",
+      "tip": "双唇闭合后突然放开；词首重读时美英通常有送气。",
+      "mouth": {
+        "jaw": "闭合后打开",
+        "tongue": "放松",
+        "lips": "先紧闭再放开",
+        "voiced": false
+      },
+      "examples": [
+        "pen",
+        "pig",
+        "apple",
+        "cup"
+      ],
+      "contrasts": [
+        "b"
+      ],
+      "audio": "p",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-b-p-consonants/",
+          "video": "https://www.youtube.com/embed/JPUr5MgeDHM?rel=0",
+          "title": "English: How to Pronounce B [b] and P [p] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/p/",
+          "video": "https://www.youtube.com/embed/FmZuiFgNxN0?rel=0",
+          "title": "p"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/p/",
+          "video": "https://www.youtube.com/embed/LsAjJwC4JTQ?rel=0",
+          "title": "p"
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "symbol": "b",
+      "category": "consonant",
+      "subtype": "stop",
+      "us": "/b/",
+      "uk": "/b/",
+      "name": "voiced bilabial stop",
+      "zh": "浊双唇塞音",
+      "tip": "双唇闭合后放开，保持声带振动。",
+      "mouth": {
+        "jaw": "闭合后打开",
+        "tongue": "放松",
+        "lips": "先闭合再放开",
+        "voiced": true
+      },
+      "examples": [
+        "book",
+        "baby",
+        "job",
+        "big"
+      ],
+      "contrasts": [
+        "p"
+      ],
+      "audio": "b",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-b-p-consonants/",
+          "video": "https://www.youtube.com/embed/JPUr5MgeDHM?rel=0",
+          "title": "English: How to Pronounce B [b] and P [p] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/b/",
+          "video": "https://www.youtube.com/embed/z1aSaxaAiwY?rel=0",
+          "title": "b"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/b/",
+          "video": "https://www.youtube.com/embed/eSaT1Cg1FbU?rel=0",
+          "title": "b"
+        }
+      ]
+    },
+    {
+      "id": "t",
+      "symbol": "t",
+      "category": "consonant",
+      "subtype": "stop",
+      "us": "/t/",
+      "uk": "/t/",
+      "name": "voiceless alveolar stop",
+      "zh": "清齿龈塞音",
+      "tip": "词首练清晰 /t/；在美式 water 中可能变为 [ɾ]，那是语音变体。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖先抵上齿龈再放开",
+        "lips": "自然",
+        "voiced": false
+      },
+      "examples": [
+        "tea",
+        "time",
+        "top",
+        "water"
+      ],
+      "contrasts": [
+        "d"
+      ],
+      "audio": "t",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-t-d-consonants/",
+          "video": "https://www.youtube.com/embed/hGZ9GwrNWmU?rel=0",
+          "title": "How to Pronounce T [t] and D [d] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/t/",
+          "video": "https://www.youtube.com/embed/OYMoNkmlvt0?rel=0",
+          "title": "t"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/t/",
+          "video": "https://www.youtube.com/embed/rXVXKx3g0m8?rel=0",
+          "title": "t"
+        }
+      ]
+    },
+    {
+      "id": "d",
+      "symbol": "d",
+      "category": "consonant",
+      "subtype": "stop",
+      "us": "/d/",
+      "uk": "/d/",
+      "name": "voiced alveolar stop",
+      "zh": "浊齿龈塞音",
+      "tip": "舌尖动作与 /t/ 相近，声带振动。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖先抵上齿龈再放开",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "dog",
+        "day",
+        "red",
+        "bed"
+      ],
+      "contrasts": [
+        "t"
+      ],
+      "audio": "d",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-t-d-consonants/",
+          "video": "https://www.youtube.com/embed/hGZ9GwrNWmU?rel=0",
+          "title": "How to Pronounce T [t] and D [d] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/d/",
+          "video": "https://www.youtube.com/embed/EMHlfRwD03I?rel=0",
+          "title": "d"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/d/",
+          "video": "https://www.youtube.com/embed/uPoK7ZJ4z9o?rel=0",
+          "title": "d"
+        }
+      ]
+    },
+    {
+      "id": "k",
+      "symbol": "k",
+      "category": "consonant",
+      "subtype": "stop",
+      "us": "/k/",
+      "uk": "/k/",
+      "name": "voiceless velar stop",
+      "zh": "清软腭塞音",
+      "tip": "舌后部先封住气流再放开；词首重读通常送气。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "后部抵软腭再放开",
+        "lips": "自然",
+        "voiced": false
+      },
+      "examples": [
+        "cat",
+        "keep",
+        "school",
+        "back"
+      ],
+      "contrasts": [
+        "g"
+      ],
+      "audio": "k",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-g-k-consonants/",
+          "video": "https://www.youtube.com/embed/O_NisgL1dvY?rel=0",
+          "title": "English: How to Pronounce G [g] and K [k] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/k/",
+          "video": "https://www.youtube.com/embed/yRYEoQGT2s4?rel=0",
+          "title": "k"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/k/",
+          "video": "https://www.youtube.com/embed/zz8C5lyE1N4?rel=0",
+          "title": "k"
+        }
+      ]
+    },
+    {
+      "id": "g",
+      "symbol": "ɡ",
+      "category": "consonant",
+      "subtype": "stop",
+      "us": "/ɡ/",
+      "uk": "/ɡ/",
+      "name": "voiced velar stop",
+      "zh": "浊软腭塞音",
+      "tip": "与 /k/ 口型相近，声带振动；IPA 字符是单层 ɡ。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "后部抵软腭再放开",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "go",
+        "girl",
+        "egg",
+        "bag"
+      ],
+      "contrasts": [
+        "k"
+      ],
+      "audio": "g",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-g-k-consonants/",
+          "video": "https://www.youtube.com/embed/O_NisgL1dvY?rel=0",
+          "title": "English: How to Pronounce G [g] and K [k] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%a1/",
+          "video": "https://www.youtube.com/embed/eBrKWhD-3Lw?rel=0",
+          "title": "ɡ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%a1/",
+          "video": "https://www.youtube.com/embed/AAHHcPGgOrQ?rel=0",
+          "title": "ɡ"
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "symbol": "f",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/f/",
+      "uk": "/f/",
+      "name": "voiceless labiodental fricative",
+      "zh": "清唇齿擦音",
+      "tip": "上齿轻触下唇，持续送气。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "放松",
+        "lips": "下唇轻触上齿",
+        "voiced": false
+      },
+      "examples": [
+        "fish",
+        "five",
+        "photo",
+        "laugh"
+      ],
+      "contrasts": [
+        "v"
+      ],
+      "audio": "f",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-f-v-consonants/",
+          "video": "https://www.youtube.com/embed/nR-K3mrHFv0?rel=0",
+          "title": "English: How to Pronounce F [f] and V [v] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/f/",
+          "video": "https://www.youtube.com/embed/IQ5cNkjeh_M?rel=0",
+          "title": "f"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/f/",
+          "video": "https://www.youtube.com/embed/Ul_xASeqFKU?rel=0",
+          "title": "f"
+        }
+      ]
+    },
+    {
+      "id": "v",
+      "symbol": "v",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/v/",
+      "uk": "/v/",
+      "name": "voiced labiodental fricative",
+      "zh": "浊唇齿擦音",
+      "tip": "保持唇齿接触和声带振动；不要读成 /w/。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "放松",
+        "lips": "下唇轻触上齿",
+        "voiced": true
+      },
+      "examples": [
+        "very",
+        "vine",
+        "five",
+        "love"
+      ],
+      "contrasts": [
+        "f",
+        "w"
+      ],
+      "audio": "v",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-f-v-consonants/",
+          "video": "https://www.youtube.com/embed/nR-K3mrHFv0?rel=0",
+          "title": "English: How to Pronounce F [f] and V [v] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/v/",
+          "video": "https://www.youtube.com/embed/DoLrlLB82Vw?rel=0",
+          "title": "v"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/v/",
+          "video": "https://www.youtube.com/embed/jZD6SX49xr8?rel=0",
+          "title": "v"
+        }
+      ]
+    },
+    {
+      "id": "th",
+      "symbol": "θ",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/θ/",
+      "uk": "/θ/",
+      "name": "voiceless dental fricative",
+      "zh": "清齿擦音",
+      "tip": "舌尖轻触或略伸到上下牙之间，让气流通过；thin 不等于 sin。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖靠近上齿边缘",
+        "lips": "自然",
+        "voiced": false
+      },
+      "examples": [
+        "think",
+        "thin",
+        "three",
+        "bath"
+      ],
+      "contrasts": [
+        "s",
+        "dh"
+      ],
+      "audio": "th",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-th-consonants/",
+          "video": "https://www.youtube.com/embed/nlKNo1TGALA?rel=0",
+          "title": "English: How to Pronounce TH Consonants [θ] + [ð]"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ce%b8/",
+          "video": "https://www.youtube.com/embed/ARP1NkLXy4A?rel=0",
+          "title": "θ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ce%b8/",
+          "video": "https://www.youtube.com/embed/r3_P_GiwPIw?rel=0",
+          "title": "θ"
+        }
+      ]
+    },
+    {
+      "id": "dh",
+      "symbol": "ð",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/ð/",
+      "uk": "/ð/",
+      "name": "voiced dental fricative",
+      "zh": "浊齿擦音",
+      "tip": "与 /θ/ 舌位相近，但声带振动；then 与 thin 不同。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖靠近上齿边缘",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "this",
+        "then",
+        "that",
+        "mother"
+      ],
+      "contrasts": [
+        "th",
+        "z"
+      ],
+      "audio": "dh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-th-consonants/",
+          "video": "https://www.youtube.com/embed/nlKNo1TGALA?rel=0",
+          "title": "English: How to Pronounce TH Consonants [θ] + [ð]"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/d-2/",
+          "video": "https://www.youtube.com/embed/hvibX5Vvc1A?rel=0",
+          "title": "ð"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/d-2/",
+          "video": "https://www.youtube.com/embed/JgSdjlQG9j0?rel=0",
+          "title": "ð"
+        }
+      ]
+    },
+    {
+      "id": "s",
+      "symbol": "s",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/s/",
+      "uk": "/s/",
+      "name": "voiceless alveolar fricative",
+      "zh": "清齿龈擦音",
+      "tip": "舌尖在上齿龈后，不伸到齿间；与 /θ/ 比较。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "靠近上齿龈形成窄缝",
+        "lips": "自然",
+        "voiced": false
+      },
+      "examples": [
+        "sun",
+        "sin",
+        "see",
+        "glass"
+      ],
+      "contrasts": [
+        "z",
+        "th"
+      ],
+      "audio": "s",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-s-z-consonants/",
+          "video": "https://www.youtube.com/embed/xl-7mSeybmI?rel=0",
+          "title": "English: How to Pronounce S [s] and Z [z] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/s/",
+          "video": "https://www.youtube.com/embed/fRx0jZ0VHSY?rel=0",
+          "title": "s"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/s/",
+          "video": "https://www.youtube.com/embed/E36bWS7Egag?rel=0",
+          "title": "s"
+        }
+      ]
+    },
+    {
+      "id": "z",
+      "symbol": "z",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/z/",
+      "uk": "/z/",
+      "name": "voiced alveolar fricative",
+      "zh": "浊齿龈擦音",
+      "tip": "与 /s/ 舌位相近，声带振动。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "靠近上齿龈形成窄缝",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "zoo",
+        "zero",
+        "is",
+        "buzz"
+      ],
+      "contrasts": [
+        "s",
+        "dh"
+      ],
+      "audio": "z",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-s-z-consonants/",
+          "video": "https://www.youtube.com/embed/xl-7mSeybmI?rel=0",
+          "title": "English: How to Pronounce S [s] and Z [z] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/z/",
+          "video": "https://www.youtube.com/embed/vBrNM8M3D3A?rel=0",
+          "title": "z"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/z/",
+          "video": "https://www.youtube.com/embed/LVlj-4lIGWM?rel=0",
+          "title": "z"
+        }
+      ]
+    },
+    {
+      "id": "sh",
+      "symbol": "ʃ",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/ʃ/",
+      "uk": "/ʃ/",
+      "name": "voiceless postalveolar fricative",
+      "zh": "清龈后擦音",
+      "tip": "舌面在齿龈后方，嘴唇轻微前突。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "前部靠近齿龈后方",
+        "lips": "略微前突",
+        "voiced": false
+      },
+      "examples": [
+        "ship",
+        "she",
+        "fish",
+        "wash"
+      ],
+      "contrasts": [
+        "zh",
+        "s"
+      ],
+      "audio": "sh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-sh-zh-consonants/",
+          "video": "https://www.youtube.com/embed/RxaLKZPPEvY?rel=0",
+          "title": "English: How to Pronounce SH [ʃ] and ZH [ʒ] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%83/",
+          "video": "https://www.youtube.com/embed/KrHn_EOOyQ4?rel=0",
+          "title": "ʃ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%83/",
+          "video": "https://www.youtube.com/embed/ODgrwg5UkfA?rel=0",
+          "title": "ʃ"
+        }
+      ]
+    },
+    {
+      "id": "zh",
+      "symbol": "ʒ",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/ʒ/",
+      "uk": "/ʒ/",
+      "name": "voiced postalveolar fricative",
+      "zh": "浊龈后擦音",
+      "tip": "与 /ʃ/ 口型接近，声带振动。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "前部靠近齿龈后方",
+        "lips": "略微前突",
+        "voiced": true
+      },
+      "examples": [
+        "vision",
+        "measure",
+        "pleasure",
+        "usual"
+      ],
+      "contrasts": [
+        "sh"
+      ],
+      "audio": "zh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-sh-zh-consonants/",
+          "video": "https://www.youtube.com/embed/RxaLKZPPEvY?rel=0",
+          "title": "English: How to Pronounce SH [ʃ] and ZH [ʒ] Consonants"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%92/",
+          "video": "https://www.youtube.com/embed/1RwR15ZnNLg?rel=0",
+          "title": "ʒ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%ca%92/",
+          "video": "https://www.youtube.com/embed/hszmG-KPPBY?rel=0",
+          "title": "ʒ"
+        }
+      ]
+    },
+    {
+      "id": "h",
+      "symbol": "h",
+      "category": "consonant",
+      "subtype": "fricative",
+      "us": "/h/",
+      "uk": "/h/",
+      "name": "voiceless glottal fricative",
+      "zh": "清声门擦音",
+      "tip": "轻轻呼气进入后面的元音，不加中文“喝”的尾音。",
+      "mouth": {
+        "jaw": "随下一个元音变化",
+        "tongue": "随下一个元音变化",
+        "lips": "随下一个元音变化",
+        "voiced": false
+      },
+      "examples": [
+        "hat",
+        "home",
+        "hello",
+        "hot"
+      ],
+      "contrasts": [],
+      "audio": "h",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-h-consonant/",
+          "video": "https://www.youtube.com/embed/uOG-4ZjR7ic?rel=0",
+          "title": "English: How to Pronounce the H [h] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/h-2/",
+          "video": "https://www.youtube.com/embed/Y69qYCF6KII?rel=0",
+          "title": "h"
+        }
+      ]
+    },
+    {
+      "id": "ch",
+      "symbol": "tʃ",
+      "category": "consonant",
+      "subtype": "affricate",
+      "us": "/tʃ/",
+      "uk": "/tʃ/",
+      "name": "voiceless postalveolar affricate",
+      "zh": "清龈后塞擦音",
+      "tip": "先短暂封住气流，再以 /ʃ/ 的位置放开。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "先抵齿龈后方再放开",
+        "lips": "略微前突",
+        "voiced": false
+      },
+      "examples": [
+        "chair",
+        "church",
+        "watch",
+        "teacher"
+      ],
+      "contrasts": [
+        "jh"
+      ],
+      "audio": "ch",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ch-jj-sounds/",
+          "video": "https://www.youtube.com/embed/aqHebuRjO0k?rel=0",
+          "title": "English: How to Pronounce CH [ʧ] and JJ [ʤ] Sounds"
+        }
+      ]
+    },
+    {
+      "id": "jh",
+      "symbol": "dʒ",
+      "category": "consonant",
+      "subtype": "affricate",
+      "us": "/dʒ/",
+      "uk": "/dʒ/",
+      "name": "voiced postalveolar affricate",
+      "zh": "浊龈后塞擦音",
+      "tip": "动作与 /tʃ/ 相近，声带振动。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "先抵齿龈后方再放开",
+        "lips": "略微前突",
+        "voiced": true
+      },
+      "examples": [
+        "job",
+        "jump",
+        "bridge",
+        "orange"
+      ],
+      "contrasts": [
+        "ch"
+      ],
+      "audio": "jh",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ch-jj-sounds/",
+          "video": "https://www.youtube.com/embed/aqHebuRjO0k?rel=0",
+          "title": "English: How to Pronounce CH [ʧ] and JJ [ʤ] Sounds"
+        }
+      ]
+    },
+    {
+      "id": "m",
+      "symbol": "m",
+      "category": "consonant",
+      "subtype": "nasal",
+      "us": "/m/",
+      "uk": "/m/",
+      "name": "voiced bilabial nasal",
+      "zh": "双唇鼻音",
+      "tip": "闭双唇，气流从鼻腔通过。",
+      "mouth": {
+        "jaw": "双唇闭合",
+        "tongue": "放松",
+        "lips": "闭合",
+        "voiced": true
+      },
+      "examples": [
+        "man",
+        "milk",
+        "mother",
+        "home"
+      ],
+      "contrasts": [
+        "n"
+      ],
+      "audio": "m",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-m-consonant/",
+          "video": "https://www.youtube.com/embed/CoEh8cz-mS4?rel=0",
+          "title": "English: How to Pronounce M [m] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/m/",
+          "video": "https://www.youtube.com/embed/8XLsMyqjq2k?rel=0",
+          "title": "m"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/m/",
+          "video": "https://www.youtube.com/embed/jzXsgd8UpKw?rel=0",
+          "title": "m"
+        }
+      ]
+    },
+    {
+      "id": "n",
+      "symbol": "n",
+      "category": "consonant",
+      "subtype": "nasal",
+      "us": "/n/",
+      "uk": "/n/",
+      "name": "voiced alveolar nasal",
+      "zh": "齿龈鼻音",
+      "tip": "舌尖抵上齿龈，气流从鼻腔通过。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖抵上齿龈",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "name",
+        "no",
+        "ten",
+        "sun"
+      ],
+      "contrasts": [
+        "m",
+        "ng"
+      ],
+      "audio": "n",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-n-consonant/",
+          "video": "https://www.youtube.com/embed/HeMzjC672OA?rel=0",
+          "title": "English: How to Pronounce N [n] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/n/",
+          "video": "https://www.youtube.com/embed/L6C4Dl6dvG4?rel=0",
+          "title": "n"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/n/",
+          "video": "https://www.youtube.com/embed/XZGzoAubnKc?rel=0",
+          "title": "n"
+        }
+      ]
+    },
+    {
+      "id": "ng",
+      "symbol": "ŋ",
+      "category": "consonant",
+      "subtype": "nasal",
+      "us": "/ŋ/",
+      "uk": "/ŋ/",
+      "name": "voiced velar nasal",
+      "zh": "软腭鼻音",
+      "tip": "舌后部抵软腭；sing 词尾不额外加 /ɡ/。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "后部抵软腭",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "sing",
+        "long",
+        "king",
+        "morning"
+      ],
+      "contrasts": [
+        "n"
+      ],
+      "audio": "ng",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-ng-consonant/",
+          "video": "https://www.youtube.com/embed/6ESY7ueSfrc?rel=0",
+          "title": "English: How to Pronounce NG [ŋ] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/n-2/",
+          "video": "https://www.youtube.com/embed/7Y0Yqlkw5Dg?rel=0",
+          "title": "ŋ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/n-2/",
+          "video": "https://www.youtube.com/embed/BARV73Q4Yk0?rel=0",
+          "title": "ŋ"
+        }
+      ]
+    },
+    {
+      "id": "l",
+      "symbol": "l",
+      "category": "consonant",
+      "subtype": "approximant",
+      "us": "/l/",
+      "uk": "/l/",
+      "name": "voiced alveolar lateral approximant",
+      "zh": "齿龈边近音",
+      "tip": "舌尖碰上齿龈，气流从两侧通过；词尾常听到较暗的 [ɫ]。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖抵上齿龈，侧面留气流",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "like",
+        "light",
+        "feel",
+        "milk"
+      ],
+      "contrasts": [
+        "r"
+      ],
+      "audio": "l",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-l-consonant/",
+          "video": "https://www.youtube.com/embed/FP0jHNoFqWo?rel=0",
+          "title": "English: How to Pronounce L [l] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/l/",
+          "video": "https://www.youtube.com/embed/8QixCkIlrKQ?rel=0",
+          "title": "l"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/l/",
+          "video": "https://www.youtube.com/embed/71gB09o-BWE?rel=0",
+          "title": "l"
+        }
+      ]
+    },
+    {
+      "id": "r",
+      "symbol": "ɹ",
+      "category": "consonant",
+      "subtype": "approximant",
+      "us": "/ɹ/",
+      "uk": "/ɹ/",
+      "name": "voiced alveolar approximant",
+      "zh": "齿龈近音 / 美式 R",
+      "tip": "舌尖抬起或舌身后缩，但不碰上颚；美式词尾 R 也要保留。词典常简写 /r/。",
+      "mouth": {
+        "jaw": "微开",
+        "tongue": "舌尖略抬或舌身后缩，不接触上颚",
+        "lips": "可轻微收圆",
+        "voiced": true
+      },
+      "examples": [
+        "red",
+        "right",
+        "car",
+        "word"
+      ],
+      "contrasts": [
+        "l"
+      ],
+      "audio": "r",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-r-consonant/",
+          "video": "https://www.youtube.com/embed/G_OQjKLvt0E?rel=0",
+          "title": "English: How to Pronounce R [ɹ] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%b9/",
+          "video": "https://www.youtube.com/embed/PknUH79aWFI?rel=0",
+          "title": "ɹ"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/%c9%b9/",
+          "video": "https://www.youtube.com/embed/grSPvjex5qg?rel=0",
+          "title": "ɹ"
+        }
+      ]
+    },
+    {
+      "id": "y",
+      "symbol": "j",
+      "category": "consonant",
+      "subtype": "approximant",
+      "us": "/j/",
+      "uk": "/j/",
+      "name": "voiced palatal approximant",
+      "zh": "硬腭近音",
+      "tip": "从接近 /i/ 的位置快速滑向下一个元音；yes 的首音。",
+      "mouth": {
+        "jaw": "随下一个元音打开",
+        "tongue": "前部抬向硬腭但不接触",
+        "lips": "自然",
+        "voiced": true
+      },
+      "examples": [
+        "yes",
+        "you",
+        "young",
+        "use"
+      ],
+      "contrasts": [
+        "w"
+      ],
+      "audio": "y",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/english-pronounce-y-consonant/",
+          "video": "https://www.youtube.com/embed/1Yo4BHIIBP8?rel=0",
+          "title": "English: How to Pronounce the Y [j] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/j/",
+          "video": "https://www.youtube.com/embed/oX1WsapOe08?rel=0",
+          "title": "j"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/j/",
+          "video": "https://www.youtube.com/embed/1NIzlLY_rYE?rel=0",
+          "title": "j"
+        }
+      ]
+    },
+    {
+      "id": "w",
+      "symbol": "w",
+      "category": "consonant",
+      "subtype": "approximant",
+      "us": "/w/",
+      "uk": "/w/",
+      "name": "voiced labial-velar approximant",
+      "zh": "唇软腭近音",
+      "tip": "双唇收圆，舌后部上抬，然后快速进入下一个元音；与 /v/ 区分。",
+      "mouth": {
+        "jaw": "随下一个元音打开",
+        "tongue": "后部上抬但不封闭",
+        "lips": "先收圆再放松",
+        "voiced": true
+      },
+      "examples": [
+        "we",
+        "water",
+        "west",
+        "window"
+      ],
+      "contrasts": [
+        "v",
+        "y"
+      ],
+      "audio": "w",
+      "media": [
+        {
+          "kind": "真人口型",
+          "provider": "Rachel's English",
+          "url": "https://rachelsenglish.com/pronounce-w-consonant/",
+          "video": "https://www.youtube.com/embed/RW94L6606DE?rel=0",
+          "title": "How to Pronounce the W [w] Consonant"
+        },
+        {
+          "kind": "舌位/口腔动画",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/w/",
+          "video": "https://www.youtube.com/embed/IUNdjUiqNRk?rel=0",
+          "title": "w"
+        },
+        {
+          "kind": "超声或动作示范",
+          "provider": "UBC eNunciate",
+          "url": "https://enunciate.arts.ubc.ca/w/",
+          "video": "https://www.youtube.com/embed/8t8ETr8IRjI?rel=0",
+          "title": "w"
+        }
+      ]
+    }
+  ],
+  "americanFeatures": [
+    {
+      "id": "rhotic-r",
+      "title": "American R · 卷舌 R",
+      "notation": "/ɹ/, /ɝ/, /ɚ/",
+      "summary": "General American 是卷舌口音：元音后的 R 通常仍发出。英式非卷舌口音在 car、bird 等词里不读同样的 R。",
+      "practice": "先听 red，再听 car 和 bird；保持舌头不接触上颚，比较英美发音。",
+      "words": [
+        "red",
+        "right",
+        "car",
+        "word",
+        "world"
+      ]
+    },
+    {
+      "id": "flap-t",
+      "title": "Flap T · 齿龈闪音",
+      "notation": "/t/ → [ɾ]",
+      "summary": "在常见的非重读元音之间，美式 /t/ 常实现为一次很快的齿龈拍击 [ɾ]；某些 /d/ 也会这样读。[ɾ] 是语音变体，不是额外音位。",
+      "practice": "听 water、better、city、pretty 的整词节奏；不要把近似拼写“wadder”当成 IPA。",
+      "words": [
+        "water",
+        "better",
+        "city",
+        "pretty"
+      ]
+    },
+    {
+      "id": "dark-l",
+      "title": "Dark L · 词尾暗 L",
+      "notation": "/l/ → [ɫ]",
+      "summary": "音节尾部的 /l/ 常带舌后部抬起的暗色彩，词首 light 的 /l/ 通常更亮。[ɫ] 是 /l/ 的常见实现。",
+      "practice": "对比 light 和 feel，保持舌尖动作，不把词尾 L 吞掉。",
+      "words": [
+        "light",
+        "feel",
+        "milk",
+        "people"
+      ]
+    },
+    {
+      "id": "schwa-feature",
+      "title": "Schwa · 弱读中央元音",
+      "notation": "/ə/",
+      "summary": "非重读音节常弱化为 /ə/；重音位置比每个字母都读得响更重要。",
+      "practice": "把 about、banana、support 的重读音节说清，其余音节读轻。",
+      "words": [
+        "about",
+        "banana",
+        "support"
+      ]
+    },
+    {
+      "id": "reductions",
+      "title": "Reduced vowels · 功能词弱读",
+      "notation": "to /tə/, for /fɚ/, and /ən/, of /əv/",
+      "summary": "在自然语流中，to、for、and、of 常出现弱读；单独强调时会恢复较完整的读法。",
+      "practice": "先慢读单词，再读 to go、for you、bread and butter、a cup of tea。",
+      "words": [
+        "to",
+        "for",
+        "and",
+        "of"
+      ]
+    },
+    {
+      "id": "linking",
+      "title": "Linking · 连读",
+      "notation": "pick it up · turn it off",
+      "summary": "英语语流里词尾辅音与下一个词首元音自然衔接；拼写边界仍在，音节边界会重新组织。",
+      "practice": "先逐词读，再连成 pick it up 和 turn it off，不额外添加元音。",
+      "words": [
+        "pick it up",
+        "turn it off"
+      ]
+    },
+    {
+      "id": "r-colored",
+      "title": "R-colored vowels · 卷舌元音",
+      "notation": "/ɝ/ · /ɚ/",
+      "summary": "/ɝ/ 常在重读音节，如 bird、word；/ɚ/ 常在弱读音节，如 teacher、better。两者的 R 色彩相近，重音和时长依词而变。",
+      "practice": "交替听 bird 与 teacher；先模仿卷舌音质，再模仿重读和弱读节奏。",
+      "words": [
+        "bird",
+        "word",
+        "teacher",
+        "better"
+      ]
+    }
+  ],
+  "minimalPairs": [
+    {
+      "left": "ship",
+      "right": "sheep",
+      "focus": "/ɪ/ · /i/",
+      "note": "sheep 舌位更高，元音更紧。"
+    },
+    {
+      "left": "bit",
+      "right": "beat",
+      "focus": "/ɪ/ · /i/",
+      "note": "beat 不只是把 bit 拉长，元音音质也不同。"
+    },
+    {
+      "left": "bad",
+      "right": "bed",
+      "focus": "/æ/ · /ɛ/",
+      "note": "bad 的嘴张得更大。"
+    },
+    {
+      "left": "man",
+      "right": "men",
+      "focus": "/æ/ · /ɛ/",
+      "note": "man 的舌位更低。"
+    },
+    {
+      "left": "full",
+      "right": "fool",
+      "focus": "/ʊ/ · /u/",
+      "note": "fool 的后元音更紧，嘴唇更圆。"
+    },
+    {
+      "left": "thin",
+      "right": "sin",
+      "focus": "/θ/ · /s/",
+      "note": "thin 的舌尖在齿边，sin 在齿龈后。"
+    },
+    {
+      "left": "then",
+      "right": "den",
+      "focus": "/ð/ · /d/",
+      "note": "then 是持续摩擦，den 是短暂封闭再放开。"
+    },
+    {
+      "left": "rice",
+      "right": "lice",
+      "focus": "/ɹ/ · /l/",
+      "note": "rice 的舌尖不碰上齿龈。"
+    },
+    {
+      "left": "vest",
+      "right": "west",
+      "focus": "/v/ · /w/",
+      "note": "vest 用上齿与下唇，west 双唇收圆。"
+    },
+    {
+      "left": "fan",
+      "right": "van",
+      "focus": "/f/ · /v/",
+      "note": "van 的声带振动。"
+    },
+    {
+      "left": "cot",
+      "right": "caught",
+      "focus": "/ɑ/ · /ɔ/",
+      "note": "部分美式口音两词同音；听不出区别时不算错误。",
+      "variable": true
+    }
+  ]
+}

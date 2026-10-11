@@ -1,0 +1,650 @@
+[
+  {
+    "id": "foundation-human-01",
+    "utterances": [
+      "8297-275156-0000"
+    ],
+    "title": "询问正在做什么",
+    "model": "What are you doing here?",
+    "translation": "你在这里做什么？",
+    "phrase": "what are you doing",
+    "meaning": "你正在做什么",
+    "transfer": "用 What are you doing …? 问朋友当前在做什么。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "询问当前动作",
+        "wrong": [
+          "询问职业",
+          "询问明天计划"
+        ],
+        "quote": "what are you doing here he asked",
+        "explanation": "你在这里做什么？"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-02",
+    "utterances": [
+      "6345-93306-0005"
+    ],
+    "title": "描述一个位置",
+    "model": "There is a seat in the garden.",
+    "translation": "花园里有一个座位。",
+    "phrase": "at the side of",
+    "meaning": "在……一侧",
+    "transfer": "用 There is … 描述你家附近一个设施。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "花园里",
+        "wrong": [
+          "商店里",
+          "公交车上"
+        ],
+        "quote": "there is a seat in the garden at the side of the house again she hesitated",
+        "explanation": "花园里有一个座位。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-03",
+    "utterances": [
+      "1272-135031-0008"
+    ],
+    "title": "表达关心",
+    "model": "I hope he does not work too hard.",
+    "translation": "我希望他不要工作得太辛苦。",
+    "phrase": "work too hard",
+    "meaning": "工作太辛苦",
+    "transfer": "用 I hope … 说一句关心朋友的话。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "希望对方不要太辛苦",
+        "wrong": [
+          "要求对方加班",
+          "询问工作地址"
+        ],
+        "quote": "i hope he doesn't work too hard said shaggy",
+        "explanation": "我希望他不要工作得太辛苦。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-04",
+    "utterances": [
+      "1462-170142-0003"
+    ],
+    "title": "进入一个房间",
+    "model": "The room was empty when he entered.",
+    "translation": "他进去时房间是空的。",
+    "phrase": "when he entered",
+    "meaning": "当他进去时",
+    "transfer": "用 The room was … when … 描述昨天见到的地方。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "房间是空的",
+        "wrong": [
+          "房间很拥挤",
+          "房间在装修"
+        ],
+        "quote": "the room was empty when he entered",
+        "explanation": "他进去时房间是空的。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-05",
+    "utterances": [
+      "6313-66129-0007"
+    ],
+    "title": "说出自己的感受",
+    "model": "I am hungry too.",
+    "translation": "我也饿了。",
+    "phrase": "I am hungry",
+    "meaning": "我饿了",
+    "transfer": "用 I am … too 回应朋友的感受。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "饿了",
+        "wrong": [
+          "冷了",
+          "困了"
+        ],
+        "quote": "i am free to admit that i am hungry too",
+        "explanation": "我也饿了。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-06",
+    "utterances": [
+      "6313-66129-0000"
+    ],
+    "title": "预测会带什么",
+    "model": "He would bring food of some kind.",
+    "translation": "他会带一些食物。",
+    "phrase": "bring food",
+    "meaning": "带食物",
+    "transfer": "用 I will bring … 为野餐提出一个建议。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "食物",
+        "wrong": [
+          "衣服",
+          "书本"
+        ],
+        "quote": "he no doubt would bring food of some kind with him",
+        "explanation": "他会带一些食物。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-07",
+    "utterances": [
+      "2428-83699-0011"
+    ],
+    "title": "听懂天气",
+    "model": "All night it had been blowing and raining.",
+    "translation": "整个夜晚都在刮风下雨。",
+    "phrase": "all night",
+    "meaning": "整个夜晚",
+    "transfer": "用 It was … last night 描述昨晚的天气。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "整晚刮风下雨",
+        "wrong": [
+          "整晚晴朗",
+          "只在早上下雨"
+        ],
+        "quote": "all night it had been blowing and raining",
+        "explanation": "整个夜晚都在刮风下雨。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-08",
+    "utterances": [
+      "2428-83699-0024"
+    ],
+    "title": "多个感受",
+    "model": "I was wet, tired and hungry.",
+    "translation": "我淋湿了，又累又饿。",
+    "phrase": "tired and hungry",
+    "meaning": "又累又饿",
+    "transfer": "用 I was … after … 描述一次外出后的感受。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "又累又饿，而且湿了",
+        "wrong": [
+          "干燥而温暖",
+          "只有口渴"
+        ],
+        "quote": "i was chilled to the bone wet tired hungry",
+        "explanation": "我淋湿了，又累又饿。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-09",
+    "utterances": [
+      "1988-24833-0021"
+    ],
+    "title": "朋友第一次来访",
+    "model": "It is the first time Hilda has been to our house.",
+    "translation": "这是Hilda第一次来我们家。",
+    "phrase": "the first time",
+    "meaning": "第一次",
+    "transfer": "用 This is my first time … 说明一个新经历。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "第一次来访",
+        "wrong": [
+          "每天来访",
+          "不愿意来访"
+        ],
+        "quote": "it's the first time hilda has been to our house and tom introduces her around",
+        "explanation": "这是Hilda第一次来我们家。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-10",
+    "utterances": [
+      "3081-166546-0003"
+    ],
+    "title": "介绍家人",
+    "model": "The lady is their aunt, not their mother.",
+    "translation": "这位女士是他们的姑姑或姨妈，不是妈妈。",
+    "phrase": "their aunt",
+    "meaning": "他们的姑姑或姨妈",
+    "transfer": "介绍自己的两位家人和彼此关系。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "姑姑或姨妈",
+        "wrong": [
+          "妈妈",
+          "姐妹"
+        ],
+        "quote": "the lady is not the mother of the boys but their aunt",
+        "explanation": "这位女士是他们的姑姑或姨妈，不是妈妈。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-11",
+    "utterances": [
+      "2035-147960-0011"
+    ],
+    "title": "两种交通方式",
+    "model": "Antonia should ride home and I would walk.",
+    "translation": "Antonia骑着回家，而我会走路。",
+    "phrase": "I would walk",
+    "meaning": "我会走路",
+    "transfer": "说清你和朋友如何回家，使用 and 连接。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "叙述者走路回家",
+        "wrong": [
+          "叙述者也骑着回家",
+          "叙述者乘火车"
+        ],
+        "quote": "we decided that antonia should ride dude home and i would walk",
+        "explanation": "Antonia骑着回家，而我会走路。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-12",
+    "utterances": [
+      "2277-149874-0013"
+    ],
+    "title": "判断距离",
+    "model": "You could get home easily; it is not very far.",
+    "translation": "你可以很容易回家，距离并不远。",
+    "phrase": "not very far",
+    "meaning": "并不远",
+    "transfer": "用 … is not very far from … 描述两处地点。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "家并不远",
+        "wrong": [
+          "家非常远",
+          "无法回家"
+        ],
+        "quote": "you could get home easy too it isn't very far",
+        "explanation": "你可以很容易回家，距离并不远。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-13",
+    "utterances": [
+      "6345-93306-0008"
+    ],
+    "title": "主动提供帮助",
+    "model": "Perhaps I can help you.",
+    "translation": "也许我可以帮助你。",
+    "phrase": "I can help you",
+    "meaning": "我可以帮助你",
+    "transfer": "用 Perhaps I can … 向遇到困难的人提供帮助。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "主动提供帮助",
+        "wrong": [
+          "拒绝帮助",
+          "要求先离开"
+        ],
+        "quote": "do drink this and then tell me perhaps i can help you",
+        "explanation": "也许我可以帮助你。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-14",
+    "utterances": [
+      "251-137823-0017"
+    ],
+    "title": "询问有什么工作",
+    "model": "We want to help. Have you got a job for us?",
+    "translation": "我们想帮忙。有什么工作可以给我们做？",
+    "phrase": "want to help",
+    "meaning": "想帮忙",
+    "transfer": "在志愿活动中说两句，说明想帮忙并询问任务。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "想帮忙并询问可做的工作",
+        "wrong": [
+          "要求休假",
+          "拒绝任何工作"
+        ],
+        "quote": "anyhow we want to help got a job for us",
+        "explanation": "我们想帮忙。有什么工作可以给我们做？"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-15",
+    "utterances": [
+      "1993-147965-0004"
+    ],
+    "title": "过去的时间与地点",
+    "model": "All afternoon he sat in the dining room.",
+    "translation": "整个下午他都坐在餐厅里。",
+    "phrase": "all afternoon",
+    "meaning": "整个下午",
+    "transfer": "用 Yesterday afternoon … 描述自己的地点和动作。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "餐厅里",
+        "wrong": [
+          "花园里",
+          "车站里"
+        ],
+        "quote": "all afternoon he sat in the dining room",
+        "explanation": "整个下午他都坐在餐厅里。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-16",
+    "utterances": [
+      "2277-149897-0019"
+    ],
+    "title": "听辨时间与结果",
+    "model": "Three, four, five and six o’clock came, and no letter.",
+    "translation": "三点、四点、五点、六点过去了，仍没有信。",
+    "phrase": "no letter",
+    "meaning": "没有信",
+    "transfer": "用 until … 说明一次等待和最终结果。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "等到六点仍没有信",
+        "wrong": [
+          "三点就收到信",
+          "六点才写信"
+        ],
+        "quote": "three o'clock came four five six and no letter",
+        "explanation": "三点、四点、五点、六点过去了，仍没有信。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-17",
+    "utterances": [
+      "7850-286674-0003"
+    ],
+    "title": "饮食习惯",
+    "model": "They never ate between meals.",
+    "translation": "他们从不在两餐之间吃东西。",
+    "phrase": "between meals",
+    "meaning": "两餐之间",
+    "transfer": "说清一个自己的饮食习惯，并补一个理由。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "两餐之间不吃东西",
+        "wrong": [
+          "每天只吃一餐",
+          "总是在餐间吃零食"
+        ],
+        "quote": "they always ate plain food and plenty of it and they never ate between meals",
+        "explanation": "他们从不在两餐之间吃东西。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-18",
+    "utterances": [
+      "652-129742-0000"
+    ],
+    "title": "听懂操作顺序",
+    "model": "Cook the asparagus in salted water, drain and chill.",
+    "translation": "把芦笋用盐水煮熟，沥干后冷却。",
+    "phrase": "drain and chill",
+    "meaning": "沥干并冷却",
+    "transfer": "用 First … then … 给出一道简单食物的操作步骤。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "煮熟、沥干、冷却",
+        "wrong": [
+          "先冷却再煮",
+          "只需加盐不用煮"
+        ],
+        "quote": "asparagus salad cook the asparagus in salted water drain and chill",
+        "explanation": "把芦笋用盐水煮熟，沥干后冷却。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-19",
+    "utterances": [
+      "5338-284437-0033"
+    ],
+    "title": "表达查询计划",
+    "model": "I will look in the great book first.",
+    "translation": "我会先查看那本大书。",
+    "phrase": "look in",
+    "meaning": "在……里查找",
+    "transfer": "用 I will … first, then … 说出两步解决方案。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "先查书",
+        "wrong": [
+          "先打电话",
+          "先出门"
+        ],
+        "quote": "i'll look in the great book first",
+        "explanation": "我会先查看那本大书。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-20",
+    "utterances": [
+      "1993-147964-0002"
+    ],
+    "title": "为别人挑选书",
+    "model": "I wanted to get some picture books.",
+    "translation": "我想拿一些图画书。",
+    "phrase": "picture books",
+    "meaning": "图画书",
+    "transfer": "说明想为谁选一本书，以及选择的原因。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "图画书",
+        "wrong": [
+          "车票",
+          "杂志广告"
+        ],
+        "quote": "i had wanted to get some picture books for yulka and antonia even yulka was able to read a little now",
+        "explanation": "我想拿一些图画书。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-21",
+    "utterances": [
+      "1462-170145-0002"
+    ],
+    "title": "听懂两个过去动作",
+    "model": "He rose and crossed the room quickly.",
+    "translation": "他站起来，迅速穿过房间。",
+    "phrase": "crossed the room",
+    "meaning": "穿过房间",
+    "transfer": "用两个过去式动词说一次自己起身去做事的经过。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "起身后穿过房间",
+        "wrong": [
+          "坐下后睡觉",
+          "站着没有动"
+        ],
+        "quote": "he rose and crossed the room quickly",
+        "explanation": "他站起来，迅速穿过房间。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-22",
+    "utterances": [
+      "1272-135031-0003"
+    ],
+    "title": "原因与后续动作",
+    "model": "She heard the raps and opened the door.",
+    "translation": "她听到敲门声，然后开了门。",
+    "phrase": "opened the door",
+    "meaning": "打开了门",
+    "transfer": "用 When I heard …, I … 描述一次回应声音的动作。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "听到敲门后开门",
+        "wrong": [
+          "睡着后关窗",
+          "敲门后离开"
+        ],
+        "quote": "the little girl had been asleep but she heard the raps and opened the door",
+        "explanation": "她听到敲门声，然后开了门。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-23",
+    "utterances": [
+      "6345-93306-0018"
+    ],
+    "title": "听懂未来安排",
+    "model": "I will catch the night train and bring my mother tomorrow.",
+    "translation": "我会赶夜班火车，明天把母亲带来。",
+    "phrase": "catch the night train",
+    "meaning": "赶夜班火车",
+    "transfer": "说一个明天的安排，包含交通、人物和目的。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "赶夜班火车，明天带母亲来",
+        "wrong": [
+          "今天乘公交去看朋友",
+          "下周步行回家"
+        ],
+        "quote": "i will catch the night train and bring my mother up to morrow then we will see what can be done",
+        "explanation": "我会赶夜班火车，明天把母亲带来。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  },
+  {
+    "id": "foundation-human-24",
+    "utterances": [
+      "6241-66616-0020"
+    ],
+    "title": "叙述时间推移",
+    "model": "Spring came and passed, and then summer.",
+    "translation": "春天来了又过去，接着是夏天。",
+    "phrase": "came and passed",
+    "meaning": "来了又过去",
+    "transfer": "用过去、现在、未来三个时间表达说一段学习变化。",
+    "questions": [
+      {
+        "prompt": "首次听懂：这句话的主要信息是什么？",
+        "answer": "先春天，后夏天",
+        "wrong": [
+          "先夏天，后春天",
+          "只有冬天"
+        ],
+        "quote": "spring came and passed and then summer",
+        "explanation": "春天来了又过去，接着是夏天。"
+      }
+    ],
+    "reviewStatus": "authored",
+    "humanReviewed": false,
+    "note": "model为教学用简化表达；原始录音转写单独保留，不假称真人读的是改写稿。"
+  }
+]

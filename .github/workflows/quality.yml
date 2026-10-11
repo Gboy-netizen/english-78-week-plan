@@ -1,0 +1,29 @@
+name: Course quality
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: python build_plan.py --check
+      - run: python tools/check_release_packages_v3.py
+      - run: npm test
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: python tools/audit_v3.py --decode
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: _shots/

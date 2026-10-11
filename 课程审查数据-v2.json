@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "weeks": 78,
+  "days": 546,
+  "coreReadings": 156,
+  "listeningUnits": 78,
+  "transferTexts": 78,
+  "uniqueTexts": 312,
+  "totalEnglishWords": 47767,
+  "objectiveQuestions": 1998,
+  "grammarExercises": 936,
+  "writingTasks": 78,
+  "speakingTasks": 78,
+  "phases": [
+    {
+      "weeks": "1-10",
+      "readings": 20,
+      "minWords": 84,
+      "maxWords": 115,
+      "meanWords": 104
+    },
+    {
+      "weeks": "11-20",
+      "readings": 20,
+      "minWords": 160,
+      "maxWords": 176,
+      "meanWords": 167
+    },
+    {
+      "weeks": "21-30",
+      "readings": 20,
+      "minWords": 269,
+      "maxWords": 298,
+      "meanWords": 282
+    },
+    {
+      "weeks": "31-40",
+      "readings": 20,
+      "minWords": 350,
+      "maxWords": 381,
+      "meanWords": 363
+    },
+    {
+      "weeks": "41-50",
+      "readings": 20,
+      "minWords": 460,
+      "maxWords": 523,
+      "meanWords": 490
+    },
+    {
+      "weeks": "51-60",
+      "readings": 20,
+      "minWords": 103,
+      "maxWords": 125,
+      "meanWords": 117
+    },
+    {
+      "weeks": "61-70",
+      "readings": 20,
+      "minWords": 92,
+      "maxWords": 128,
+      "meanWords": 109
+    },
+    {
+      "weeks": "71-78",
+      "readings": 16,
+      "minWords": 99,
+      "maxWords": 130,
+      "meanWords": 114
+    }
+  ],
+  "limitations": [
+    "内置听力为系统合成语音；真人练习需打开官方资源。",
+    "W21–50增加分级长文，W51起短篇策略课配合独立官方分科训练；内置文章不是完整雅思试卷。",
+    "自编题以细节理解、段落匹配和语法应用为主，不是经过标准化校准的雅思题库。"
+  ],
+  "qualitySignals": {
+    "questionsWithExplicitEvidence": 0,
+    "questionsWithExplanation": 1998,
+    "listeningAudioKinds": {
+      "system-tts": 78
+    },
+    "officialListeningLinks": 78
+  },
+  "longReadingStatus": "W1–50两篇核心阅读均通过所设词数梯度检查。W51–78内置题型策略微课，配合官方分科练习；不将策略短文冒充完整雅思卷。词数与自动检查不等于独立教师逐题审校或能力校准。"
+}
