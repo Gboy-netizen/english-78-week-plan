@@ -24,6 +24,12 @@ def main():
                 elif phase and path=='assets/course-data.js':
                     expected=(source.read_text(encoding='utf-8')+'\nwindow.ENGLISH_COURSE.offlinePackage='+json.dumps({'start':phase['start'],'end':phase['end']})+';\n').encode()
                 else:expected=source.read_bytes()
-                assert archive.read(path)==expected,(name,path,'stale or corrupted package')
+                actual=archive.read(path)
+                # Git normalizes text to LF on Linux; Windows installation ZIPs
+                # can contain CRLF. Compare text across those two line endings,
+                # while retaining exact byte checks for audio and other binaries.
+                if source.suffix.lower() in {'.html','.js','.css','.py','.cmd','.txt','.md'}:
+                    actual=actual.replace(b'\r\n',b'\n');expected=expected.replace(b'\r\n',b'\n')
+                assert actual==expected,(name,path,'stale or corrupted package')
         print('PASS',name,len(selected),'core recordings')
 if __name__=='__main__':main()
