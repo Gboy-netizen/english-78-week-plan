@@ -17,6 +17,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      - run: python build_plan.py
       - run: python build_plan.py --check
       - run: python tools/check_release_packages_v3.py
       - run: npm test
@@ -27,3 +28,4 @@ jobs:
         with:
           name: browser-evidence
           path: _shots/
+
