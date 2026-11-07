@@ -45,10 +45,10 @@
 | 功能名称版本 | `CHANGELOG.md` 最新记录为 **3.1.2**，新增 60/90/120 分钟学习模式 |
 | 生成数据版本 | `curriculum_v3.py`、`data/course_manifest_v3.json` 和 Release 标签统一为 **3.1.2** |
 | 本地源码分支 | `codex/route-b-upgrade` |
-| 本地功能提交 | `8e1b82f`，2026-11-07；包含审查修复、3.1.2 一致性调整和交接文档。本文件后续修订提交以 `git log -1` 为准 |
+| 本地功能提交 | `c01ca87`，2026-11-07；包含审查修复、3.1.2 一致性调整、交接文档和 CI 修复。本文件后续文档修订提交以 `git log -1` 为准 |
 | 工作树 | 上传前已验证并提交；除本交接文档后续补记外为干净状态 |
-| GitHub `main` | `9b3ce488f96b205c64b9d95fc5832beca3721dec`，远端树 `7f7d2023b78b8665fcf84077add5453e5bf24efc` |
-| GitHub Pages | 构建状态 `built`，构建提交 `9b3ce48` |
+| GitHub 代码快照 | 首轮上传提交 `9b3ce48`；CI 修复提交 `c5f3d0a2bbb239e61462c2fd00b68a60372434d3`，远端树 `7b15ccfa1c96d62a6f169b7148eaeba9d7d5d312` |
+| GitHub Pages | 构建状态 `built`，构建提交 `c5f3d0a2bbb239e61462c2fd00b68a60372434d3` |
 | Release | `v3.1.2` 已发布；完整课程包资产 75,486,813 字节 |
 | 公共仓库 | <https://github.com/Gboy-netizen/english-78-week-plan> |
 | 公共网址 | <https://gboy-netizen.github.io/english-78-week-plan/> |
@@ -308,9 +308,10 @@ python ..\tools\publish_via_github_api.py
 | `npm run test:browser` | **通过** | 三天诊断、答案门控、语法提示留痕、音频播放、模拟录音、首答、反馈复测、完整包往返、篡改拒绝、配额回滚、恢复回滚、发音、刷新中断、媒体失败和三种宽度通过 |
 | `python tools/check_release_packages_v3.py` | **通过** | 完整包和六个阶段包的录音覆盖、文件内容与当前站点一致 |
 | `npm test` | **通过** | 引擎、课程审计和浏览器回归全部通过；周期测试已改用显式夹具日期，不再依赖测试执行日期 |
-| GitHub Git Data API 上传 | **通过** | 远端树与本地树均为 `7f7d2023b78b8665fcf84077add5453e5bf24efc`；`main` 非强推更新到 `9b3ce48` |
-| GitHub Pages 构建 | **通过** | Pages 构建状态 `built`，对应提交 `9b3ce48`；带缓存破坏参数的公共首页返回新版 3,251 字节入口 |
+| GitHub Git Data API 上传 | **通过** | CI 修复后的远端树与本地树均为 `7b15ccfa1c96d62a6f169b7148eaeba9d7d5d312`，共 430 个文件 |
+| GitHub Pages 构建 | **通过** | Pages 构建状态 `built`，对应提交 `c5f3d0a`；公共 `assets/app.js` 与本地 SHA-256 完全一致 |
 | GitHub Release 资产 | **上传通过** | `v3.1.2` 已发布，资产状态 `uploaded`，字节数与本地完整包一致；受执行环境网络限制，未完成从 Release 的整包回下载 |
+| GitHub Actions | **通过** | 修复 CI 的生成顺序后，提交 `c5f3d0a` 的 Course quality 工作流结论为 `success` |
 | `git fsck --full --no-reflogs` | **失败** | 主仓库缺少对象 `742f658e8579ce519f6910d821693682316c8c05`，父提交链不完整 |
 
 浏览器截图和媒体验证结果保存在 `_shots/`；这些目录被 Git 忽略，适合本机排查，不作为公共网站内容发布。
@@ -338,7 +339,7 @@ python ..\tools\publish_via_github_api.py
 2. **音频人工试听与口音核验**：文件可解码不等于自然、清晰或适合当前水平。仍要逐人/逐段核对口音、语境和难度。
 3. **真实设备**：浏览器测试使用模拟麦克风。真实 Windows/macOS、iPhone、Android 的麦克风权限、录音播放、安全区、输入法和恢复流程仍需抽检。
 4. **外部媒体**：2026-10-10 的 11 项 HTTP 抽检中 9 项可访问；IELTS General 样题页超时、Rachel 页面返回 403。HTTP 可访问也不等于播放器正常播放。
-5. **公共部署**：GitHub `main` 和 Pages 已更新，但本次通过 API 上传，没有普通 Git push 和远端 Actions 运行记录；仍需在正常网络和真实手机上抽查公共页面、下载与跳转。
+5. **公共部署**：GitHub `main`、Pages 和 Course quality Actions 均已更新并通过；仍需在正常网络和真实手机上抽查公共页面、下载与跳转。
 6. **学习成效**：没有学习者研究或真实考试成绩数据。产品的考试准备度只是一套证据门槛，不能推算官方 band。
 7. **完整考试材料**：不打包版权不明的 Cambridge 或 IELTS 试卷；用户需合法取得未见材料，并由可识别的人工作来源评分。
 
@@ -506,6 +507,8 @@ python build_plan.py --check
 - [x] 已上传 GitHub `main` 并完成 Pages 构建；仍需在目标网络和真实设备做最终用户验收。
 
 只要上述项目还有未完成项，就应把当前状态表述为“可本地维护的功能版本”，而不是“已全面验证并正式发布的教学产品”。
+
+
 
 
 
