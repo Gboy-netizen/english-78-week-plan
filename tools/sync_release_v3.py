@@ -13,7 +13,7 @@ def main():
             if p.is_file() and '__pycache__' not in p.parts:paths.append(p)
     for p in ROOT.iterdir():
         if p.is_file() and (p.suffix=='.py' or p.name in ['index.html','english-18m-plan.html','sw.js','start-learning.cmd','package.json','package-lock.json','README.md','SOURCES.md','LICENSE','.gitignore','CHANGELOG.md']):paths.append(p)
-    paths.extend((ROOT/'downloads').glob('english-course-*-v3.zip'));paths.append(ROOT/'downloads/english-course-v3.zip');paths.append(ROOT/'legacy/index.html')
+    paths.extend((ROOT/'downloads').glob('english-course-*-v3.zip'));paths.append(ROOT/'legacy/index.html')
     files={}
     for p in paths:
         target=DEST/p.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,target)
@@ -23,3 +23,4 @@ def main():
     (ROOT/'release-v3.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print('Synced and verified',len(files),'files; no commit, push or deployment')
 if __name__=='__main__':main()
+

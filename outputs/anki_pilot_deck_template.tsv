@@ -1,0 +1,20 @@
+#separator:Tab
+#html:true
+#tags column:9
+#columns:CardID	阶段/日期	技能	正面提示	背面答案	例句或说明	音频位置	来源与许可	标签
+V001	试点-W1 / 2026-10-16	词汇/搭配	礼貌地请对方再说一次；回忆 repeat that 的完整搭配	Could you repeat that, please?	可接 Please speak slowly.；先遮住答案口头说，再翻卡核对。	—	data/foundation.tsv；基础词条与示范句由本项目编写；本卡补充说明为原创；项目许可	pilot::vocab stage::W1 context::trade skill::speaking
+L001	试点-W1 / 2026-10-16	听力理解	播放音频 0–3.58 秒：说话者问了什么？	What are you doing here?	先听两遍再回答；核对转写后标记漏听的词。	assets/human/diagnostic.mp3；0–3.58 s（未复制到 Anki 媒体）	data/diagnostic_audio.json；LibriSpeech/LibriVox，CC BY 4.0；署名见 data/human_library.json；机器解码，未逐条人工试听；非雅思材料	pilot::listening stage::W1 source::CC-BY-4.0 context::general
+S001	试点-W1 / 2026-10-16	口语复述	外贸场景：供应商把周五上午的交付改到周五下午。用 30–45 秒复述原时间、变化、原因（可自拟）和你要的下一步。	要点：原定时间 → 变更时间 → 原因 → 请求书面确认；允许使用自己的句子。	录音后只记两项可改进点：时间表达和请求是否清楚；三天后换一个订单重说。	—	取自课程项目原创工作/服务情境的改写；本卡提示与答案标准为本次原创；项目许可	pilot::speaking stage::W1 context::trade output::record
+W001	试点-W1 / 2026-10-16	写作纠错	改正：Please confirm me the delivery time.	Please confirm the delivery time.	confirm 后直接接要确认的内容；商务邮件保持短句即可。	—	本次原创纠错示例；无外部文本；项目许可	pilot::writing stage::W1 context::trade error::verb-pattern
+V002	试点-W1 / 2026-10-17	词汇/搭配	外贸：请求书面报价。回忆 written quote 的句子。	Could you send me a written quote?	quote 在这里是“报价”；可补充规格、数量和有效期，但本卡只记核心搭配。	—	课程项目原创工作情境（course_content.py）的改写；本卡句子为原创；项目许可	pilot::vocab stage::W1 context::trade
+L002	试点-W1 / 2026-10-17	听力理解	播放音频 3.58–8.095 秒：座位在哪里？	In the garden, at the side of the house.	回答位置即可；先不看转写。	assets/human/diagnostic.mp3；3.58–8.095 s（未复制到 Anki 媒体）	data/diagnostic_audio.json；LibriSpeech/LibriVox，CC BY 4.0；署名见 data/human_library.json；机器解码，未逐条人工试听；非雅思材料	pilot::listening stage::W1 source::CC-BY-4.0 context::general
+S002	试点-W1 / 2026-10-17	口语复述	外贸场景：向客户说明较低报价不含包装材料，楼梯可能另收费。用 30–45 秒解释并提出一个澄清问题。	要点：报价较低 → 不含什么 → 可能的额外费用 → 澄清问题；不要背固定范文。	重录时检查数字/费用是否说清，是否给客户下一步。	—	课程项目原创搬家/服务情境的改写；本卡提示与评分要点为本次原创；项目许可	pilot::speaking stage::W1 context::trade output::record
+W002	试点-W1 / 2026-10-17	写作纠错	改正：We discussed about the new price yesterday.	We discussed the new price yesterday.	discuss 后直接接宾语，不用 about；保留 yesterday 的位置即可。	—	本次原创纠错示例；无外部文本；项目许可	pilot::writing stage::W1 context::trade error::preposition
+V003	试点-W2 / 2026-10-23	词汇/搭配	外贸：确认交付时间。回忆最简洁的句子。	Please confirm the delivery time.	confirm the delivery time 可作为邮件标题或正文句；需要礼貌时可加 Could you...?	—	课程项目原创工作情境的改写；本卡句子为原创；项目许可	pilot::vocab stage::W2 context::trade
+L003	试点-W2 / 2026-10-23	听力理解	播放音频 8.095–10.55 秒：说话者承认自己怎样？	The speaker is hungry too.	听清 hungry 和 too；答案可用完整句或关键词。	assets/human/diagnostic.mp3；8.095–10.55 s（未复制到 Anki 媒体）	data/diagnostic_audio.json；LibriSpeech/LibriVox，CC BY 4.0；署名见 data/human_library.json；机器解码，未逐条人工试听；非雅思材料	pilot::listening stage::W2 source::CC-BY-4.0 context::general
+S003	试点-W2 / 2026-10-23	口语复述	亲子场景：用 30 秒向孩子解释为什么要把活动的时间和地点写进日历，并给一个家庭例子。	要点：防止忘记 → 同时记录时间/地点 → 一个真实或自拟例子；语言以孩子能懂为准。	家长先录一遍，再让孩子用自己的话复述要点；不把孩子录音上传云端。	—	本次原创亲子学习示例；无外部文本；项目许可	pilot::speaking stage::W2 context::parent-child output::record
+W003	试点-W2 / 2026-10-23	写作纠错	改正：My child have a reading task tonight.	My child has a reading task tonight.	第三人称单数 child 用 has；先读完整句，再写出规则。	—	本次原创纠错示例；无外部文本；项目许可	pilot::writing stage::W2 context::parent-child error::agreement
+V004	试点-W2 / 2026-10-24	词汇/搭配	亲子/日程：地点变了但时间不变。回忆 keep the same time 的句子。	We can keep the same time.	keep the same time = 保持同一时间；换地点时很实用。	—	课程项目原创日程情境的改写；本卡句子为原创；项目许可	pilot::vocab stage::W2 context::parent-child
+L004	试点-W2 / 2026-10-24	听力理解	播放短音频：房间发生了什么？	The room was empty when he entered.	先用关键词回答，再核对全文；这是文学朗读短句，不是自然对话。	assets/human/ls-004.mp3；0–2.37 s（未复制到 Anki 媒体）	data/human_library.json 条目 human-004；LibriSpeech/LibriVox，CC BY 4.0；机器解码，未逐条人工试听；非雅思材料	pilot::listening stage::W2 source::CC-BY-4.0 context::general
+S004	试点-W2 / 2026-10-24	口语复述	亲子场景：用 30–45 秒复述“出门前准备”流程：检查书包、确认时间、迟到时如何求助。	要点：至少三个有顺序的动作 + 一个求助句；可用 First/Then/If。	家长可先示范，再让孩子用更短版本复述；只保存自愿的成人录音。	—	本次原创亲子学习示例；无外部文本；项目许可	pilot::speaking stage::W2 context::parent-child output::record
+W004	试点-W2 / 2026-10-24	写作纠错	改正：I am looking forward to hear from you.	I am looking forward to hearing from you.	look forward to 后接名词或动名词；to 在这里是介词。	—	本次原创纠错示例；无外部文本；项目许可	pilot::writing stage::W2 context::trade error::gerund

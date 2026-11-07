@@ -12,6 +12,9 @@ for(let d=0;d<546;d++){
   if(plan.mode==='mock'){assert.equal(plan.minutes,180);mock++;}else{assert.equal(plan.minutes,60);if(plan.mode==='section')section++;else normal++;}
 }
 assert.equal(mock,3);assert.equal(normal+section+mock,546);
+const intensive=E.copy(s);intensive.profile.dailyMinutes=90;
+const intensivePlan=E.schedule(intensive,C,epoch.start);assert.equal(intensivePlan.minutes,90);assert.equal(intensivePlan.steps.reduce((n,x)=>n+x.minutes,0),90);
+intensive.profile.dailyMinutes=120;const extendedPlan=E.schedule(intensive,C,epoch.start);assert.equal(extendedPlan.minutes,120);assert.equal(extendedPlan.steps.reduce((n,x)=>n+x.minutes,0),120);
 assert.equal(E.info(s,'2026-10-10').status,'before');assert.equal(E.info(s,E.addDays(epoch.start,546)).status,'after');assert.equal(E.serial('2026-02-30'),null);
 assert.equal(new Set(C.units.flatMap(u=>u.listening.map(m=>m.audio))).size,156);assert.equal(new Set(C.units.flatMap(u=>[u.reading.text,u.transfer.text])).size,156);
 const m=C.units[0].transfer;assert.equal(E.seen(s,m),false);const first=E.recordAttempt(s,'test-task',m,Object.fromEntries(m.questions.map(q=>[q.id,q.correct])),{wasSeen:false});
@@ -22,7 +25,8 @@ s.checks.push({id:'check1',week:1,epochId:s.currentEpochId,materialId:'check-m1'
 assert.deepEqual(E.adjustment(s,3).replaceDays,[2,5]);assert.equal(E.adjustment(s,3).lower,true);
 const repair=E.schedule(s,C,E.addDays(epoch.start,16));assert.equal(repair.repair,true);assert.equal(repair.minutes,60);
 s.checks=[];s.diagnostic.levels.reading='everyday';epoch.baseline.levels.reading='everyday';assert.equal(E.schedule(s,C,epoch.start).skillUnits.reading.week,13);
-const outputFirst=E.recordAttempt(s,'test-task',m,{},{output:'My first output.',kind:'output'});assert.equal(outputFirst.first,true);
+const outputFirst=E.recordAttempt(s,'test-task',m,{},{output:'My first output.',kind:'output'});assert.equal(outputFirst.first,true);outputFirst.date=epoch.start;
+const weekly=E.weeklySummary(s,C,epoch.start);assert.equal(weekly.status,'active');assert.equal(weekly.week,1);assert.equal(weekly.plannedMinutes,420);assert.ok(weekly.outputs>=1);assert.ok(weekly.completedDays>=1);assert.ok(weekly.recommendations.length>=1);
 assert.equal(E.schedule(s,C,E.addDays(epoch.start,55*7+5)).mode,'mock');
 const a=E.recordAttempt(s,'writing',m,{},{output:'I go to work yesterday.',kind:'output'});
 const feedback={source:'ai',audioReceived:false,dimensions:{grammar:'过去时间需要过去式',task:'信息清楚'},evidence:[{quote:'I go to work yesterday.',comment:'动词时态'}],tags:['过去时'],actions:['把昨天的动作改成过去式','换一个过去经历独立复述']};
@@ -58,3 +62,6 @@ evidence.sessions.find(x=>x.id==='b1-reading').startedAt+=300000;evidence.sessio
 evidence.sessions.find(x=>x.id==='b1-reading').startedPerf-=300000;assert.equal(E.readiness(evidence).endurance,false);
 const incoming=E.copy(s);incoming.attempts[0].output='conflicting output';const merged=E.merge(s,incoming);assert.equal(merged.state.attempts.length,s.attempts.length+1);assert.equal(merged.state.attempts.find(x=>x.id===first.id).output,'');
 console.log('PASS v3 engine: 546-day budgets, adaptive replacement, immutable first attempt, source history, evidence-linked feedback, readiness exclusions and conflict preservation');
+
+
+

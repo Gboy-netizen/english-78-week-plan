@@ -1,0 +1,38 @@
+{
+  "https://elllo.org/Audio/SoundGrammar/A1-Audio4x/A1-01-1-Be-Verbs-First-Day.mp3": {
+    "checkedOn": "2026-10-13",
+    "accessMethod": "desktop proxy 127.0.0.1:7897; not verified on direct domestic network",
+    "humanListenedOn": null,
+    "directDomesticVerified": false,
+    "httpStatus": 200,
+    "decoded": true,
+    "duration": 32.779841
+  },
+  "https://elllo.org/Audio/SoundGrammar/A1-Audio4x/A1-01-3-Be-Verbs-Classes.mp3": {
+    "checkedOn": "2026-10-13",
+    "accessMethod": "desktop proxy 127.0.0.1:7897; not verified on direct domestic network",
+    "humanListenedOn": null,
+    "directDomesticVerified": false,
+    "httpStatus": 200,
+    "decoded": true,
+    "duration": 37.984671
+  },
+  "https://elllo.org/Audio/SoundGrammar/A1-Audio4x/A1-04-1-Verbs-Morning.mp3": {
+    "checkedOn": "2026-10-13",
+    "accessMethod": "desktop proxy 127.0.0.1:7897; not verified on direct domestic network",
+    "humanListenedOn": null,
+    "directDomesticVerified": false,
+    "httpStatus": 200,
+    "decoded": true,
+    "duration": 25.311088
+  },
+  "https://elllo.org/Audio/SoundGrammar/A1-Audio4x/A1-01-4-Be-Verbs-Lab.mp3": {
+    "checkedOn": "2026-10-13",
+    "accessMethod": "desktop proxy 127.0.0.1:7897; not verified on direct domestic network",
+    "humanListenedOn": null,
+    "directDomesticVerified": false,
+    "httpStatus": 200,
+    "decoded": true,
+    "duration": 37.037188
+  }
+}

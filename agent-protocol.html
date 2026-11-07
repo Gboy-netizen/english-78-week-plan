@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语提升计划 · Agent 执行协议</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F5F1;
+    --ink:#1B1D22;
+    --ink-soft:#5B5E63;
+    --ink-faint:#8A8D8F;
+    --line:#D9DAD2;
+    --accent:#2F5233;
+    --accent-ink:#20381F;
+    --accent-soft:#E3E9DD;
+    --panel:#EBECE5;
+    --panel-line:#D3D5CB;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#15171A;
+      --ink:#E8E9E4;
+      --ink-soft:#A4A7A2;
+      --ink-faint:#6F726E;
+      --line:#2A2D2A;
+      --accent:#7BAE82;
+      --accent-ink:#C3DCC6;
+      --accent-soft:#1E2A1F;
+      --panel:#1C1F1C;
+      --panel-line:#2E312C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15171A;
+    --ink:#E8E9E4;
+    --ink-soft:#A4A7A2;
+    --ink-faint:#6F726E;
+    --line:#2A2D2A;
+    --accent:#7BAE82;
+    --accent-ink:#C3DCC6;
+    --accent-soft:#1E2A1F;
+    --panel:#1C1F1C;
+    --panel-line:#2E312C;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    padding:0 24px 120px;
+  }
+  .code,.mono{font-family:"Space Grotesk",-apple-system,sans-serif;}
+
+  .wrap{max-width:680px;margin:0 auto;padding-top:72px;}
+
+  header.top{margin-bottom:56px;}
+  .kicker{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:13px;
+    color:var(--accent);
+    font-weight:500;
+    margin:0 0 14px;
+  }
+  h1{
+    font-size:32px;
+    line-height:1.28;
+    font-weight:700;
+    margin:0 0 18px;
+    letter-spacing:-0.01em;
+  }
+  .lede{
+    color:var(--ink-soft);
+    font-size:16px;
+    margin:0 0 28px;
+    max-width:52ch;
+  }
+  .stat-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 28px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+  }
+  .stat-row div{font-size:14px;color:var(--ink-soft);}
+  .stat-row b{
+    font-family:"Space Grotesk",sans-serif;
+    color:var(--ink);
+    font-weight:500;
+  }
+
+  section{margin-bottom:52px;}
+  h2{
+    font-size:20px;
+    font-weight:700;
+    margin:0 0 6px;
+    letter-spacing:-0.005em;
+  }
+  .sec-note{
+    color:var(--ink-faint);
+    font-size:14px;
+    margin:0 0 22px;
+  }
+
+  .src-list{list-style:none;margin:0;padding:0;}
+  .src-list li{
+    display:flex;
+    gap:16px;
+    padding:14px 0;
+    border-top:1px solid var(--line);
+    font-size:15px;
+  }
+  .src-list li:last-child{border-bottom:1px solid var(--line);}
+  .src-list .f{
+    font-family:"Space Grotesk",sans-serif;
+    color:var(--accent-ink);
+    background:var(--accent-soft);
+    padding:2px 8px;
+    border-radius:4px;
+    font-size:13px;
+    white-space:nowrap;
+    height:fit-content;
+  }
+  .src-list p{margin:0;color:var(--ink-soft);}
+  .src-list p b{color:var(--ink);font-weight:500;}
+
+  ol.loop{
+    list-style:none;
+    counter-reset:step;
+    margin:0;
+    padding:0;
+  }
+  ol.loop li{
+    counter-increment:step;
+    position:relative;
+    padding:16px 0 16px 40px;
+    border-top:1px solid var(--line);
+    font-size:15px;
+  }
+  ol.loop li:last-child{border-bottom:1px solid var(--line);}
+  ol.loop li::before{
+    content:counter(step);
+    font-family:"Space Grotesk",sans-serif;
+    font-weight:700;
+    font-size:13px;
+    color:var(--accent);
+    position:absolute;
+    left:0;
+    top:17px;
+    width:22px;
+    height:22px;
+    border:1px solid var(--accent);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  ol.loop b{font-weight:600;}
+
+  table{width:100%;border-collapse:collapse;font-size:14.5px;}
+  th{
+    text-align:left;
+    font-weight:500;
+    color:var(--ink-faint);
+    font-size:13px;
+    padding:0 12px 10px 0;
+    border-bottom:1px solid var(--line);
+  }
+  td{
+    padding:12px 12px 12px 0;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  .tbl-scroll{overflow-x:auto;}
+  .tag{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:12.5px;
+    color:var(--accent-ink);
+    background:var(--accent-soft);
+    padding:2px 7px;
+    border-radius:4px;
+    white-space:nowrap;
+  }
+
+  details{
+    border-top:1px solid var(--line);
+  }
+  details:last-of-type{border-bottom:1px solid var(--line);}
+  summary{
+    padding:16px 0;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .n{
+    font-family:"Space Grotesk",sans-serif;
+    color:var(--ink-faint);
+    font-weight:400;
+    font-size:13px;
+  }
+  summary::after{
+    content:"+";
+    font-family:"Space Grotesk",sans-serif;
+    font-size:18px;
+    color:var(--ink-faint);
+    flex-shrink:0;
+  }
+  details[open] summary::after{content:"–";}
+  .prompt{
+    background:var(--panel);
+    border:1px solid var(--panel-line);
+    border-radius:6px;
+    padding:16px 18px;
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.75;
+    margin:0 0 20px;
+    white-space:pre-wrap;
+  }
+
+  .rule{
+    display:flex;
+    gap:18px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+    font-size:15px;
+  }
+  .rule:last-child{border-bottom:1px solid var(--line);}
+  .rule .k{
+    font-family:"Space Grotesk",sans-serif;
+    color:var(--accent);
+    font-weight:500;
+    flex-shrink:0;
+    width:92px;
+  }
+  .rule p{margin:0;color:var(--ink-soft);}
+
+  .config{
+    background:var(--panel);
+    border:1px solid var(--panel-line);
+    border-radius:6px;
+    padding:20px 22px;
+    font-family:"Space Grotesk",sans-serif;
+    font-size:13.5px;
+    line-height:2;
+    color:var(--ink-soft);
+    overflow-x:auto;
+  }
+  .config b{color:var(--ink);font-weight:500;}
+
+  footer{
+    padding-top:32px;
+    border-top:1px solid var(--line);
+    color:var(--ink-faint);
+    font-size:13.5px;
+  }
+
+  @media(max-width:520px){
+    h1{font-size:26px;}
+    .wrap{padding-top:48px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <p class="kicker">EXECUTION PROTOCOL</p>
+    <h1>英语提升计划 · Agent 执行协议</h1>
+    <p class="lede">一份可以直接交给 AI Agent 按日执行的操作手册——判断今天做什么、要不要调用 AI、结果记到哪。</p>
+    <div class="stat-row">
+      <div>目标 <b>IELTS 5.5–6.0</b></div>
+      <div>起点 <b>~1000 词</b></div>
+      <div>周期 <b>78 周 / 18 个月</b></div>
+      <div>每日 <b>45–60 分钟</b></div>
+      <div>时段 <b>20:00–21:00</b></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>数据源</h2>
+    <p class="sec-note">Agent 每天需要读取的三个来源，任务内容以文件①为准，本文档不重复搬运。</p>
+    <ul class="src-list">
+      <li><span class="f">① 任务表</span><p><b>english-18m-plan.html</b> —— 权威数据源。8 阶段划分、每周 / 每日任务、终检标准全在这里，按当前周数在对应阶段面板里查当日任务。</p></li>
+      <li><span class="f">② 记录表</span><p><b>飞书多维表格</b>「英语打卡-78周」—— 每日执行结果的落地位置。</p></li>
+      <li><span class="f">③ 角色库</span><p>本文档第 3 节，7 个可直接调用的 AI 角色 prompt。</p></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>1 · 每日执行循环</h2>
+    <p class="sec-note">这是 Agent 每天要走的一遍流程，顺序固定。</p>
+    <ol class="loop">
+      <li>取当前日期，换算属于第几周（W几）、第几阶段（P几）、星期几</li>
+      <li>在 ①任务表 对应阶段面板里，按星期几取出当日任务的名称和时长</li>
+      <li>用第 2 节的「角色速查」匹配任务关键词，判断要不要调用 AI、调用哪个角色</li>
+      <li>需要陪练 / 教学 / 批改时，用第 3 节对应 prompt 开对话，完成当日练习</li>
+      <li>把结果写入 ②记录表：日期 / 周数 / 是否完成 / 流畅度·完整度·状态（各 1–5）/ 练习内容 / 录音链接 / 备注</li>
+      <li>检查断档：距上次打卡 &gt; 7 天 → 本周启用简化版（砍到 30 分钟，不追进度），连续 4 周正常后切回标准任务</li>
+      <li>每满 10 周检查该阶段是否全部达标 → 达标则解锁 ①任务表 里对应的里程碑奖励</li>
+      <li>周日额外跑一次「错题讲解」或「整卷模考总评」prompt，作为本周收尾复盘</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>2 · AI 角色速查</h2>
+    <p class="sec-note">当日任务名称命中左列关键词，就调用对应角色。</p>
+    <div class="tbl-scroll">
+    <table>
+      <tr><th>任务关键词</th><th>角色</th><th>用途</th></tr>
+      <tr><td><span class="tag">情景对话 / 角色扮演</span></td><td>情景对话陪练</td><td>场景化口语实战，8–10 轮</td></tr>
+      <tr><td><span class="tag">自由对话 / 口语保温</span></td><td>自由对话陪练</td><td>追问式口语训练</td></tr>
+      <tr><td><span class="tag">从句 / 非谓语 / 虚拟语气</span></td><td>语法讲解老师</td><td>系统讲解 + 5 题小测</td></tr>
+      <tr><td><span class="tag">日记 / Task 1 / Task 2 / 作文</span></td><td>写作批改老师</td><td>四维度打分 + 修改建议</td></tr>
+      <tr><td><span class="tag">口语仿真 / 口语终检</span></td><td>模拟考官</td><td>Part 1–3 全流程 + 四维度打分</td></tr>
+      <tr><td><span class="tag">听力 / 阅读 + 错题</span></td><td>错题讲解</td><td>错因分析 + 生词提炼</td></tr>
+      <tr><td><span class="tag">整卷模拟之后</span></td><td>模考总评</td><td>差距分析 + 两周训练安排</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>3 · 角色 Prompt 库</h2>
+    <p class="sec-note">点开对应角色，复制 prompt 直接开对话。</p>
+
+    <details>
+      <summary>情景对话陪练 <span class="n">P1–P5 周四</span></summary>
+      <div class="prompt">我在练口语，请你现在扮演【今天的场景，比如：咖啡店店员/机场地勤/超市收银员】，用简单地道的英语和我对话，别提前告诉我剧情走向，随机应变，一轮一轮来，大概进行 8–10 轮。对话全部结束后，用中文列出我说错或不够地道的地方，每条给出更自然的说法。</div>
+    </details>
+
+    <details>
+      <summary>自由对话陪练 <span class="n">P6 日常 / P7–P8 终检</span></summary>
+      <div class="prompt">接下来我们做 [X] 分钟自由对话练习，主题是【今天话题，比如：工作/旅行/家乡】。你是一个耐心的英语对话伙伴，用日常口语跟我聊，多问追问式问题（why/how）逼我多说，别让我用一两句话就结束。结束后用中文总结：我说得好的地方 + 3 个最该改进的地方（语法/用词/流利度各挑一个）。</div>
+    </details>
+
+    <details>
+      <summary>语法讲解老师 <span class="n">P4</span></summary>
+      <div class="prompt">请扮演一位英语语法老师，给我讲【今天语法点，比如：定语从句】。要求：① 先用最简单的中文类比把核心逻辑讲清楚；② 给 5 个例句配中文翻译；③ 出 5 道选择题考我，我答完后告诉我对错和为什么错。</div>
+    </details>
+
+    <details>
+      <summary>写作批改老师 <span class="n">P5–P8</span></summary>
+      <div class="prompt">我在准备雅思，这是我写的一篇 Task [1/2] 作文，题目是：【粘贴题目】。请按雅思官方四个评分维度（Task Response、Coherence & Cohesion、Lexical Resource、Grammatical Range & Accuracy）分别打分（0–9），然后：① 指出 3 处最影响得分的问题并给出修改后的句子；② 给一个能替换我平时表达的更高级说法；③ 一句话总结这篇离目标分还差什么。作文如下：【粘贴正文】</div>
+    </details>
+
+    <details>
+      <summary>雅思口语模拟考官 <span class="n">P7–P8</span></summary>
+      <div class="prompt">你现在是一位专业雅思口语考官，请按 Part 1 → Part 2 → Part 3 流程考我。Part 2 给我一张话题卡，我说"准备 1 分钟"后开始计时，说满 2 分钟。全程结束后按四个评分维度（Fluency & Coherence、Lexical Resource、Grammatical Range & Accuracy、Pronunciation）逐项打分（0–9），并给每一项一条具体改进建议。</div>
+    </details>
+
+    <details>
+      <summary>听力 / 阅读错题讲解 <span class="n">P6–P8</span></summary>
+      <div class="prompt">这是我雅思 [听力/阅读] 真题里做错的一题，原文段落：【粘贴】，题目：【粘贴】，正确答案是 [X]，我选的是 [Y]。请用中文讲清楚：① 为什么正确答案是这个（原文对应哪句话/什么逻辑）；② 我为什么会选错（同义替换没看出/生词/理解偏差，帮我判断）；③ 这道题里我需要记住的生词或表达。</div>
+    </details>
+
+    <details>
+      <summary>整卷模考总评 <span class="n">P8 周六之后</span></summary>
+      <div class="prompt">这是我这次雅思模拟四项成绩：听力 [X]、阅读 [X]、写作 [X]（附作文）、口语 [X]（附转录或分数）。目标 5.5–6.0。请帮我分析：① 目前离目标差距最大的是哪一项；② 给接下来 2 周的针对性训练安排；③ 一句话真诚的鼓励，别写成鸡汤。</div>
+    </details>
+  </section>
+
+  <section>
+    <h2>4 · 异常处理规则</h2>
+    <div class="rule">
+      <span class="k">断档</span>
+      <p>距上次打卡 &gt; 7 天：当周只做简化版（砍到 30 分钟，不追补进度），连续 4 周正常后切回标准任务。</p>
+    </div>
+    <div class="rule">
+      <span class="k">里程碑</span>
+      <p>每满 10 周检查该阶段全部达标 → 解锁 ①任务表 Module 6 对应的里程碑奖励。</p>
+    </div>
+    <div class="rule">
+      <span class="k">报考</span>
+      <p>第 12 个月（约 W48–52）报名一次雅思，¥2,170 考费作为外部目标锚点。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>5 · 阶段与关键节点</h2>
+    <div class="tbl-scroll">
+    <table>
+      <tr><th>阶段</th><th>周数</th><th>词汇</th><th>主题</th></tr>
+      <tr><td class="mono">P1</td><td>W1–W10</td><td>1000→1800</td><td>开口破冰期</td></tr>
+      <tr><td class="mono">P2</td><td>W11–W20</td><td>1800→2600</td><td>日常对话筑基期</td></tr>
+      <tr><td class="mono">P3</td><td>W21–W30</td><td>2600→3500</td><td>听说强化期</td></tr>
+      <tr><td class="mono">P4</td><td>W31–W40</td><td>3500→4500</td><td>阅读语法筑基期</td></tr>
+      <tr><td class="mono">P5</td><td>W41–W50</td><td>4500→5500</td><td>输入输出并行期</td></tr>
+      <tr><td class="mono">P6</td><td>W51–W60</td><td>5500→6500</td><td>雅思题型导入期</td></tr>
+      <tr><td class="mono">P7</td><td>W61–W70</td><td>6500→7000+</td><td>雅思冲刺强化期</td></tr>
+      <tr><td class="mono">P8</td><td>W71–W78</td><td>终检</td><td>实战达标期</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>6 · 完成判定</h2>
+    <p class="sec-note">四项全过即视为计划完成。</p>
+    <div class="rule">
+      <span class="k">听力</span>
+      <p>120 词/分钟语速，理解率 ≥ 80%</p>
+    </div>
+    <div class="rule">
+      <span class="k">阅读</span>
+      <p>300 词文章，6 题对 4</p>
+    </div>
+    <div class="rule">
+      <span class="k">写作</span>
+      <p>200 词，40 分钟内完成</p>
+    </div>
+    <div class="rule">
+      <span class="k">口语</span>
+      <p>3–5 分钟自我介绍 + 自由对话不冷场</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>配置参数</h2>
+    <div class="config">
+target: <b>IELTS General 5.5–6.0</b><br>
+start_vocab: <b>1000</b><br>
+total_weeks: <b>78</b><br>
+daily_minutes: <b>45–60</b><br>
+session_time: <b>20:00–21:00</b><br>
+checkin_store: <b>Feishu multi-dim table</b><br>
+dropout_threshold_days: <b>7</b><br>
+recovery_weeks: <b>4</b><br>
+milestone_interval_weeks: <b>10</b><br>
+exam_registration_week: <b>48–52</b>
+    </div>
+  </section>
+
+  <footer>
+    配套文件：english-18m-plan.html（任务表 + 日历）· english-plan-execution.md（决策记录 + 博主资源 + 飞书搭建步骤）
+  </footer>
+
+</div>
+</body>
+</html>

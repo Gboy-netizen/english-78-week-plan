@@ -188,6 +188,10 @@ def build():
             'pronunciation':['i','ih','eh','ae','th','dh','r','l','w','v'][i%10],
             'review':{'id':f'v3-w{week:02}-review','prompt':'不看旧答案，完成保留的迁移阅读；提取本周词块，再修改原稿或重录。用证据安排下周。'},
             'deliveryStatus':'training-ready','humanReviewed':False,'version':3})
+    from sample_course_v3 import build as sample_build
+    checks=read('sample_media_checks.json') if (ROOT/'data/sample_media_checks.json').exists() else {}
+    for unit,sample in zip(units,sample_build(online,checks,units)):
+        unit['sample']=sample
     phonemes=read('pronunciation.json')['phonemes'];credits=read('phoneme_audio_credits.json')
     for item in phonemes:
         item['localAudio']='assets/phonemes/'+credits[item['audio']]['file'] if item.get('audio') in credits else None
@@ -212,7 +216,7 @@ def build():
         {'name':'v4','prompt':'起床','answer':'get up'}, {'name':'g0','prompt':'我是初学者。补全：I ___ a beginner.','answer':'am'},
         {'name':'g1','prompt':'她在一家商店工作。补全：She ___ in a shop.','answer':'works'},
         {'name':'g2','prompt':'你住在公园附近吗？补全：Do you ___ near the park?','answer':'live'}]}
-    manifest={'version':'3.0.1','schemaVersion':3,'phases':[{'start':a,'end':b,'id':c,'title':d} for a,b,c,d in PHASES],
+    manifest={'version':'3.1.2','schemaVersion':3,'phases':[{'start':a,'end':b,'id':c,'title':d} for a,b,c,d in PHASES],
         'units':units,'diagnostic':diagnostic,'phonemes':phonemes,'phonemeCredits':credits,
         'officialSources':read('official_practice.json'),
         'resourceChecks':read('resource_checks_v3.json') if (ROOT/'data/resource_checks_v3.json').exists() else [],
@@ -244,5 +248,20 @@ def validate(m):
         assert u['chunks'] and u['writing']['prompt'] and u['speaking']['prompt']
     for item in m['diagnostic']['language']['items']:
         assert not re.search(r'\b'+re.escape(item['answer'])+r'\b',item['prompt'],re.I)
+    assert len(m['units'])==78 and all(len(u.get('sample',{}).get('days',[]))==7 for u in m['units'])
+    for u in m['units']:
+        sample=u['sample'];assert len(sample['days'])==7 and len(sample['chunks'])==25
+        for day in sample['days']:
+            assert sum(day['minutes'])==60 and day['output'] and day['model'] and day['retest']
+            mat=day['input'];assert mat['id'] not in ids;ids.add(mat['id'])
+            assert len(mat['questions'])>=2
+            for q in mat['questions']:
+                assert q['id'] not in ids;ids.add(q['id'])
+                assert q['evidence']['quote']==mat['text'][q['evidence']['start']:q['evidence']['end']]
+                assert len(set(q['options']))==3 and 0<=q['correct']<3
+            if mat.get('audio'):
+                assert mat['audioKind'] in ('human-online','human-audio')
+                if mat['audioKind']=='human-online':assert mat['sourceUrl'].startswith('https://elllo.org/')
     assert len(audio)==156 and len(reading)==156
     return {'weeks':78,'days':546,'localHumanAudio':len(audio),'readings':len(reading),'humanReviewedUnits':sum(u['humanReviewed'] for u in m['units'])}
+

@@ -36,6 +36,8 @@
     for(const k of ['profile','diagnostic','cards','pronunciation'])if(!s[k]||typeof s[k]!=='object'||Array.isArray(s[k]))throw Error('无效的 '+k);
     if(!Number.isInteger(s.revision)||s.revision<0||!s.diagnostic.days||typeof s.diagnostic.days!=='object'||Array.isArray(s.diagnostic.days)||!s.diagnostic.levels||typeof s.diagnostic.levels!=='object'||!Array.isArray(s.diagnostic.weaknesses))throw Error('诊断或记录修订版本无效');
     if(!band(s.profile.overall)||!band(s.profile.minEach))throw Error('目标分数无效');
+    if(s.profile.dailyMinutes===undefined)s.profile.dailyMinutes=60;
+    if(![60,90,120].includes(s.profile.dailyMinutes))throw Error('每日学习时长只能是60、90或120分钟');
     for(const e of s.epochs)if(serial(e.start)===null)throw Error('周期日期无效');
     if(s.currentEpochId&&!s.epochs.some(e=>e.id===s.currentEpochId))throw Error('找不到当前学习周期');
     for(const a of s.attempts){if(typeof a.taskId!=='string'||typeof a.materialId!=='string'||typeof a.output!=='string'||!Array.isArray(a.audioIds))throw Error('练习关联无效');if(a.revisionOf&&!s.attempts.some(x=>x.id===a.revisionOf))throw Error('修改稿缺少原始练习');}
@@ -79,14 +81,18 @@
     const easierWeek=adjust.lower?Math.max(1,(PHASES.find(p=>p.id===unit.phase)?.start||d.week)-12):Math.max(1,d.week-1);
     const remedialUnit=course.units[easierWeek-1];
     const due=s.feedback.filter(f=>f.epochId===s.currentEpochId&&f.retestDate<=date&&(!f.retestAttemptId||!f.retestDelayed));
-    let minutes=[10,20,15,10,5],labels=['回想与复习','理解输入','主动输出','反馈与重练','保存与安排'];
+    const dailyMinutes=[60,90,120].includes(s.profile.dailyMinutes)?s.profile.dailyMinutes:60;
+    const rhythm={60:[10,20,15,10,5],90:[15,30,20,15,10],120:[20,35,30,20,15]};
+    let minutes=rhythm[dailyMinutes].slice(),labels=['回想与复习','理解输入','主动输出','反馈与重练','保存与安排'];
     let mode='normal';
-    if(d.day===6)labels=['主动提取','新材料周测','修改或重录','分析本周','安排下周'];
+    if(d.day===6){labels=['主动提取','新材料周测','修改或重录','分析本周','安排下周'];if(dailyMinutes===90)minutes=[15,25,20,20,10];if(dailyMinutes===120)minutes=[20,35,30,20,15];}
     if(d.week>=45&&[1,3].includes(d.day)&&!repair){minutes=[60];labels=[d.day===1?'阅读限时训练':'写作限时训练'];mode='section';}
     if([56,68,76].includes(d.week)&&d.day===5){minutes=[180];labels=['完整模拟：先登记合法未见材料'];mode='mock';}
     const taskId=`v3-w${String(d.week).padStart(2,'0')}-d${d.day+1}`;
     const materialId=d.day===6?unit.transfer.id:[0,4].includes(d.day)?unit.listening[d.day===0?0:1].id:unit.reading.id;
-    return {...d,unit,skillUnits,remedialUnit,taskId,materialId,repair,lower:adjust.lower,due,mode,minutes:minutes.reduce((a,b)=>a+b,0),
+    const sample=!repair&&unit.sample&&Object.values(skillUnits).every(u=>u.id===unit.id)?unit.sample.days[d.day]:null;
+    return {...d,unit,skillUnits,remedialUnit,taskId,materialId:sample?.input.id||materialId,repair,lower:adjust.lower,due,mode,minutes:minutes.reduce((a,b)=>a+b,0),
+      sample,
       title:THEMES[d.day],steps:minutes.map((m,i)=>({minutes:m,label:labels[i]})),
       instruction:repair?'本课替换为最近错误的复练，不增加时长。':unit.goal};
   }
@@ -139,6 +145,35 @@
   function trends(s) {
     const count={};for(const f of s.feedback.filter(f=>f.epochId===s.currentEpochId))for(const tag of f.tags)count[tag]=(count[tag]||0)+1;
     return Object.entries(count).sort((a,b)=>b[1]-a[1]);
+  }
+  function weeklySummary(s,course,date=today()) {
+    const infoValue=info(s,date);
+    if(!['active','before','after'].includes(infoValue.status))return {status:infoValue.status,date};
+    if(infoValue.status!=='active')return {status:infoValue.status,date,week:null,phase:null,start:null,end:null,completedDays:0,plannedMinutes:0,attempts:0,outputs:0,recordings:0,feedback:0,dueFeedback:0,checks:[],topErrors:[],recommendations:['完成三天诊断后再开始周计划。']};
+    const start=addDays(infoValue.epoch.start,(infoValue.week-1)*7),end=addDays(start,6);
+    const dates=Array.from({length:7},(_,i)=>addDays(start,i));
+    const inWindow=(value)=>typeof value==='string'&&value.slice(0,10)>=start&&value.slice(0,10)<=end;
+    const attempts=s.attempts.filter(a=>a.epochId===s.currentEpochId&&inWindow(a.date));
+    const outputs=attempts.filter(a=>a.kind==='output');
+    const recordings=attempts.reduce((n,a)=>n+(Array.isArray(a.audioIds)?a.audioIds.length:0),0);
+    const notes=Object.values(s.dailyNotes||{}).filter(n=>n.epochId===s.currentEpochId&&inWindow(n.date));
+    const completed=new Set([...attempts.map(a=>a.date),...notes.map(n=>n.date)]);
+    const feedback=s.feedback.filter(f=>f.epochId===s.currentEpochId&&inWindow(f.createdAt));
+    const dueFeedback=s.feedback.filter(f=>f.epochId===s.currentEpochId&&(!f.retestAttemptId||!f.retestDelayed)&&f.retestDate<=date);
+    const checks=s.checks.filter(c=>c.epochId===s.currentEpochId&&c.week===infoValue.week);
+    const errorCounts={};for(const f of feedback)for(const tag of f.tags||[])errorCounts[tag]=(errorCounts[tag]||0)+1;
+    const topErrors=Object.entries(errorCounts).sort((a,b)=>b[1]-a[1]).slice(0,3);
+    const plans=course?dates.map(day=>schedule(s,course,day)).filter(p=>p.status==='active'):[];
+    const plannedMinutes=plans.length?plans.reduce((n,p)=>n+p.minutes,0):(s.profile.dailyMinutes||60)*7;
+    const recommendations=[];
+    if(dueFeedback.length)recommendations.push(`先完成 ${dueFeedback.length} 项到期复测，再增加新内容。`);
+    if(!outputs.length)recommendations.push('本周还没有保存独立输出；保留一份原稿或录音，作为反馈依据。');
+    if(outputs.length&&outputs.every(a=>!a.audioIds?.length))recommendations.push('下一次口语任务保存原始录音，便于自己做 A/B 对比。');
+    if(checks.some(c=>c.unseen&&(c.comprehension<80||c.recall<80||!c.outputComplete)))recommendations.push('阶段检查有一项未达参考线，下周替换两个课时做补强。');
+    const dueCards=Object.values(s.cards||{}).filter(c=>c.due<=date).length;
+    if(dueCards>10)recommendations.push(`有 ${dueCards} 项词句到期，先清理积压，暂缓新增卡片。`);
+    if(!recommendations.length)recommendations.push('保持本周节奏；下次输出只改 2–3 个问题，再换情境复述。');
+    return {status:'active',date,week:infoValue.week,phase:infoValue.phase.title,start,end,completedDays:completed.size,plannedMinutes,attempts:attempts.length,outputs:outputs.length,recordings,feedback:feedback.length,dueFeedback:dueFeedback.length,checks,topErrors,recommendations};
   }
   function recallCard(s,id,result,date=today()) {
     const c=s.cards[id]||{id,interval:0,failures:0,successes:0,epochId:s.currentEpochId};
@@ -241,6 +276,6 @@
     out.archives.push({id:uid(),kind:'import-profile',profile:inc.profile,diagnostic:inc.diagnostic,at:new Date().toISOString()});
     out.currentEpochId ||= inc.currentEpochId;return {state:validate(out),remap};
   }
-  const api={VERSION,SKILLS,PHASES,THEMES,uid,today,serial,addDays,fresh,copy,safeParse,validate,migrateLegacy,beginEpoch,info,adjustment,schedule,canonical,seen,expose,recordAttempt,parseFeedback,trends,recallCard,vocabulary,band,overall,officialURL,convert,readiness,continuous,feedbackPrompt,merge};
+  const api={VERSION,SKILLS,PHASES,THEMES,uid,today,serial,addDays,fresh,copy,safeParse,validate,migrateLegacy,beginEpoch,info,adjustment,schedule,canonical,seen,expose,recordAttempt,parseFeedback,trends,weeklySummary,recallCard,vocabulary,band,overall,officialURL,convert,readiness,continuous,feedbackPrompt,merge};
   root.EnglishV3=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof globalThis==='undefined'?this:globalThis);
